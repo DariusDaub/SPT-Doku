@@ -4,26 +4,39 @@ Bei der Simulation des Inselnetzes liegt der Fokus hinsichtlich des Stands der T
 
 \section{Inselnetze}
 
-Als Inselnetz, auch autonomes Netz genannt, wird ein Stromnetz bezeichnet, welches nur ein kleines Gebiet versorgt und keinen Anschluss an andere Stromnetze besitzt. Es stellt das Gegenstück zum Verbundnetz dar, welches aus mehreren kleinen, synchronisierten Netzen besteht . 
+Als Inselnetz, auch autonomes Netz genannt, wird ein Stromnetz bezeichnet, welches nur ein kleines Gebiet versorgt und keinen Anschluss an andere Stromnetze besitzt. Es stellt das Gegenstück zum Verbundnetz dar, welches aus mehreren kleinen, synchronisierten Netzen besteht. 
 Es gibt verschiedene Gründe, ein Inselnetz aufzubauen. Häufige Anlässe, ein Inselnetz aufzubauen, bestehen in der geographischen isolierten Position oder politischen Lagen von Gebieten, für die eine Stromversorgung aufrechterhalten werden soll. Historische Beispiele hierfür sind die Nordseeinsel Helgoland, welche bis 2009 durch Dieselgeneratoren Strom ihre Stromversorgung sicherstellte  und West-Berlin, dessen externe Stromversorgung durch die Blockade der sowjetischen Besatzungszone 1948 binnen vier Tagen vollständig gekappt wurde . Auch heutzutage gibt es noch Inselnetze, beispielsweise das der 30.000-Einwohner Stadt Fairbanks im US-Bundesstaat Alaska  oder der Färöer-Ins eln . Letzteres ist für den Aufbau des Netzes der fiktiven Kommune von größter Relevanz, da dieses momentan entwickelt wird, um eine Stromversorgung mit ausschließlich erneuerbaren Energien zu ermöglichen. Dabei ist das Ziel Wind als primäre Energiequelle zu nutzen, was auch für das vorliegende Projekt zutrifft. Bei einer Einwohnerzahl von 54.000  und dazugehöriger Industrie und Infrastruktur liegt ein höherer Strombedarf als für dieses Projekt vor, jedoch bewegt dieser sich voraussichtlich in einer ähnlichen Größenordnung, sodass der Aufbau, untersuchte Parameter und tiefere Analysen für das fiktive Projekt relevant sind.
 Weitere Inselnetze werden für beispielsweise für Flugzeuge, Schiffe oder sensible Infrastruktur, wie Krankenhäuser oder militärische Einrichtungen, betrieben. Diese werden nicht weiter betrachtet.
 Ein Inselnetz einer Kommune kann vom Aufbau generell leicht skizziert werden. Es besteht im vorliegenden Fall aus einem Verteilverbund  aus Stromerzeugern und -verbrauchern, als auch Speichersystemen. Das Netz wird durch verschiedene technische Geräte, beispielsweise Trafos, und einer Regelung gestützt. 
- 
-%% Abbildung 1: Skizze Inselnetz 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=10cm]{Abbildungen/StandDerTechnikAbb1.png}
+    \caption{Skizze Inselnetz}\label{fig:Skizze_Inselnetz}
+\end{figure}
 
 Zu den regenerativen Stromerzeugern, welche genutzt werden können, zählen Windkraft, wobei zwischen On- und Off-Shore unterschieden wird, Photovoltaik, Wasserkraft und Geothermie. Die Auswahl der Stromerzeuger nach den lokalen Gegebenheiten. Auf den Färöer-Inseln bietet sich aufgrund der Lage insbesondere Windkraft , sowohl On-Shore als auch Off-Shore, an. Darüber hinaus wurde die Nutzung von Wasserkraft in Form von Gezeitenkraftwerken geprüft . Auch Geothermie und Photovoltaik spielen eine Rolle. Für deutsche Kommunen sind diese Stromerzeuger auch relevant, wobei sich geothermische Kraftwerke ausschließlich in Süddeutschland finden lassen . Die Stromverbraucher setzen sich auf kommunaler Ebene aus einer Mischung aus Wohn- und Nichtwohngebäuden als auch gegebenenfalls industrieller Abnehmer zusammen. Als Speichersysteme kommen z. B. Batterien in Frage. In der Praxis werden häufig Lithium-Ionen oder Redox-Flow-Batterien genutzt. Solche Speicher, insbesondere auf Gebäudeebene, können diese zu sogenannten Prosumern  machen und schon heute ein relevanter Faktor bei der Netzregelung sein. Darüber hinaus fallen Wärme-, Druckluftspeicher, Pumpspeicherwerke und die Zwischenlagerung als Wasserstoff unter nutzbare Speichersysteme bei Nutzung erneuerbarer Energien. Zur kurzzeitigen Speicherung von Strom zur Netzstabilität ist außerdem die Nutzung von Spulen, Kondensatoren oder Schwungmassenspeichern möglich . 
 Inselnetze haben im Vergleich zu Verbundnetzen eine Reihe von Vor- und Nachteilen. Sie können autonom operieren und unterliegen einer lokalen Kontrolle. Dadurch wird die Anpassung der Energieproduktion und -verteilung an die Bedürfnisse der Verbraucher einfacher. Außerdem sind Transportverluste und die Komplexität des Systems deutlich geringer als bei Verbundnetzen. Dagegen steigen die Stromerzeugungskosten, was die Wirtschaftlichkeit des Inselnetzes erschwert. Ein weiterer Nachteil ist, dass eine Kommune oder Inselgruppe über geographisch begrenzte Ressourcen verfügt. Erneuerbare Energien, beispielsweise Photovoltaik und Windkraft, sind limitiert einsetzbar und volatil gegenüber Wetterschwankungen. Bei anhaltender Dunkelflaute oder einer Beschädigung des Inselnetzes ist die Versorgungssicherheit eines Solchen, wie dem der Färöer-Inseln, unmittelbar gefährdet.
 Insgesamt sind solche Inselnetze meist darauf ausgelegt, einen Überschuss an elektrischer Energie zu produzieren. Für das Stromnetz der Färöer-Inseln wurde 2021 berechnet, dass für die Tagesproduktion an Strom Kapazitäten von 224% für Wind, 105 % für PV mit 8-9 Tage Speicherkapazität gerechnet werden müssen, um eine Versorgung von 87 % aus erneuerbaren Energien zu gewährleisten.  
  
-%%Abbildung 2: Stromprognose und Lastverläufe Färöer-Inseln, Stand 2021
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=10cm]{Abbildungen/StandDerTechnikAbb2.png}
+    \caption{Stromprognose und Lastverläufe Färöer-Inseln, Stand 2021}\label{fig:Stromprognose_und_Lastverläufe}
+\end{figure}
 
 In solchen Prognosen ist es außerdem wichtig, Prognosen des Strombedarfs für mehrere Jahre in die Zukunft zu berücksichtigen (s. Abbildung 2). Die Lastverläufe sind außerdem in Kombination mit fluktuierender Stromerzeugung von hoher Relevanz für Regelung und Speicher. Dabei ist eine wochenbezogene Betrachtung üblich.
 
 \section{Speicher}
 
 Die Speicherung von Strom spielt in der Simulation eine zentrale Rolle. Um den Aufbau von realistischen Speichersystemen im fiktiven Inselnetz zu ermöglichen, ist ein Blick auf den Stand der Technik solcher Speichertechnologie notwendig. Im Fokus stehen dabei Be- und Entladeverhalten von genutzten Batterien, da deren Verhalten fundamental für Be- und Entladestrategien ist. Außerdem werden weitere Speichertechnologien genauer betrachtet, um den Nutzen ihres Einsatzes in der Simulation abzuschätzen. Eine Gegenüberstellung dieser Technologien nach heutigem Stand von Ausspeicherdauer zu Speicherkapazität in logarithmischer Skalierung kann nachfolgender Abbildung entnommen werden.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=10cm]{Abbildungen/StandDerTechnikAbb3.png}
+    \caption{Speichertechnologien Übersicht}\label{fig:Speichertechnologien_Übersicht}
+\end{figure}
  
-Abbildung 3: Speichertechnologien Übersicht
 Batteriespeicher gehören zu den am häufigsten genutzten Speicherformen für Inselnetze. Eine genauere Betrachtung der verschiedenen Batterietypen nach ihrem Stand der Technik bietet sich an. Relevant sind dabei insbesondere der Wirkungsgrad, die Lebens- bzw. Zyklenlebensdauer, der Temperaturbereich in welchem die Batterien arbeiten können und die Kosten.
 
 \begin{table}[htbp]
@@ -66,7 +79,11 @@ Die Technologie der Redox-Flow-Batterien ist weniger gut erforscht als die der L
 
 In einem kommunalen Inselnetz werden häufig ein oder mehrere stationäre Batteriespeichersysteme genutzt. In dem hier betrachteten Kapazitätsbereich von mehreren MW spricht man von Großspeichern. Im Zuge der Energiewende haben sich Schwerpunkte des Anforderungsprofils solcher Batteriegroßspeicher verändert. Wichtige Eigenschaften stellen dabei die Reaktionsgeschwindigkeit, Flexibilität und Zuverlässigkeit solcher Systeme dar.
  
-%%Abbildung 4: Batterispeichersystem Aufbau: https://www.kyon-energy.de/blog/wie-batteriegrossspeicher-aufgebaut-sind
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=10cm]{Abbildungen/StandDerTechnikAbb4jpg.png}
+    \caption{Batterispeichersystem Aufbau}\label{fig:Batterispeichersystem_Aufbau}
+\end{figure}
 
 Ausgangspunkt des Speichers sind die Batteriezellen in einem Container. Um die technischen und gesetzlichen Anforderungen zu erfüllen, besitzt jeder Batteriecontainer ein Kühlsystem für die Nutzung und eine Löschanlage für den Brandfall. Diese Batteriecontainer können flexibel skaliert werden, also an die Bedürfnisse des Stromnetzes angepasst werden. Im Vergleich zu anderen Industrieren wie z.B. der Automobilindustrie, spielt die Energiedichte eine geringere Rolle, als reine Materialkosten. Daher werden häufig billigere Zellen aus Lithium-Eisen-Phosphat (LFP), der Alternative mit hoher Energiedichte aus Lithium-Nickel-Mangan-Cobalt (NMC), vorgezogen.
 \documentclass{article}
