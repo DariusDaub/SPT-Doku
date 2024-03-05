@@ -33,8 +33,8 @@
       \strng{authorbibnamehash}{a8a24e803be4cea53eead29c87bd8e1a}
       \strng{authornamehash}{a8a24e803be4cea53eead29c87bd8e1a}
       \strng{authorfullhash}{a8a24e803be4cea53eead29c87bd8e1a}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{german}
@@ -60,8 +60,8 @@
       \strng{authorbibnamehash}{c0f9e839e59e6b01283923c350d87c88}
       \strng{authornamehash}{c0f9e839e59e6b01283923c350d87c88}
       \strng{authorfullhash}{c0f9e839e59e6b01283923c350d87c88}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Entwicklung von Modellen zur speichergestützten Versorgung mit erneuerbaren Energien in Inselnetzen}
@@ -102,8 +102,8 @@
       \strng{authorbibnamehash}{0f612b24e9fb0a3bb52b292090355707}
       \strng{authornamehash}{f2ca577c5490d8d865462bca9dbb8b79}
       \strng{authorfullhash}{0f612b24e9fb0a3bb52b292090355707}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper describes a control algorithm for a battery energy storage system ({BESS}) to deliver a charge/discharge power output in response to changes in the grid frequency constrained by the National Grid Electricity Transmission ({NGET})—the primary electricity transmission network operator in the U.K.—while managing the state of charge of the {BESS} to optimize the availability of the system. Furthermore, this paper investigates using the {BESS} in order to maximize triad avoidance beneﬁt revenues while layering other services. Simulation using a 2 {MW}/1 {MWh} lithium–titanate {BESS} validated model is carried out to explore possible scenarios using the proposed algorithms. Finally, experimental results of the 2 {MW}/1 {MWh} Willenhall Energy Storage System verify the performance of the proposed algorithms.}
@@ -138,8 +138,8 @@
       \strng{authorbibnamehash}{e47eca591e4951290e138de0973db360}
       \strng{authornamehash}{e47eca591e4951290e138de0973db360}
       \strng{authorfullhash}{e47eca591e4951290e138de0973db360}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Die Versorgung mit elektrischer Energie ist für viele Menschen heute zur Selbstverständlichkeit geworden. Jedoch entstehen, durch den immer größer werdenden Verbrauch an elektrischer Energie, die Einbindung von umrichtergekoppelten Erzeugungsanlagen, sowie die Anbindung von Anlagen mit dargebotsabhängiger Einspeisung, Probleme, welche die Qualität der Netzdienstleistung beeinflussen. In traditionellen Erzeugungsanlagen wie etwa Wasserkraftwerken wird die Trägheit der Turbinen-Generator-Anordnung ausgenutzt, um die Frequenzelastizität zu verkleinern. Viele neue, regenerative Systeme zur Erzeugung von elektrischer Energie (z.B. {PhotovoltaikSysteme}, Windenergieanlagen, etc.) werden mit Hilfe von leistungselektronischen Umrichterschaltungen mit dem Netz gekoppelt und bieten so keine Möglichkeit, mechanische Schwungmassen einzusetzen. Dieses Paper beschäftigt sich mit einem Konzept, das eine funktionale Erweiterung der leistungselektronisch angebundenen Erzeugungsanlagen darstellt, damit auch diese ihren Beitrag zur Frequenzstabilisierung leisten. Aufgrund des mechanischen Pendants werden diese Systeme als „Virtuelle Schwungmassen“ bezeichnet.}
@@ -152,8 +152,8 @@
       \endverb
     \endentry
     \entry{noauthor_soc_nodate}{online}{}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
       \field{title}{{SoC} management strategies in Battery Energy Storage System providing Primary Control Reserve - {ScienceDirect}}
       \field{urlday}{19}
@@ -194,8 +194,8 @@
       \strng{authorbibnamehash}{9eae3e9606c3de4d8f321f9d161f4e43}
       \strng{authornamehash}{9eae3e9606c3de4d8f321f9d161f4e43}
       \strng{authorfullhash}{9eae3e9606c3de4d8f321f9d161f4e43}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0932-383X, 1613-7620}
@@ -227,6 +227,198 @@
       \verb http://link.springer.com/10.1007/s00502-019-0704-1
       \endverb
     \endentry
+    \entry{Hau2016}{booklet}{}
+      \name{author}{1}{}{%
+        {{hash=27d2eda0e2f6997f9e3091b77b2fc6bd}{%
+           family={Hau},
+           familyi={H\bibinitperiod},
+           given={Erich},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Vieweg}%
+      }
+      \strng{namehash}{27d2eda0e2f6997f9e3091b77b2fc6bd}
+      \strng{fullhash}{27d2eda0e2f6997f9e3091b77b2fc6bd}
+      \strng{bibnamehash}{27d2eda0e2f6997f9e3091b77b2fc6bd}
+      \strng{authorbibnamehash}{27d2eda0e2f6997f9e3091b77b2fc6bd}
+      \strng{authornamehash}{27d2eda0e2f6997f9e3091b77b2fc6bd}
+      \strng{authorfullhash}{27d2eda0e2f6997f9e3091b77b2fc6bd}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Windkraftanlagen Grundlagen, Technik, Einsatz, Wirtschaftlichkeit}
+      \field{year}{2016}
+    \endentry
+    \entry{E115}{booklet}{}
+      \name{author}{1}{}{%
+        {{hash=3e54d6cb1d34f982fae47e30bfdbcf32}{%
+           family={GmbH},
+           familyi={G\bibinitperiod},
+           given={Enercon},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{3e54d6cb1d34f982fae47e30bfdbcf32}
+      \strng{fullhash}{3e54d6cb1d34f982fae47e30bfdbcf32}
+      \strng{bibnamehash}{3e54d6cb1d34f982fae47e30bfdbcf32}
+      \strng{authorbibnamehash}{3e54d6cb1d34f982fae47e30bfdbcf32}
+      \strng{authornamehash}{3e54d6cb1d34f982fae47e30bfdbcf32}
+      \strng{authorfullhash}{3e54d6cb1d34f982fae47e30bfdbcf32}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Datenblatt ENERCON Windenergieanlage E-115 Betriebsmodi 0 s, I s, II s und leistungsreduzierte Betriebe mit TES}
+      \verb{urlraw}
+      \verb https://docplayer.org/136627205-Datenblatt-enercon-windenergieanlage-e-115-betriebsmodi-0-s-i-s-ii-s-und-leistungsreduzierte-betriebe-mit-tes-trailing-edge-serrations.html
+      \endverb
+      \verb{url}
+      \verb https://docplayer.org/136627205-Datenblatt-enercon-windenergieanlage-e-115-betriebsmodi-0-s-i-s-ii-s-und-leistungsreduzierte-betriebe-mit-tes-trailing-edge-serrations.html
+      \endverb
+    \endentry
+    \entry{Hoehenprofil}{booklet}{}
+      \name{author}{1}{}{%
+        {{hash=230087f74b72d6e2a87de41d1296e0b9}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           given={Anna-Kathrin\bibnamedelima Wallasch},
+           giveni={A\bibinithyphendelim K\bibinitperiod\bibinitdelim W\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Deutsche Windguard GmbH}%
+      }
+      \strng{namehash}{230087f74b72d6e2a87de41d1296e0b9}
+      \strng{fullhash}{230087f74b72d6e2a87de41d1296e0b9}
+      \strng{bibnamehash}{230087f74b72d6e2a87de41d1296e0b9}
+      \strng{authorbibnamehash}{230087f74b72d6e2a87de41d1296e0b9}
+      \strng{authornamehash}{230087f74b72d6e2a87de41d1296e0b9}
+      \strng{authorfullhash}{230087f74b72d6e2a87de41d1296e0b9}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Wirtschaftlichkeit unterschiedlicher Nabenhöhen von Windenergieanlagen}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://www.windguard.de/veroeffentlichungen.html?file=files/cto_layout/img/unternehmen/veroeffentlichungen/2017/Wirtschaftlichkeit%20unterschiedlicher%20Nabenh%C3%B6hen%20von%20Windenergieanlagen.pdff
+      \endverb
+      \verb{url}
+      \verb https://www.windguard.de/veroeffentlichungen.html?file=files/cto_layout/img/unternehmen/veroeffentlichungen/2017/Wirtschaftlichkeit%20unterschiedlicher%20Nabenh%C3%B6hen%20von%20Windenergieanlagen.pdff
+      \endverb
+    \endentry
+    \entry{Rauigkeit}{booklet}{}
+      \name{author}{1}{}{%
+        {{hash=a2800e8afe8fc327e20a9e48e96f94a6}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           given={A.\bibnamedelimi Henze},
+           giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Institute of Aerodynamics, RWTH Aachen University}%
+      }
+      \strng{namehash}{a2800e8afe8fc327e20a9e48e96f94a6}
+      \strng{fullhash}{a2800e8afe8fc327e20a9e48e96f94a6}
+      \strng{bibnamehash}{a2800e8afe8fc327e20a9e48e96f94a6}
+      \strng{authorbibnamehash}{a2800e8afe8fc327e20a9e48e96f94a6}
+      \strng{authornamehash}{a2800e8afe8fc327e20a9e48e96f94a6}
+      \strng{authorfullhash}{a2800e8afe8fc327e20a9e48e96f94a6}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Windenergie Windturbines}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://www.aia.rwth-aachen.de/vluebfiles/vlueb/lecture_materials/20/link/Windenergie_Standort.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.aia.rwth-aachen.de/vluebfiles/vlueb/lecture_materials/20/link/Windenergie_Standort.pdf
+      \endverb
+    \endentry
+    \entry{PV}{booklet}{}
+      \name{author}{1}{}{%
+        {{hash=8fd3a8379cbda9c60f92e446330e16fb}{%
+           family={Wagner},
+           familyi={W\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Vieweg}%
+      }
+      \strng{namehash}{8fd3a8379cbda9c60f92e446330e16fb}
+      \strng{fullhash}{8fd3a8379cbda9c60f92e446330e16fb}
+      \strng{bibnamehash}{8fd3a8379cbda9c60f92e446330e16fb}
+      \strng{authorbibnamehash}{8fd3a8379cbda9c60f92e446330e16fb}
+      \strng{authornamehash}{8fd3a8379cbda9c60f92e446330e16fb}
+      \strng{authorfullhash}{8fd3a8379cbda9c60f92e446330e16fb}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Photovoltaik Engineering Handbuch für Planung, Entwicklung und Anwendung}
+      \field{year}{2015}
+    \endentry
+    \entry{VerlustePV}{booklet}{}
+      \name{author}{1}{}{%
+        {{hash=bf08863b1320510019eb61665cccd1bc}{%
+           family={Wirtschaft\bibnamedelimb und\bibnamedelima Klimaschutz},
+           familyi={W\bibinitperiod\bibinitdelim u\bibinitperiod\bibinitdelim K\bibinitperiod},
+           given={Bundesministerium},
+           giveni={B\bibinitperiod},
+           prefix={für},
+           prefixi={f\bibinitperiod}}}%
+      }
+      \strng{namehash}{bf08863b1320510019eb61665cccd1bc}
+      \strng{fullhash}{bf08863b1320510019eb61665cccd1bc}
+      \strng{bibnamehash}{bf08863b1320510019eb61665cccd1bc}
+      \strng{authorbibnamehash}{bf08863b1320510019eb61665cccd1bc}
+      \strng{authornamehash}{bf08863b1320510019eb61665cccd1bc}
+      \strng{authorfullhash}{bf08863b1320510019eb61665cccd1bc}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Verluste einer Solarzelle}
+      \verb{urlraw}
+      \verb https://www.enargus.de/pub/bscw.cgi/d13357-2/*/*/Verluste%20einer%20Solarzelle.html?op=Wiki.getwiki
+      \endverb
+      \verb{url}
+      \verb https://www.enargus.de/pub/bscw.cgi/d13357-2/*/*/Verluste%20einer%20Solarzelle.html?op=Wiki.getwiki
+      \endverb
+    \endentry
+    \entry{FaktenPV}{booklet}{}
+      \name{author}{1}{}{%
+        {{hash=ca39a3c15edfcb2085b57111924efed4}{%
+           family={Wirth},
+           familyi={W\bibinitperiod},
+           given={Harry},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Fraunhofer ISE}%
+      }
+      \strng{namehash}{ca39a3c15edfcb2085b57111924efed4}
+      \strng{fullhash}{ca39a3c15edfcb2085b57111924efed4}
+      \strng{bibnamehash}{ca39a3c15edfcb2085b57111924efed4}
+      \strng{authorbibnamehash}{ca39a3c15edfcb2085b57111924efed4}
+      \strng{authornamehash}{ca39a3c15edfcb2085b57111924efed4}
+      \strng{authorfullhash}{ca39a3c15edfcb2085b57111924efed4}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Aktuelle Fakten zur Photovoltaik in Deutschland}
+      \field{year}{2024}
+    \endentry
     \entry{keil2012aufbau}{inproceedings}{}
       \name{author}{2}{}{%
         {{hash=566486c68aca4044aa0722ef9239e974}{%
@@ -246,8 +438,8 @@
       \strng{authorbibnamehash}{53d174aa790fb3385c95e33142148e89}
       \strng{authornamehash}{53d174aa790fb3385c95e33142148e89}
       \strng{authorfullhash}{53d174aa790fb3385c95e33142148e89}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{19. DESIGN\&ELEKTRONIK-Entwicklerforum Batterien \& Ladekonzepte}
