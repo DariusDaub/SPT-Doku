@@ -26,18 +26,24 @@ Die Speicherung von Strom spielt in der Simulation eine zentrale Rolle. Um den A
 Abbildung 3: Speichertechnologien Übersicht
 Batteriespeicher gehören zu den am häufigsten genutzten Speicherformen für Inselnetze. Eine genauere Betrachtung der verschiedenen Batterietypen nach ihrem Stand der Technik bietet sich an. Relevant sind dabei insbesondere der Wirkungsgrad, die Lebens- bzw. Zyklenlebensdauer, der Temperaturbereich in welchem die Batterien arbeiten können und die Kosten.
 
-Tabelle 1: Gegenüberstellung Batteriespeicher Stand der Technik
-Eigenschaft
-Batterie 	Energiedich- te [Wh/kg]	Wirkungs- grad [%]	Lebensdauer 
-[Jahre]	Zyklenlebens-dauer [-]	Temperatur- bereich [°C]	Kosten
-[€/kWh]
-Blei-Säure	25-40	80-90	3-12	50-2.000	-20 bis +50	100-300
-Lithium-Ionen	70-260	90-95	Bis zu 15	>2.000	0 bis +40	92
-Natrium-Ionen	140-160	90	k.A.	>50.000	-20 bis +45	60 
-Nickel-Metallhybrid	80	70-90	Bis zu 10	500 (i.L.) 	Über 0°C	150 – 300*
-Natrium-Schwefel	218	75-85	Ca. 10	2.500 (i.L.)	+300 bis +350	200 – 400*
-Redox-Flow (Vanadium)	10-85	70-80	>15	>15.000	0 bis +40	200 – 500*
-* grobe Schätzung
+\begin{table}[htbp]
+    \centering
+    \caption{Gegenüberstellung Batteriespeicher Stand der Technik}
+    \label{tab:Gegenüberstellung_Batteriespeicher_Stand_der_Technik}
+    \begin{tabular}{lcccccc}
+        \toprule
+        \textbf{Batterietyp} & \textbf{Energiedichte [Wh/kg]} & \textbf{Wirkungsgrad [\%]} & \textbf{Lebensdauer [Jahre]} & \textbf{Zyklenlebensdauer [-]} & \textbf{Temperaturbereich [°C]} & \textbf{Kosten [€/kWh]} \\
+        \midrule
+        Blei-Säure & 25-40 & 80-90 & 3-12 & 50-2.000 & -20 bis +50 & 100-300 \\
+        Lithium-Ionen & 70-260 & 90-95 & Bis zu 15 & >2.000 & 0 bis +40 & 92 \\
+        Natrium-Ionen & 140-160 & 90 & k.A. & >50.000 & -20 bis +45 & 60 \\
+        Nickel-Metallhybrid & 80 & 70-90 & Bis zu 10 & 500 (i.L.) & Über 0°C & 150 – 300* \\
+        Natrium-Schwefel & 218 & 75-85 & Ca. 10 & 2.500 (i.L.) & +300 bis +350 & 200 – 400* \\
+        Redox-Flow (Vanadium) & 10-85 & 70-80 & >15 & >15.000 & 0 bis +40 & 200 – 500* \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+*grobe Schätzung
 
 Unter Betrachtung der verglichenen Eigenschaften von genutzter Batteriespeicher die meisten betrachteten Technologien aus der Auswahl für ein Inselnetz heraus. Blei-Säure-Batterien sind für die benötigte Speicherkapazität unwirtschaftlich. Nickel-Metallhybrid-Batterien sind über alle Eigenschaften hinweg Lithium-Ionen-Batterien unterlegen und werden durch ebendiese momentan ersetzt. Da Natrium-Ionen-Batterien eine deutlich geringere Energiedichte haben, eignen sie sich als stationäre Batterie-Speicherkraftwerke nicht für Wind- und Solarenergie nicht. Bei Natrium-Schwefel-Batterien liegt bei der vorliegenden Anwendung das Hauptproblem im nutzbaren Temperaturfenster. Die hohen Temperaturen von 300 bis 350°C müssen gehalten werden, wodurch sie als Speicher bisher nur für Großspeicher zur Netzstabilisierung Anwendung gefunden haben. Als realisierbare Speicher bleiben Lithium-Ionen- und Redox-Flow-Batterien übrig. Eine tiefere Analyse folgt.
 
@@ -63,10 +69,27 @@ In einem kommunalen Inselnetz werden häufig ein oder mehrere stationäre Batter
 %%Abbildung 4: Batterispeichersystem Aufbau: https://www.kyon-energy.de/blog/wie-batteriegrossspeicher-aufgebaut-sind
 
 Ausgangspunkt des Speichers sind die Batteriezellen in einem Container. Um die technischen und gesetzlichen Anforderungen zu erfüllen, besitzt jeder Batteriecontainer ein Kühlsystem für die Nutzung und eine Löschanlage für den Brandfall. Diese Batteriecontainer können flexibel skaliert werden, also an die Bedürfnisse des Stromnetzes angepasst werden. Im Vergleich zu anderen Industrieren wie z.B. der Automobilindustrie, spielt die Energiedichte eine geringere Rolle, als reine Materialkosten. Daher werden häufig billigere Zellen aus Lithium-Eisen-Phosphat (LFP), der Alternative mit hoher Energiedichte aus Lithium-Nickel-Mangan-Cobalt (NMC), vorgezogen.
-Tabelle 2: Auswahl Batteriezellen Großspeicher
-	LFP	NMC	Redox Flow	Redox Flow (Vanadium- Vanadium
-Energiedichte [Wh/kg] 	230 - 260	130 - 200	10 - 85	85
-Kosten [€/kWh]	150 - 250	100 - 200	200 – 500*	300 - 500*
+\documentclass{article}
+\usepackage{booktabs}
+
+\begin{document}
+
+\begin{table}[htbp]
+    \centering
+    \caption{Auswahl Batteriezellen Großspeicher}
+    \label{tab:Auswahl_Batteriezellen_Großspeicher}
+    \begin{tabular}{lcccc}
+        \toprule
+        & \textbf{LFP} & \textbf{NMC} & \textbf{Redox Flow} & \textbf{Redox Flow (Vanadium-Vanadium)} \\
+        \midrule
+        \textbf{Energiedichte [Wh/kg]} & 230-260 & 130-200 & 10-85 & 85 \\
+        \textbf{Kosten [€/kWh]} & 150-250 & 100-200 & 200-500* & 300-500* \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\end{document}
 * grobe Schätzung
+
 Da Batterien im Gleichstrom betrieben werden, wird das Batteriesystem durch Wechselrichter vom Netz getrennt. Wenn die vorliegenden Energiemengen entsprecht groß sind, bedarf es außerdem eines Transformators, welcher den Strom von der Niederspannungsebene auf das gewünschte Spannungsniveau wandelt. Wechselrichter und Transformatoren müssen bidirektional verwendbar sein, um Be- und Entladung zu gewähren. Die Koordination dieses Vorganges wird durch ein Energie-Management-System (EMS) gewährleistet. Dadurch ist es außerdem möglich, Zellen zu überwachen und das System im Problemfall zu schützen.
 
