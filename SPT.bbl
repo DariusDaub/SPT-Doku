@@ -33,8 +33,8 @@
       \strng{authorbibnamehash}{a8a24e803be4cea53eead29c87bd8e1a}
       \strng{authornamehash}{a8a24e803be4cea53eead29c87bd8e1a}
       \strng{authorfullhash}{a8a24e803be4cea53eead29c87bd8e1a}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{german}
@@ -60,8 +60,8 @@
       \strng{authorbibnamehash}{c0f9e839e59e6b01283923c350d87c88}
       \strng{authornamehash}{c0f9e839e59e6b01283923c350d87c88}
       \strng{authorfullhash}{c0f9e839e59e6b01283923c350d87c88}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Entwicklung von Modellen zur speichergestützten Versorgung mit erneuerbaren Energien in Inselnetzen}
@@ -102,8 +102,8 @@
       \strng{authorbibnamehash}{0f612b24e9fb0a3bb52b292090355707}
       \strng{authornamehash}{f2ca577c5490d8d865462bca9dbb8b79}
       \strng{authorfullhash}{0f612b24e9fb0a3bb52b292090355707}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper describes a control algorithm for a battery energy storage system ({BESS}) to deliver a charge/discharge power output in response to changes in the grid frequency constrained by the National Grid Electricity Transmission ({NGET})—the primary electricity transmission network operator in the U.K.—while managing the state of charge of the {BESS} to optimize the availability of the system. Furthermore, this paper investigates using the {BESS} in order to maximize triad avoidance beneﬁt revenues while layering other services. Simulation using a 2 {MW}/1 {MWh} lithium–titanate {BESS} validated model is carried out to explore possible scenarios using the proposed algorithms. Finally, experimental results of the 2 {MW}/1 {MWh} Willenhall Energy Storage System verify the performance of the proposed algorithms.}
@@ -138,8 +138,8 @@
       \strng{authorbibnamehash}{e47eca591e4951290e138de0973db360}
       \strng{authornamehash}{e47eca591e4951290e138de0973db360}
       \strng{authorfullhash}{e47eca591e4951290e138de0973db360}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Die Versorgung mit elektrischer Energie ist für viele Menschen heute zur Selbstverständlichkeit geworden. Jedoch entstehen, durch den immer größer werdenden Verbrauch an elektrischer Energie, die Einbindung von umrichtergekoppelten Erzeugungsanlagen, sowie die Anbindung von Anlagen mit dargebotsabhängiger Einspeisung, Probleme, welche die Qualität der Netzdienstleistung beeinflussen. In traditionellen Erzeugungsanlagen wie etwa Wasserkraftwerken wird die Trägheit der Turbinen-Generator-Anordnung ausgenutzt, um die Frequenzelastizität zu verkleinern. Viele neue, regenerative Systeme zur Erzeugung von elektrischer Energie (z.B. {PhotovoltaikSysteme}, Windenergieanlagen, etc.) werden mit Hilfe von leistungselektronischen Umrichterschaltungen mit dem Netz gekoppelt und bieten so keine Möglichkeit, mechanische Schwungmassen einzusetzen. Dieses Paper beschäftigt sich mit einem Konzept, das eine funktionale Erweiterung der leistungselektronisch angebundenen Erzeugungsanlagen darstellt, damit auch diese ihren Beitrag zur Frequenzstabilisierung leisten. Aufgrund des mechanischen Pendants werden diese Systeme als „Virtuelle Schwungmassen“ bezeichnet.}
@@ -152,8 +152,8 @@
       \endverb
     \endentry
     \entry{noauthor_soc_nodate}{online}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
       \field{title}{{SoC} management strategies in Battery Energy Storage System providing Primary Control Reserve - {ScienceDirect}}
       \field{urlday}{19}
@@ -194,8 +194,8 @@
       \strng{authorbibnamehash}{9eae3e9606c3de4d8f321f9d161f4e43}
       \strng{authornamehash}{9eae3e9606c3de4d8f321f9d161f4e43}
       \strng{authorfullhash}{9eae3e9606c3de4d8f321f9d161f4e43}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0932-383X, 1613-7620}
@@ -226,6 +226,342 @@
       \verb{url}
       \verb http://link.springer.com/10.1007/s00502-019-0704-1
       \endverb
+    \endentry
+    \entry{energielexikon}{online}{}
+      \name{author}{1}{}{%
+        {{hash=d32f26c6dc8d9b5ebcbada8fe8470680}{%
+           family={Paschotta},
+           familyi={P\bibinitperiod},
+           given={Dr.\bibnamedelimi Rüdiger},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{d32f26c6dc8d9b5ebcbada8fe8470680}
+      \strng{fullhash}{d32f26c6dc8d9b5ebcbada8fe8470680}
+      \strng{bibnamehash}{d32f26c6dc8d9b5ebcbada8fe8470680}
+      \strng{authorbibnamehash}{d32f26c6dc8d9b5ebcbada8fe8470680}
+      \strng{authornamehash}{d32f26c6dc8d9b5ebcbada8fe8470680}
+      \strng{authorfullhash}{d32f26c6dc8d9b5ebcbada8fe8470680}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: March 3, 2024}
+      \field{title}{Inselnetz}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.energie-lexikon.info/inselnetz.html
+      \endverb
+      \verb{url}
+      \verb https://www.energie-lexikon.info/inselnetz.html
+      \endverb
+    \endentry
+    \entry{merkur}{online}{}
+      \name{author}{1}{}{%
+        {{hash=2c5545b326c663b9815bbead3690ab22}{%
+           family={Merkur},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{2c5545b326c663b9815bbead3690ab22}
+      \strng{fullhash}{2c5545b326c663b9815bbead3690ab22}
+      \strng{bibnamehash}{2c5545b326c663b9815bbead3690ab22}
+      \strng{authorbibnamehash}{2c5545b326c663b9815bbead3690ab22}
+      \strng{authornamehash}{2c5545b326c663b9815bbead3690ab22}
+      \strng{authorfullhash}{2c5545b326c663b9815bbead3690ab22}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: March 4, 2024}
+      \field{title}{Nordseeinsel Helgoland ans Stromnetz angeschlossen}
+      \field{year}{2009}
+      \verb{urlraw}
+      \verb https://www.merkur.de/deutschland/nordseeinsel-helgoland-stromnetz-angeschlossen-zr-544258.html
+      \endverb
+      \verb{url}
+      \verb https://www.merkur.de/deutschland/nordseeinsel-helgoland-stromnetz-angeschlossen-zr-544258.html
+      \endverb
+    \endentry
+    \entry{berlinstreet}{online}{}
+      \name{author}{1}{}{%
+        {{hash=467c09b20ba8a50ed69e789b6a580d68}{%
+           family={Kuhrt},
+           familyi={K\bibinitperiod},
+           given={Aro},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{467c09b20ba8a50ed69e789b6a580d68}
+      \strng{fullhash}{467c09b20ba8a50ed69e789b6a580d68}
+      \strng{bibnamehash}{467c09b20ba8a50ed69e789b6a580d68}
+      \strng{authorbibnamehash}{467c09b20ba8a50ed69e789b6a580d68}
+      \strng{authornamehash}{467c09b20ba8a50ed69e789b6a580d68}
+      \strng{authorfullhash}{467c09b20ba8a50ed69e789b6a580d68}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: March 5, 2024}
+      \field{title}{Die Stromversorgung West-Berlins während der Blockade}
+      \field{year}{2010}
+      \verb{urlraw}
+      \verb https://www.berlinstreet.de/2254#:~:text=Das%20gesamte%20West-Berlin%20wurde,auch%20Ost-Berlin%20versorgt%20wurden.
+      \endverb
+      \verb{url}
+      \verb https://www.berlinstreet.de/2254#:~:text=Das%20gesamte%20West-Berlin%20wurde,auch%20Ost-Berlin%20versorgt%20wurden.
+      \endverb
+    \endentry
+    \entry{iseralaska}{online}{}
+      \name{author}{2}{}{%
+        {{hash=23951972118e36a334195e90e2d67c32}{%
+           family={Fay},
+           familyi={F\bibinitperiod},
+           given={Ginny},
+           giveni={G\bibinitperiod}}}%
+        {{hash=0cd63d7ac33b2bc926ae3e1e9a546034}{%
+           family={Meléndez},
+           familyi={M\bibinitperiod},
+           given={Alejandra\bibnamedelima Villalobos},
+           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{4e0177955f88e57d381586040b51cd9d}
+      \strng{fullhash}{4e0177955f88e57d381586040b51cd9d}
+      \strng{bibnamehash}{4e0177955f88e57d381586040b51cd9d}
+      \strng{authorbibnamehash}{4e0177955f88e57d381586040b51cd9d}
+      \strng{authornamehash}{4e0177955f88e57d381586040b51cd9d}
+      \strng{authorfullhash}{4e0177955f88e57d381586040b51cd9d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{4}
+      \field{note}{Accessed: March 5, 2024}
+      \field{title}{Electricity in Alaska: A Growing and Changing Picture}
+      \field{year}{2014}
+      \verb{urlraw}
+      \verb https://iseralaska.org/static/legacy_publication_links/2014_04-RS-ElectricityInAlaska.pdf
+      \endverb
+      \verb{url}
+      \verb https://iseralaska.org/static/legacy_publication_links/2014_04-RS-ElectricityInAlaska.pdf
+      \endverb
+    \endentry
+    \entry{cigre-article}{online}{}
+      \name{author}{2}{}{%
+        {{hash=65f7bae37f91c61198d5fb637937990f}{%
+           family={Trondheim},
+           familyi={T\bibinitperiod},
+           given={H.M.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=23a8f283e804ecd2db10d9938ccaeb92}{%
+           family={Nielsen},
+           familyi={N\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{420d4c3c1aae41bd02acaf832a14cfa3}
+      \strng{fullhash}{420d4c3c1aae41bd02acaf832a14cfa3}
+      \strng{bibnamehash}{420d4c3c1aae41bd02acaf832a14cfa3}
+      \strng{authorbibnamehash}{420d4c3c1aae41bd02acaf832a14cfa3}
+      \strng{authornamehash}{420d4c3c1aae41bd02acaf832a14cfa3}
+      \strng{authorfullhash}{420d4c3c1aae41bd02acaf832a14cfa3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{10}
+      \field{note}{Accessed: March 5, 2024}
+      \field{title}{Experiences with 100\% Wind Power Generation in an Isolated Power System - Faroe Islands}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://cse.cigre.org/cse-n030/experiences-with-100-wind-power-generation-in-an-isolated-power-system-suduroy-faroe-islands.html
+      \endverb
+      \verb{url}
+      \verb https://cse.cigre.org/cse-n030/experiences-with-100-wind-power-generation-in-an-isolated-power-system-suduroy-faroe-islands.html
+      \endverb
+    \endentry
+    \entry{trondheim-thesis}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=4cc7f652cf6e3e2ecde4e65f23c352c7}{%
+           family={Tróndheim},
+           familyi={T\bibinitperiod},
+           given={Dr.\bibnamedelimi Helma\bibnamedelima Maria},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Aalborg University}%
+      }
+      \list{publisher}{1}{%
+        {Springer Theses}%
+      }
+      \strng{namehash}{4cc7f652cf6e3e2ecde4e65f23c352c7}
+      \strng{fullhash}{4cc7f652cf6e3e2ecde4e65f23c352c7}
+      \strng{bibnamehash}{4cc7f652cf6e3e2ecde4e65f23c352c7}
+      \strng{authorbibnamehash}{4cc7f652cf6e3e2ecde4e65f23c352c7}
+      \strng{authornamehash}{4cc7f652cf6e3e2ecde4e65f23c352c7}
+      \strng{authorfullhash}{4cc7f652cf6e3e2ecde4e65f23c352c7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Ensuring Supply Reliability and Grid Stability in a 100\% Renewable Electricity Sector in the Faroe Islands}
+      \field{type}{phdthesis}
+      \field{year}{2023}
+    \endentry
+    \entry{statista-population}{online}{}
+      \name{author}{1}{}{%
+        {{hash=e92db778447a6f10f4a59a7aac0fcacd}{%
+           family={Dyvik},
+           familyi={D\bibinitperiod},
+           given={Einar\bibnamedelima H.},
+           giveni={E\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{e92db778447a6f10f4a59a7aac0fcacd}
+      \strng{fullhash}{e92db778447a6f10f4a59a7aac0fcacd}
+      \strng{bibnamehash}{e92db778447a6f10f4a59a7aac0fcacd}
+      \strng{authorbibnamehash}{e92db778447a6f10f4a59a7aac0fcacd}
+      \strng{authornamehash}{e92db778447a6f10f4a59a7aac0fcacd}
+      \strng{authorfullhash}{e92db778447a6f10f4a59a7aac0fcacd}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{11}
+      \field{note}{Accessed: March 5, 2024}
+      \field{title}{Population of the Faroe Islands 2022, by Island}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.statista.com/statistics/805966/population-of-the-faroe-islands-by-island/
+      \endverb
+      \verb{url}
+      \verb https://www.statista.com/statistics/805966/population-of-the-faroe-islands-by-island/
+      \endverb
+    \endentry
+    \entry{uni-lecture}{online}{}
+      \name{author}{1}{}{%
+        {{hash=d198051d839092404bb9d818b8fbb4a5}{%
+           family={Feindt},
+           familyi={F\bibinitperiod},
+           given={Oliver},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{d198051d839092404bb9d818b8fbb4a5}
+      \strng{fullhash}{d198051d839092404bb9d818b8fbb4a5}
+      \strng{bibnamehash}{d198051d839092404bb9d818b8fbb4a5}
+      \strng{authorbibnamehash}{d198051d839092404bb9d818b8fbb4a5}
+      \strng{authornamehash}{d198051d839092404bb9d818b8fbb4a5}
+      \strng{authorfullhash}{d198051d839092404bb9d818b8fbb4a5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{11}
+      \field{title}{Speichertechnologien - 4. Elektrochemische Energiespeicher}
+      \field{year}{2023}
+    \endentry
+    \entry{cleanthinking}{online}{}
+      \name{author}{1}{}{%
+        {{hash=202ea978607caafb09a6c742d6c7b2b6}{%
+           family={Jendrischik},
+           familyi={J\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{202ea978607caafb09a6c742d6c7b2b6}
+      \strng{fullhash}{202ea978607caafb09a6c742d6c7b2b6}
+      \strng{bibnamehash}{202ea978607caafb09a6c742d6c7b2b6}
+      \strng{authorbibnamehash}{202ea978607caafb09a6c742d6c7b2b6}
+      \strng{authornamehash}{202ea978607caafb09a6c742d6c7b2b6}
+      \strng{authorfullhash}{202ea978607caafb09a6c742d6c7b2b6}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.cleanthinking.de/redox-flow-batterie-vorteile-und-nachteile-von-fluessigbatterien-2/}}
+      \field{month}{4}
+      \field{note}{Accessed: March 5, 2024}
+      \field{title}{Redox-Flow-Batterie: Vorteile und Nachteile unterschiedlicher Flüssigbatterien}
+    \endentry
+    \entry{yang2020redoxflow}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d6f2b26e2b50e389f737db615a2d7427}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Bo},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{d6f2b26e2b50e389f737db615a2d7427}
+      \strng{fullhash}{d6f2b26e2b50e389f737db615a2d7427}
+      \strng{bibnamehash}{d6f2b26e2b50e389f737db615a2d7427}
+      \strng{authorbibnamehash}{d6f2b26e2b50e389f737db615a2d7427}
+      \strng{authornamehash}{d6f2b26e2b50e389f737db615a2d7427}
+      \strng{authorfullhash}{d6f2b26e2b50e389f737db615a2d7427}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of The Electrochemical Society}
+      \field{title}{A Durable, Inexpensive and Scalable Redox Flow Battery Based on Iron Sulfate and Anthraquinone Disulfonic Acid}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://iopscience.iop.org/article/10.1149/1945-7111/ab84f8/pdf
+      \endverb
+      \verb{url}
+      \verb https://iopscience.iop.org/article/10.1149/1945-7111/ab84f8/pdf
+      \endverb
+    \endentry
+    \entry{winfuture-news}{online}{}
+      \name{author}{1}{}{%
+        {{hash=887a4d7a914cb904368d74300fb30c5f}{%
+           family={Kahle},
+           familyi={K\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{887a4d7a914cb904368d74300fb30c5f}
+      \strng{fullhash}{887a4d7a914cb904368d74300fb30c5f}
+      \strng{bibnamehash}{887a4d7a914cb904368d74300fb30c5f}
+      \strng{authorbibnamehash}{887a4d7a914cb904368d74300fb30c5f}
+      \strng{authornamehash}{887a4d7a914cb904368d74300fb30c5f}
+      \strng{authorfullhash}{887a4d7a914cb904368d74300fb30c5f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://winfuture.de/news,136852.html}}
+      \field{month}{6}
+      \field{note}{Accessed: March 5, 2024}
+      \field{title}{Title of the Article}
+      \field{year}{2023}
+    \endentry
+    \entry{poworks-comparison}{online}{}
+      \name{author}{1}{}{%
+        {{hash=9a94576570adcc745b15b1a5466bab74}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Jerry},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{9a94576570adcc745b15b1a5466bab74}
+      \strng{fullhash}{9a94576570adcc745b15b1a5466bab74}
+      \strng{bibnamehash}{9a94576570adcc745b15b1a5466bab74}
+      \strng{authorbibnamehash}{9a94576570adcc745b15b1a5466bab74}
+      \strng{authornamehash}{9a94576570adcc745b15b1a5466bab74}
+      \strng{authorfullhash}{9a94576570adcc745b15b1a5466bab74}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://poworks.com/de/ein-vergleich-von-nmc-nca-lithium-ionen-akku-und-lfp-batterie}}
+      \field{month}{11}
+      \field{note}{Accessed: March 5, 2024}
+      \field{title}{Ein Vergleich von NMC/NCA Lithium-Ionen-Akku und LFP-Batterie}
+      \field{year}{2020}
+    \endentry
+    \entry{kyon-energy}{online}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.kyon-energy.de/blog/wie-batteriegrossspeicher-aufgebaut-sind}}
+      \field{note}{Accessed: March 5, 2024}
+      \field{title}{Wie Batteriegroßspeicher aufgebaut sind}
     \endentry
     \entry{Hau2016}{booklet}{}
       \name{author}{1}{}{%
@@ -330,8 +666,8 @@
       \strng{authornamehash}{a2800e8afe8fc327e20a9e48e96f94a6}
       \strng{authorfullhash}{a2800e8afe8fc327e20a9e48e96f94a6}
       \field{extraname}{2}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Windenergie Windturbines}
@@ -360,8 +696,8 @@
       \strng{authorbibnamehash}{8fd3a8379cbda9c60f92e446330e16fb}
       \strng{authornamehash}{8fd3a8379cbda9c60f92e446330e16fb}
       \strng{authorfullhash}{8fd3a8379cbda9c60f92e446330e16fb}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Photovoltaik Engineering Handbuch für Planung, Entwicklung und Anwendung}
@@ -383,8 +719,8 @@
       \strng{authorbibnamehash}{bf08863b1320510019eb61665cccd1bc}
       \strng{authornamehash}{bf08863b1320510019eb61665cccd1bc}
       \strng{authorfullhash}{bf08863b1320510019eb61665cccd1bc}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Verluste einer Solarzelle}
@@ -412,8 +748,8 @@
       \strng{authorbibnamehash}{ca39a3c15edfcb2085b57111924efed4}
       \strng{authornamehash}{ca39a3c15edfcb2085b57111924efed4}
       \strng{authorfullhash}{ca39a3c15edfcb2085b57111924efed4}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Aktuelle Fakten zur Photovoltaik in Deutschland}
@@ -438,8 +774,8 @@
       \strng{authorbibnamehash}{53d174aa790fb3385c95e33142148e89}
       \strng{authornamehash}{53d174aa790fb3385c95e33142148e89}
       \strng{authorfullhash}{53d174aa790fb3385c95e33142148e89}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{19. DESIGN\&ELEKTRONIK-Entwicklerforum Batterien \& Ladekonzepte}

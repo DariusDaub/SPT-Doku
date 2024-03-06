@@ -81,14 +81,9 @@ Im Folgenden sollen die Anforderungen und Bestimmungen zu den einzelnen in Deuts
 zusammengefasst werden.
 
 \begin{itemize}
-    \item Primärreserve oder \texttt{Frequency Containment Reserve} (FCR) ist darauf ausgelegt die Netzfrequenz möglichst 
-schnell zu stabilisieren. Dafür wird die FCR proportional zur Abweichung der Frequenz von ihrem Sollwert geregelt.
-Sie wird automatisch bei Abweichungen über 10 mHz aktiviert und soll spätestens nach 30 Sekunden vollständig zur Verfügung stehen.
-    \item Sekundärreserve oder \texttt{automatic Frequency Restoration Reserves} (aFRR) löst die Primärreserve ab indem sie
-die Frequenzabweichung vollständig ausgleicht. Die aFRR ist dafür als Proportional-Integral-Regelung umgesetzt und 
-ist nicht nur abhängig von der Netzfrequenzabweichung sondern zusätzlich vom Leistungsaustausch zwischen den Bilanzkreisen.
-    \item Tertiärreserve oder \texttt{manual Frequency Restoration Reserve} (mFRR) löst die aFRR bei länger anhaltenden Störungen ab.
-Sie ist daher nicht automatisch aktiviert und muss erst innerhalb von 15 Minuten vollständig aktivierbar sein.
+    \item Primärreserve oder \texttt{Frequency Containment Reserve} (FCR) ist darauf ausgelegt die Netzfrequenz möglichst schnell zu stabilisieren. Dafür wird die FCR proportional zur Abweichung der Frequenz von ihrem Sollwert geregelt. Sie wird automatisch bei Abweichungen über 10 mHz aktiviert und soll spätestens nach 30 Sekunden vollständig zur Verfügung stehen.
+    \item Sekundärreserve oder \texttt{automatic Frequency Restoration Reserves} (aFRR) löst die Primärreserve ab indem sie die Frequenzabweichung vollständig ausgleicht. Die aFRR ist dafür als Proportional-Integral-Regelung umgesetzt und ist nicht nur abhängig von der Netzfrequenzabweichung sondern zusätzlich vom Leistungsaustausch zwischen den Bilanzkreisen.
+    \item Tertiärreserve oder \texttt{manual Frequency Restoration Reserve} (mFRR) löst die aFRR bei länger anhaltenden Störungen ab. Sie ist daher nicht automatisch aktiviert und muss erst innerhalb von 15 Minuten vollständig aktivierbar sein.
 \end{itemize}
 
 \begin{figure}[h!]
@@ -159,7 +154,7 @@ oder nach unten erweitert je nachdem ob der SOC unter oder über dem festgelegte
     \caption{SOC-Wiederherstellung mit Leistungssollwerten aus \parencite[]{noauthor_soc_nodate}}\label{Droopplus}
 \end{figure}
 
-Abbildung \ref{Droopplus} zeigt den resultierenden Leistungsverlauf.
+Abbildung~\ref{Droopplus} zeigt den resultierenden Leistungsverlauf.
 Dabei muss die maximale Leistungsaufnahme bzw. -abgabe der Batterie berücksichtigt werden und die Vorgaben der
 Übertragungsnetzbetreiber müssen eingehalten werden.
 Ein sehr ähnlicher Ansatz wird auch in \parencite[]{mantar_gundogdu_battery_2018} für den EFR-Einsatz genutzt.
