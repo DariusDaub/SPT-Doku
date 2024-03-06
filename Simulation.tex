@@ -221,7 +221,7 @@ Ausgängen für jede Spannungsphase sowie dem Ausgang der Messgrößen.
     \caption{Inhalt des Batteriesubsystems in Simulink}\label{BatModell1}
 \end{figure}
 
-Der Aufbau des Subsystems ist in Abbildung \ref{BatModell1} gezeigt.
+Der Aufbau des Subsystems ist in Abbildung~\ref{BatModell1} gezeigt.
 Im Wesentlichen besteht das Modell aus einem Block zur Steuerung und Umsetzung der Betriebsstrategien, einem Block
 zur Berechnung des SOCs und einer dreiphasigen Last die für dieses Modell als einfacher Umrichter genutzt wird.
 Thermische Effekte, Verzögerungen oder Nicht-linearitäten wurden beim Entwurf dieses Modells gänzlich vernachlässigt.
@@ -232,12 +232,75 @@ Zur Auswertung der Betriebsstrategien und zum groben Entwurf eines realistischen
 des Modells dennoch genügen.
 Trotz dieser starken Vereinfachungen laufen Simulationen im dreiphasigen Modell fast in Echtzeit ab.
 
+Während die Steuerung im nächsten Abschnitt~\ref{Lade- und Entlade} genauer erläutert wird soll hier auf die anderen
+Komponenten des Batteriemodells etwas näher eingegangen werden.
+
+\paragraph{SOC-Schätzung}
+Der Block zur SOC-Schätzung (im Modell als Stored Energy Calculation bezeichnet) basiert auf einem einfachen Leistungsintegral.
+Dabei wird aus dem Integral der Batterieleistung die gespeicherte Energiemenge berechnet, welche dann mit der Kapazität der Batterie verglichen wird.
+Der SOC zum Zeitpunkt t ergibt sich dann aus
+\begin{equation}\label{GL_SOC}
+	SOC_{\%}(t) = \frac{E(t)}{C} \cdot 100
+\end{equation}
+mit
+\begin{equation}\label{GL_SOC2}
+	E(t) = \int_{0}^{t}p(t) \diff t + E(0) = \int_{0}^{t}p(t) \diff t + \frac{SOC_{\%}(0)}{100}\cdot C.
+\end{equation}
+Wobei hierbei die korrekte Form der Einheiten zu beachten ist.
+Ist die Kapazität der Batterie in $kWh$ gegeben muss das Integral der Leistung entsprechend umgerechnet werden.
+Desweitern muss der Momentanwert der Leistung zunächst aus Blind- und Wirkleistung bestimmt werden.
+Abbildung~\ref{SOC} zeigt die Umsetzung der beiden Gleichungen~\ref{GL_SOC} und~\ref{GL_SOC2} im Simulink-Modell 
+wobei der anfängliche Ladezustand im Integral-Block als Anfangszustand hinterlegt ist.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=12cm]{Abbildungen/SOC.png}
+	\caption{Aufbau der SOC-Schätzung im Simulink Batteriemodell}\label{SOC}
+\end{figure}
+
+\paragraph{Dreiphasige Last als Umrichter}
+Grundlegend wird in diesem Batteriemodell davon ausgegangen, dass die in der Steuerung festgelegte Leistung
+innerhalb der Leistungsgrenzen aber unabhängig vom SOC oder sonstigen Faktoren, exakt an das Netz abgegeben werden kann.
+Das ist eine starke aber notwendige Vereinfachung der tatsächlichen Gegebenheiten um überhaupt ein funktionierendes Modell
+für diese Projektarbeit zu erstellen.
+Durch diese Betrachtung ist es möglich die geforderte Leistung direkt an einen Simulink-Baustein zur dynamischen Last
+anzuschließen. 
+Ein wesentlicher Vorteil zeigt sich in diesem Baustein, durch die Möglichkeit sowohl negative als auch positive Leistung
+an das Netz anzulegen.
+Im Block zur Leistungssteuerung wird vorher die Ladeleistung der Batterie als positiv und die Entladeleistung als negativ definiert,
+sodass beim Laden der Batterie tatsächlich eine Last am Netz anliegt und beim Entladen bekommt der dynamische Last-Baustein
+ein negatives Signal und speist daher Leistung in das Netz ein.
+
+Dieser Block findet seine Anwendung nur in der dreiphasigen Simulation aus Abschnitt~\ref{3phase}.
+Da im bilanziellen Modell nur der Leistungsfluss betrachtet wird, braucht es keinen Batterieumrichter.
 
 \subsection{Umsetzung Lade- und Entladestrategien}\label{Lade- und Entlade}
+In diesem Abschnitt wird die Umsetzung der in Kapitel~\ref{Betriebsstrategien} beschriebenen Betriebsstrategien erklärt.
+Da wir uns entschieden haben, die Batteriespeicher im Inselnetz für die Erbringung von FCR zu nutzen, lag es nahe 
+die Deadband-Strategie zu implementieren.
+Dafür wurde innerhalb des Simulink-Speicherblocks ein Subsystem erstellt, dass in Abbildung~\ref{Steuerung} zu sehen ist.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=14cm]{Abbildungen/Steuerung.png}
+	\caption{Inhalt des Subsystems zur Leistungssteuerung der FCR-Batterie}\label{Steuerung}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=12cm]{Abbildungen/SOC-Rest.png}
+	\caption{Inhalt des Steuerblocks zur SOC-Restoration}\label{SOC-Rest}
+\end{figure}
+
+\paragraph{Nachweis der Funktion}
+Um die Funktion der Batteriesteuerung nachzuweisen wurde eine Simulation mit öffentlichen Frequenzdaten des europäischen Strromnetzes durchgeführt~\parencite[]{noauthor_netztransparenz_nodate}.
+Um eine längere Simulation und Auswertung zu ermöglichen wurde das Batteriemodell vom Rest des Inselnetzes isoliert betrachtet.
+Während der Simulation mit den sekündlichen Frequenzwerten wurde der SOC und die Leistung der Batterie aufgezeichnet.
+
+
 
 \section{Netzmodell}
 \subsection{Bilanziell}
-\subsection{Dreiphasig}
+\subsection{Dreiphasig}\label{3phase}
 
 
 \chapter{Simulationsergebnisse}
