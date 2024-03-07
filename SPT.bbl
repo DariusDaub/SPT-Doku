@@ -151,6 +151,13 @@
       \verb Boxleitner und Brauner - 2009 - VIRTUELLE SCHWUNGMASSE.pdf:C\:\\Users\\user\\Zotero\\storage\\8TKK2XA9\\Boxleitner und Brauner - 2009 - VIRTUELLE SCHWUNGMASSE.pdf:application/pdf
       \endverb
     \endentry
+    \entry{Verordnung}{legislation}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{note}{DIE EUROPÄISCHE KOMMISSION vom 2. August 2017}
+      \field{title}{VERORDNUNG (EU) 2017/ 1485 zur Festlegung einer Leitlinie für den Übertragungsnetzbetrieb}
+    \endentry
     \entry{noauthor_soc_nodate}{online}{}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
@@ -448,8 +455,8 @@
       \strng{authorbibnamehash}{d198051d839092404bb9d818b8fbb4a5}
       \strng{authornamehash}{d198051d839092404bb9d818b8fbb4a5}
       \strng{authorfullhash}{d198051d839092404bb9d818b8fbb4a5}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{11}
@@ -666,8 +673,8 @@
       \strng{authornamehash}{a2800e8afe8fc327e20a9e48e96f94a6}
       \strng{authorfullhash}{a2800e8afe8fc327e20a9e48e96f94a6}
       \field{extraname}{2}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Windenergie Windturbines}
@@ -781,6 +788,82 @@
       \field{booktitle}{19. DESIGN\&ELEKTRONIK-Entwicklerforum Batterien \& Ladekonzepte}
       \field{title}{Aufbau und parametrierung von batteriemodellen}
       \field{year}{2012}
+    \endentry
+    \entry{Reservebetrieb}{online}{}
+      \name{author}{4}{}{%
+        {{hash=2f6c4f0ece0ff8eb705caaad23af88de}{%
+           family={{50Hertz Transmission GmbH}},
+           familyi={5\bibinitperiod}}}%
+        {{hash=ac7a086f95252c4f07a42d3cd274e062}{%
+           family={{Amprion GmbH}},
+           familyi={A\bibinitperiod}}}%
+        {{hash=aef848d363c29ef92017bc4ca7c48347}{%
+           family={{TenneT TSO GmbH}},
+           familyi={T\bibinitperiod}}}%
+        {{hash=792544fa7f1b78246639148155bd1134}{%
+           family={{TransnetBW GmbH}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{b2c18a15f31c9faa91168f0626728e2c}
+      \strng{fullhash}{26ea18d1c6b9062cea51214c781ee76e}
+      \strng{bibnamehash}{26ea18d1c6b9062cea51214c781ee76e}
+      \strng{authorbibnamehash}{26ea18d1c6b9062cea51214c781ee76e}
+      \strng{authornamehash}{b2c18a15f31c9faa91168f0626728e2c}
+      \strng{authorfullhash}{26ea18d1c6b9062cea51214c781ee76e}
+      \field{extraname}{1}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Reservebetrieb - Begleitdokument (Zusätzliche Anmerkungen zum „Erlaubten Arbeitsbereich“, „Gefährdeten Zustand“ und „Reservebetrieb“)}
+      \field{urlday}{7}
+      \field{urlmonth}{3}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.regelleistung.net/de-de/Infos-f%C3%BCr-Anbieter/Wie-werde-ich-Regelenergieanbieter-Pr%C3%A4qualifikation
+      \endverb
+      \verb{url}
+      \verb https://www.regelleistung.net/de-de/Infos-f%C3%BCr-Anbieter/Wie-werde-ich-Regelenergieanbieter-Pr%C3%A4qualifikation
+      \endverb
+    \endentry
+    \entry{Regelleistung}{online}{}
+      \name{author}{4}{}{%
+        {{hash=2f6c4f0ece0ff8eb705caaad23af88de}{%
+           family={{50Hertz Transmission GmbH}},
+           familyi={5\bibinitperiod}}}%
+        {{hash=ac7a086f95252c4f07a42d3cd274e062}{%
+           family={{Amprion GmbH}},
+           familyi={A\bibinitperiod}}}%
+        {{hash=aef848d363c29ef92017bc4ca7c48347}{%
+           family={{TenneT TSO GmbH}},
+           familyi={T\bibinitperiod}}}%
+        {{hash=792544fa7f1b78246639148155bd1134}{%
+           family={{TransnetBW GmbH}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{b2c18a15f31c9faa91168f0626728e2c}
+      \strng{fullhash}{26ea18d1c6b9062cea51214c781ee76e}
+      \strng{bibnamehash}{26ea18d1c6b9062cea51214c781ee76e}
+      \strng{authorbibnamehash}{26ea18d1c6b9062cea51214c781ee76e}
+      \strng{authornamehash}{b2c18a15f31c9faa91168f0626728e2c}
+      \strng{authorfullhash}{26ea18d1c6b9062cea51214c781ee76e}
+      \field{extraname}{2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Präqualifikationsverfahren für Regelreserveanbieter (FCR, aFRR, mFRR) in Deutschland (PQ-Bedingungen)}
+      \field{urlday}{7}
+      \field{urlmonth}{3}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.regelleistung.net/de-de/Infos-f%C3%BCr-Anbieter/Wie-werde-ich-Regelenergieanbieter-Pr%C3%A4qualifikation
+      \endverb
+      \verb{url}
+      \verb https://www.regelleistung.net/de-de/Infos-f%C3%BCr-Anbieter/Wie-werde-ich-Regelenergieanbieter-Pr%C3%A4qualifikation
+      \endverb
     \endentry
     \entry{noauthor_netztransparenz_nodate}{online}{}
       \field{sortinit}{4}

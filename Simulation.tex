@@ -285,16 +285,87 @@ Dafür wurde innerhalb des Simulink-Speicherblocks ein Subsystem erstellt, dass 
 	\caption{Inhalt des Subsystems zur Leistungssteuerung der FCR-Batterie}\label{Steuerung}
 \end{figure}
 
+In der Mitte des Systems befindet sich ein Schalter der im Wesentlichen entscheidet ob Regelleistung bereitgestellt wird
+oder der SOC der Batterie korrigiert wird.
+Dafür werden zunächst mehrere Kriterien überprüft.
+Der Schalter gibt den oberen Pfad zur FCR-Provision weiter wenn die Frequenzabweichung außerhalb des Totbands von $\pm 10$ mHz liegt
+und der SOC im erlaubten Arbeitsbereich von 35 \% bis 65 \% liegt.
+Dieser Bereich ist durch die Übertragungsnetzbetreiber in \parencite[]{Reservebetrieb} festgelegt und ist abhängig vom Speicherverhältnis $\rho$.
+Die Relays nach den SOC-Bausteinen schalten jeweils ab $8,3 \%$ und $91,7 \%$ ab, sodass der Speicher in einen Reservebetrieb wechselt wie er in \parencite[]{Reservebetrieb}
+definiert ist.
+Erst wenn der Ladezustand dann wieder im Arbeitsbereich liegt, geben die Relays frei und eine FCR-Erbringung ist möglich.
+Zusätzlich ist eine Oder-Bedingung eingebaut, die den FCR-Zweig aktiv schaltet sobald die Frequenzabweichung $\pm 200$ mHz überschreitet.
+Diese Maßnahme entspricht der Vorgabe zum gefährdeten Zustand, welcher ebenfalls in \parencite[]{Reservebetrieb} definiert 
+und durch die Übertragungsnetzbetreiber vorgeschrieben ist.
+
+Im oberen Schaltungszweig wird dann ie Abweichung der Frequenz von 50 Hz mit dem maximalen Wert von 0,2 Hz verglichen.
+Ab diesem Wert soll die maximale Primärregelleistung ausgegeben werden wie in~\parencite[Kap. 3.1]{Regelleistung} gefordert.
+Dafür wird das Ergebnis auf einen Wert zwischen -1 und 1 begrenzt und anschließend 
+mit der maximalen Batterieleistung multipliziert.
+Ab 200 Mhz wird also die volle Regelleistung erreicht, davor wird proportional zur Frequenzabweichung
+weniger Leistung ausgegeben.
+
+Ist keines der Kriterien erfüllt, gibt der Schalter den unteren Zweig zur SOC-Restoration frei.
+Hier wird einmal überprüft ober überhaupt geladen werden muss ($SOC \neq 50 \%$) und ob geladen werden darf ($|\Delta f| < \pm 10 \text{mHz}$).
+Erst wenn beide Kriterien erfüllt sind, gibt der Schalter den Wert aus dem Subsystem zur SOC-Restoration weiter.
+
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=12cm]{Abbildungen/SOC-Rest.png}
 	\caption{Inhalt des Steuerblocks zur SOC-Restoration}\label{SOC-Rest}
 \end{figure}
 
+Abbildung~\ref{SOC-Rest} zeigt den Inhalt dieses Subsystems.
+Es wird ein weiter Check durchgeführt ob der SOC tatsächlich eine Korrektur erfordert.
+Die Leistung die dafür benötigt wird, berechnet sich hier aus der Abweichung des SOCs von 50 \%.
+Dabei soll bei ca. 5 \% Ladezustand mit maximaler Leistung nachgeladen werden und bei einem Ladezustand von
+90 \% möglichst schnell Leistung abgegeben werden.
+Ein Saturation-Block begrenzt die Restorations-Geschwindigkeit dabei auf maximal 50 \% der vollen Batterieleistung.
+
 \paragraph{Nachweis der Funktion}
 Um die Funktion der Batteriesteuerung nachzuweisen wurde eine Simulation mit öffentlichen Frequenzdaten des europäischen Strromnetzes durchgeführt~\parencite[]{noauthor_netztransparenz_nodate}.
 Um eine längere Simulation und Auswertung zu ermöglichen wurde das Batteriemodell vom Rest des Inselnetzes isoliert betrachtet.
 Während der Simulation mit den sekündlichen Frequenzwerten wurde der SOC und die Leistung der Batterie aufgezeichnet.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=14cm]{Abbildungen/SteuerungFCR.png}
+	\caption{Messergebnisse der Simulation mit vorgegebenen Frequenzwerten}\label{FCRMessung}
+\end{figure}
+
+Abbildung~\ref{FCRMessung} zeigt den Gesamten Verlauf der Messreihe.
+Die Simulation ging dabei über einen Zeitraum von 31 Tagen und wurde mit den Frequenzdaten vom Dezember 2023 durchgeführt.
+Der Speicher wurde mit einer Kapazität von $1$ MWh und einer Leistung von $1$ MW modelliert.
+Daraus ergibt sich ein Speicherverhältnis von $\rho = 1h$, was der Dimensionierung des Beispielszenarios aus\parencite[S. 7]{Reservebetrieb}
+entspricht.
+
+Im Verlauf des Ladezustands zeigt sich, dass der Speicher über den ganzen Monat genug Reserve bereitstellen kann.
+Die kurzen Phasen mit geringer Frequenzabweichung genügen um einen nötigen Reservebetrieb weitestgehend zu vermeiden.
+Dazu ist allerdings zu erwähnen, dass während des gesamten Monats keine Differenz außerhalb der $\pm$ 200 Mhz Grenze erreicht wird
+und daher kein gefährdeter Zustand.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=14cm]{Abbildungen/SteuerungFCR2.png}
+	\caption{Ausschnitt aus den Messergebnissen der Simulation mit vorgegebenen Frequenzwerten}\label{FCRMessung2}
+\end{figure}
+
+Abbildung \ref{FCRMessung2} zeigt einen Ausschnitt aus dem Gesamtverlauf.
+Hier ist deutlich zu erkennen, dass der Batteriespeicher bei einer Frequenzabweichung von über $\pm$ 10 mHz
+anfängt FCR bereitzustellen.
+Dabei folgt er der Höhe der Frequenzabweichung proportional. 
+Zwischen diesen Phasen wird der SOC entsprechend regeneriert.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=14cm]{Abbildungen/SteuerungFCR3.png}
+	\caption{Simulation mit Beispielszenario der Übertragungsnetzbetreiber}\label{FCRMessung3}
+\end{figure}
+
+Um das Verhalten und die Übergänge im gefährdeten Zustand dennoch zu überprüfen wurde die Simulation mit den Frequenzdaten
+des Beispielszenarios der Übertragungsnetzbetreiber aus \parencite[]{Reservebetrieb} wiederholt.
+Abbildung \ref{FCRMessung3} zeigt die dabei aufgezeichneten Verläufe.
+
 
 
 
