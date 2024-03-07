@@ -1,5 +1,261 @@
 \chapter{Theoretische Grundlagen}
 
+\section{Verbraucher in Inselnetzen}
+
+Der folgende Abschnitt befasst sich mit der Beschreibung der Stromverbraucher für das vorliegende Inselnetz. 
+Für eine fiktive Kommune gibt es verschiedene Verbrauchertypen, welche es näher zu untersuchen gilt. 
+Ziel dabei ist es, reale Verbraucher zu kategorisieren und ihren Verlauf genauer zu analysieren. 
+Da der Fokus der Simulation auf dem Netz und Speichertechnologien liegt, werden Vereinfachungen zur Darstellung in MatLab/Simulink vorgenommen.
+Die Betrachtung potentieller Verbraucher und ihre Modellierung in einem Inselnetz-Modell wird in den folgenden beiden Abschnitten genauer analysiert. 
+Im ersten Schritt wird die momentane Situation in Deutschland und seinen Kommunen hinsichtlich Differenzierung und Verbrauch beschrieben. 
+Danach erfolgt die Ermittlung eines Konzepts zur Abschätzung von Verbräuchen mittels Lastkurven. 
+Ziel der Unterteilung ist zuerst einen Überblick über die Basis des zu modellierenden Inselnetzes zu schaffen. 
+Danach gilt es daraus pauschale Verbräuche unter Einbezug von Lastkurven zu ermitteln, welche in MatLab/Simulink simulationstauglich sind.
+
+\subsecction(Verbraucher am Stromnetz)
+
+Die potentiell zu betrachtenden Verbraucher für das Inselnetz entsprechen dabei denen einer deutschen Kommune am deutschen Stromnetz. 
+Sie werden dabei in verschiedene Kategorien unterteilt und in folgenden Sub-Abschnitten genauer analysiert. 
+Dabei erfolgt eine Differenzierung in Wohngebäude (WG), Nichtwohngebäude (NWG), die Interaktion dieser beiden Verbraucher mit eigenen Speichern, Windkraft und PV-Anlagen im Unterpunkt „Prosumer“, der Faktor Elektromobilität und weitere Verbraucher, die noch nicht betrachtet wurden. 
+Die für das Inselnetz relevanten Parameter sind hierbei der Stromverbrauch und das Lastprofil jeden Verbrauchers, sowie deren Vorkommen in einer durchschnittlichen, deutschen Kommune. 
+Außerdem wird noch die Möglichkeit der Einspeisung von Strom in ein Fernwärmenetz bzw. die Umwandlung von Strom in Wasserstoff als Power-to-Gas beschrieben.
+
+\subsubsection(Wohngebäude (WG))
+
+In Deutschland gibt es etwa 19,5 Mio. Wohngebäude, die an das Stromnetz angebunden sind. Dabei hat jedes Wohngebäude einen Energieverbrauch, der sich aus verschiedenen Faktoren zusammensetzt. 
+Diese lassen sich in Raumwärme, Warmwasser, Beleuchtung, Betrieb von Elektrogeräten und sonstiger Prozesswärme unterteilen. 
+
+to do
+Abbildung 1: Energieverbrauch WG 
+
+Hierbei werden die Faktoren Elektrogeräte und Beleuchtung in der Regel durch Strom gedeckt. 
+Die Faktoren Warmwasser und Raumwärme sind abhängig vom eingebauten Heizungssystem. 
+Hierbei sind eine anteilige bis vollständige Erzeugung der Raumwärme und des Warmwassers durch eine strombetriebene Wärmepumpe, eine Stromheizung oder ein Wärmenetz möglich und für die Simulation relevant. 
+Dabei ist zu beachten, dass insbesondere bei Wärmepumpen der Wärmeenergieverbrauch stark vom Strombedarf abweicht. 
+Eine Umrechnung mit Hilfe der Jahresarbeitszahl (JAZ) ist möglich. 
+Im Neubau liegt der Anteil der verbauten Wärmepumpen im Jahr 2022 bei ca. 57\%.
+
+Die Höhe des Energieverbrauches ist außerdem abhängig von der Anzahl der Bewohner des Wohngebäudes und dessen Größe als auch Zustand. 
+Im Gebiet Wohnen und Gebäude werden daher viele Annahmen und Hochrechnungen pro Kopf, pro Fläche oder pro Haushalt getätigt. Um die Verbraucher für verschiedene Simulationsszenarien vereinfacht zu ermitteln, wird hier wie im Folgenden beschrieben vorgegangen. 
+
+to do
+Abbildung 2: https://www.parbuilding.de/leitfaden-wohnungsbau/gebäudearten-wohnungstypen-bauweisen/typologie-für-wohngebäude/
+
+Wohngebäude lassen sich generell noch in weitere Unterkategorien aufgliedern.
+Dazu zählen Einfamilienhäuser, Mehrfamilienhäuser, große Mehrfamilienhäuser, Reihenhäuser, Hochhäuser und Doppelhaushälfte, sowie diverse Spezialfälle. 
+Um die Simulation der Verbraucher simpel zu halten, werden zum Verbraucher „Einfamilienhaus“ auch energetisch in der gleichen Größenordnung liegende Wohngebäudetypen gezählt, beispielsweise Reihen- und Zweifamilienhäuser. 
+Der Verbraucher „Mehrfamilienhaus“ umfasst äquivalent auch solche Wohngebäudetypen. 
+Große Mehrfamilienhäuser (ab 13 Wohnungen), Hochhäuser und mittelgroße bis große Wohnheime werden in der Praxis dazugezählt. 
+Diese werden nicht in der Simulation dargestellt.
+Das liegt einerseits daran, dass es sich nicht um eine großstädtische Simulation handelt, andererseits daran, dass bei außergewöhnlich großen Wohngebäuden individuell stark abweichende Energieverbräuche – auch beim Stromverbrauch – entstehen. 
+Der Einbezug dieser übersteigt die Komplexität dieses Aspektes der Simulation.
+Unter Einbezug des Heizungssystems gilt es einen Gesamtenergieverbrauch des Verbrauchers zu ermitteln. 
+Der Jahresverbrauch von Wohnenergie liegt pro Einfamilienhaus bei etwa 25.000 kWh. 
+Mehrfamilienhäuser sind meist energieeffizienter was den Heizenergieverbrauch betrifft, jedoch hängt der Verbrauch stark von der Anzahl der Wohnfläche, Wohnungseinheiten und Bewohnern ab. 
+Aus Simplifizierungsgründen wird hier mit dem bundesweiten Jahresenergieverbrauch pro Kopf gerechnet, 8.800 kWh. 
+Bei der Annahme von durchschnittlich 12 Personen pro Mehrfamilienhaus entspricht dies einem Jahresenergieverbrauch von 105.600 kWh. 
+Es wird angenommen, dass der Anteil vom Energieverbrauch sich zu 85\% auf das Heizen bezieht. 
+Wenn man nun davon ausgeht, dass entweder eine Wärmepumpe oder ein anderes Heizungssystem verbaut ist, welches nicht auf Strom basiert, ergeben sich vier Szenarien. 
+Bevor jedoch ein Stromverbrauch bei Nutzung einer Wärmepumpe errechnet werden kann, ist zu beachten, dass der Energieverbrauch durch den Wirkungsgrad der Wärmepumpe in Stromverbrauch umgerechnet werden muss. 
+Dies über die Jahresarbeitszahl JAZ möglich. 
+Bei dem am meisten verbauten Typ von Wärmepumpen, den Luft-Wasser-Wärmepumpen, liegt dieser üblicherweise im Bereich von 2 bis 4. 
+Für die Berechnung wird mit einer JAZ von 3 gerechnet. Daher ergibt sich folgende Formel:
+
+\begin{equation}
+    \text{Strom pro Jahr} = \text{Enrg. pro Jahr} \times \frac{0.85}{3} + \text{Enrg. pro Jahr} \times 0.15
+\end{equation}
+
+Liegt keine Wärmepumpenheizung vor, wird der erste Teil des Terms gleich null gesetzt. 
+Die vier resultierenden Verbrauchertypen werden in nachfolgender Tabelle aufgeführt, wobei aufgerundet wird:
+
+\begin{table}[htbp]
+    \centering
+    \caption{Tabelle 1: 4 Szenarien (exakter Wert in den Klammern)}
+    \label{tab:szenarien}
+    \begin{tabular}{lccc}
+        \toprule
+        \textbf{Szenario/Verbrauch [kWh/a]} & \textbf{Einfamilienhaus} & \textbf{Mehrfamilienhaus} \\
+        \midrule
+        Heizung Wärmepumpe & 7,000 (7,083) & 30,000 (29,920) \\
+        Heizung nicht abgebildet & 3,750 & 16,000 (15,840) \\
+        \bottomrule
+    \end{tabula
+
+Der Momentanverbrauch wird durch Lastprofile abgeschätzt und im entsprechenden Abschnitt bearbeitet.
+
+\subsubsection(Nichtwohngebäude (NWG))
+
+Die Anzahl an Nichtwohngebäuden beläuft sich auf 21,5 Mio. in Deutschland, von denen 6 Mio. thermisch konditioniert sind. 
+Diese lassen sich allgemein in Dienstleistungsgebäude, beispielsweise Schulen, Büros, Gastro, Sport und Produktionsgebäude, beispielsweise Werkstätten, Lager, Betriebe, unterteilen. 
+Der Energieverbrauch allgemein und einhergehend der Stromverbrauch ist hierbei stark nutzungsabhängig. 
+Während sich bei Dienstleistungsgebäuden die Verbrauchsfaktoren meist noch anteilig ähnlich derer bei Wohngebäuden verhalten, ist dies bei Produktionsgebäuden nicht der Fall. 
+Dies geht soweit, dass eine Pauschalisierung der Verbrauchsaufschlüsselung nicht möglich ist.
+
+abbildung hier 
+Abbildung 3: Endenergieverbrauch nach Sektoren
+
+Trotz deutschlandweit bekannter Gesamtverbräuche ist der Energiebedarf in einer Kommune stark von lokalen Gewerbegebieten und einzelnen Großverbrauchern abhängig. 
+Diese sind für eine Simulation individuell abzuschätzen. Die Stromverbrauchsabschätzung ist dabei hauptsächlich produktabhängig und bedarf branchenüblicher Kennzahlen.
+
+\subsubsection(Elektromobilität)
+
+Im Abschnitt Elektromobilität als Verbraucher gilt es den Stromverbrauch durch Elektromobilität, also vorwiegend E-Autos zu bestimmen. 
+Diese kann dann einem bereits bekannten Verbraucher zuzuordnen ist, z.B. einem Einfamilienhaus oder einzeln oder zu mehreren (Bsp. Tankstelle) betrachtet werden.
+Mögliche Nutzer einer E-Ladesäule sind E-Autos, E-Motorräder und E-Bikes. 
+Um ein einfaches Modell zu erhalten, werden alle Nutzer einer E-Zapfsäule als E-Autos betrachtet, da diese absolut und verbrauchsmäßig der größte Nutzer sind. 
+Für private E-Zapfsäulen bietet es sich an, über gefahrene Kilometer und Verbrauch eine pauschale Abschätzung zu treffen. 
+Pro E-Auto kommt man bei den durchschnittlich gefahrenen 15.000 km pro Jahr auf einen Verbrauch von 2.250 kWh Strom. 
+Bei anderen E-Zapfsäulen ist auch eine Abschätzung in E-Auto-Jahresstromverbräuchen sinnig. 
+Da diese nicht mit einem privaten Speicher interagieren, wie bei privaten E-Zapfsäulen, lassen sich diese einfach zusammenfassen.
+
+\subsubcetion(Prosumer: Gebäude mit PV/Windkraft/Speicher)
+
+Als private Speicher, Windkraft und PV sind hier ebensolche gemeint, die einem WG oder NWG konkret zugeordnet werden können und keine eigenständigen, kommerziellen Anlagen sind. 
+Diese sind keine eigenen Verbraucher, aber ein Faktor bei der Findung von Verbrauchszahlen von den genutzten WG und NWG als auch der Elektromobilität.
+Die beschriebenen PV-Anlagen sind für die Simulation hinsichtlich ihrer Höchstleistung, in kWp angegeben, relevant. 
+Bei Einfamilienhäusern liegt diese meist im Bereich von 15-25 kWp, bei Mehrfamilienhäusern von 20 bis zu 40 kWp und im Bereich der NWG bis zu 99 kWp. 
+Da bei NWG häufig große Dachflächen zur Verfügung stehen, werden entsprechend 99 kWp installiert. 
+Aufgrund von gesetzlichen Vorschriften im Rahmen des GEG’s sind größer dimensionierte Anlagen die Ausnahme.
+Windkraft im privaten Bereich ist in den letzten Jahren immer relevanter geworden. 
+Die Stromerzeugung liegt bei bis zu 1 kWh/a pro Haushalt. 
+Da diese sie noch nicht als wirtschaftlich gelten und bei der Stromerzeugung eine nicht-relevante Rolle spielen, wird sie in dieser Simulation nicht betrachtet.
+Private Stromspeicher werden üblicherweise in Verbindung mit Eigenerzeugung von Strom durch PV installiert. 
+Stand heute besitzen 12\% der Haushalte eine PV, jedoch besitzt nur jeder dritte einen dazugehörigen Stromspeicher. 
+Eine Dimensionierung des Speichers erfolgt in Abhängigkeit zur kWp der eigenen PV-Anlage. 
+Eine Faustformel ist hierbei pro 1 kWp Höchstleistung 1kWh Speicher zu dimensionieren. 
+Bei Nutzung der Mittelwerte für die Dimensionierung von PV-Anlagen pro Verbraucher der Faustformel zur Speicherdimensionierung ergeben sich folgende Werte:
+
+\begin{table}[htbp]
+    \centering
+    \caption{Tabelle 2: Dimensionierung}
+    \label{tab:dimensionierung}
+    \begin{tabular}{lccc}
+        \toprule
+        \textbf{Szenario} & \textbf{Einfamilienhaus} & \textbf{Mehrfamilienhaus} & \textbf{NWG} \\
+        \midrule
+        PV [kWp] & 20 & 30 & 99 \\
+        Stromspeicher [kWh] & 20 & 30 & 99 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\subsubsection(Weitere Verbraucher)
+
+Für eine Kommune als Inselnetz gibt es noch zwei weitere Verbraucher, dessen Einfluss in einem Inselnetz geprüft werden muss. 
+Dabei handelt es sich um Eisenbahn, ein Wärmenetz und Straßenbeleuchtung.
+Die Eisenbahn in Deutschland wird i.d.R. durch das Bahnstromnetz versorgt, dessen Betrachtung außerhalb eines kommunalen Inselnetzes liegen würde. 
+Ein Bahnstromnetz wird daher nicht simuliert.
+Der letzte zu betrachtende Verbraucher ist die Straßenbeleuchtung. 
+Generell ist diese schwierig zu betrachten, da Verbräuche kommunal stark schwanken. 
+Dies hat damit zu tun, dass die Dichte an Straßenlaternen, als auch die genutzte Technik im Verbrauch starke Unterschiede aufweist. 
+Statistisch liegt der Stromverbrauch der Straßenbeleuchtung bei 40 bis 80 kWh pro Einwohner pro Jahr. 
+Es ist erwähnenswert, dass der Anschluss der Straßenbeleuchtung meist über separate Beleuchtungskabel erfolgt.
+
+\subsubsection(Umwandlung in Fernwärme/Power-to-Gas (Wasserstoff))
+
+Die Umwandlung in Wärme und Verteilung durch ein Fernwärmenetz ist eine mögliche Option zur Energieversorgung. 
+Ein solches kann der Simulation beigefügt werden und ist ein Spezialfall. 
+Der Bedarf an Wärmeenergie, welche relevant für die Simulation ist, wenn sie durch Strom erzeugt wird, ist gekoppelt an Endverbraucher, z.B. Einfamilienhäuser. 
+Jedoch bringt ein Fernwärmenetz flexible Speichermöglichkeiten für Erzeugungsspitzen mit sich. 
+So kann das Fernwärmenetz über den Energiebedarf der Endverbraucher erhitzt werden und dabei Energie in Form von Wärme zwischenspeichern. 
+Die Dimensionierung dieses Netzes ist abhängig von der Anzahl der Verbraucher, dessen Wärmebedarf aus oberen Abschnitten bereits bekannt ist. 
+Der Wirkungsgrad liegt bei 80 – 90\%.
+Bei Power-to-Gas handelt es sich um eine ähnliche Methode. 
+Da der Wasserstoff in Speichern, statt in einem Netz gespeichert werden kann, ist die Nutzung flexibler und sogar der Export möglich. 
+Der Strom-zu-Strom-Wirkungsgrad, also inklusive der Umwandlung von Gas-to-Power, liegt bei etwa 70\%.
+
+\subsection(Verbrauchsermittlung auf Basis von Lastkurven)
+
+Lastkurven dienen in der Elektrizitätswirtschaft dazu, den prognostizierten Strombedarf für verschiedene Verbraucher im Stromnetz abzuschätzen. 
+Diese Unterscheidung erfolgt zeitlich in 15-Minuten-Schritten. 
+Dazu kommt zusätzlich eine saisonale und tagesbezogene Unterteilung. 
+Die Simulation des Strombedarfs in einem Inselnetz wird für einen diskreten Zeitpunkt benötigt und lässt sich mit Hilfe der Lastkurven beschreiben. 
+Der Bezug und die Verarbeitung der Daten aus zugänglichen Lastprofilen werden zunächst genauer beschrieben. 
+Weitere notwendige Schritte zur Implementierung und Nutzung der Daten bei Zeitschritten unter 15 Minuten.
+Für die verschiedenen Verbraucher gibt es eine größere Anzahl an unterschiedlichen Lastprofilen. 
+Da der Fokus der Simulation auf Speichertechnologien liegt, ist es sinnvoll, ähnliche Lastkurven zusammenzufassen und auf den Endverbrauch hin zu skalieren. 
+Die Auswahl und Zusammenfassung der vorhandenen Lastkurven kann folgender Tabelle entnommen werden. 
+Als Kriterium für die Nutzung gilt der Anteil in einer Kommune, die auf Basis erneuerbarer Energien ihre Stromversorgung gewährleistet.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Tabelle 3: Liste verfügbare Lastprofile}
+    \label{tab:lastprofile}
+    \begin{tabular}{llcc}
+        \toprule
+        \textbf{Bezeichnung} & \textbf{Beschreibung} & \textbf{Nutzung} & \textbf{Quelle} \\
+        \midrule
+        H0 & Haushalt & Ja & VDEW (SLP) \\
+        G0 & Gewerbe allgemein & Nein & VDEW (SLP) \\
+        G1 & Gewerbe werktags 8-18 Uhr & Nein & VDEW (SLP) \\
+        G2 & Gewerbe mit starkem bis überwiegendem Verbrauch in den Abendstunden & Nein & VDEW (SLP) \\
+        G3 & Gewerbe durchlaufend & Nein & VDEW (SLP) \\
+        G4 & Laden/Friseur & Ja & VDEW (SLP) \\
+        G5 & Bäckerei mit Backstube & Ja & VDEW (SLP) \\
+        G6 & Wochenendbetrieb & Nein & VDEW (SLP) \\
+        L0 & Landwirtschaftsbetriebe & Ja & VDEW (SLP) \\
+        L1 & Landwirtschaftsbetriebe mit Milchwirtschaft/Nebenerwerbs-Tierzucht & Nein & VDEW (SLP) \\
+        L2 & Übrige Landwirtschaftsbetriebe & Nein & VDEW (SLP) \\
+        W0 & Wärmepumpen & Ja & SWKiel Netz GmbH \\
+        N0 & Nachtspeicherheizungen & Nein & SWKiel Netz GmbH \\
+        24h & 24h-Band & Nein & SWKiel Netz GmbH \\
+        T0 & Telefonzellen & Nein & SWKiel Netz GmbH \\
+        A0 & Ampelanalgen & Ja & SWKiel Netz GmbH \\
+        S0 & Straßenbeleuchtung & Ja & SWKiel Netz GmbH \\
+        B1 & BHKW mit KWK & Nein & SWKiel Netz GmbH \\
+        B2 & BHKW ohne KWK & Nein & SWKiel Netz GmbH \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+Aufgrund ähnlicher Lastkurven von den Lastprofilen G0 bis G6 erfolgt eine vereinfachte Aufteilung des Gewerbes auf die sich deutlich unterscheidenden Lastprofile G4 und G5.
+G0, G1 und G3 werden dabei in G4 betrachtet und G2 in G5. 
+G6 fällt unter L0. 
+Alle Landwirtschaftsbetriebe sind außerdem pauschal über L0 berücksichtigt. 
+Aufgrund der vereinfachten Annahme, dass alle Haushalte, die ihre Heizenergie über das Stromnetz beziehen, eine Wärmepumpe nutzen, wird W0 mit der Bedingung W0≤H0 genutzt, da davon ausgegangen wird, dass pro Haushalt maximal eine Wärmepumpe genutzt wird. 
+Es ist anzumerken, dass im Lastprofile H0 der Strombedarf für Raumwärme und Warmwasser nicht berücksichtigt ist. 
+BHKW’s stellen als zu simulierendes Objekt eine große Herausforderung dar und werden daher auch nicht betrachtet.
+Die Angaben von Lastprofilen erfolgt in 15-Minuten-Schritten in der Einheit Watt als Leistungswerte für den Jahresverbrauch von 1.000kWh. 
+Bei einer Simulationsschrittgröße ab 1 Sekunde sind daher Leistungswerte pro Sekunde notwendig. 
+Es müssen daher zwei Schritte vorgenommen werden. 
+Es bedarf einer Skalierung des Jahresverbrauches pro Einheit und einen „Momentanverbrauch“ für jeden Simulationsschritt.
+Die Jahresverbräuche wurden im Abschnitt „Verbraucher am Stromnetz“ abgeschätzt und können übernommen werden. 
+Für Landwirtschaftliche- und gewerbliche Verbraucher unterscheidet sich der Verbrauch stark durch Flächen- und Produktionsunterschiede. 
+Daher wurden Schätzfaktoren im Verhältnis zum Haushalt aufgestellt. Die genutzten Faktoren können folgender Tabelle entnommen werden.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Tabelle 4: Skalierungsfaktor Lastprofile Jahresverbrauch}
+    \label{tab:skalierungsfaktor}
+    \begin{tabular}{lcl}
+        \toprule
+        \textbf{Lastprofil} & \textbf{Faktor zum Jahresverbrauch (1000 kW * Faktor)} \\
+        \midrule
+        H0 & 7* (auf Basis des Verhältnisses von EFH und MFH nach Verbrauchswerten aus Tabelle 1 berechnet) \\
+        G4 & 20 \\
+        G5 & 50 \\
+        L0 & 30 \\
+        W0 & 10* (auf Basis des Verhältnisses von EFH und MFH nach Verbrauchswerten aus Tabelle 1 berechnet) \\
+        A0 & 1 \\
+        S0 & 1 \\
+        \bottomrule
+    \end{tabular}
+    
+Der Jahresverbrauch einer Straßenlaterne ist bei Nutzung von LEDs bei etwa 168 kWh. 
+Aus Simplifizierungsgründen wird mit dem Faktor 1 gearbeitet, also entspricht eine Einheit einem Zug von 6 Straßenlaternen. 
+Bei Ampelanlagen hängt dies von der Größe und Anzahl Leuchtfelder, als auch der genutzten Technik, ab. 
+Der jährliche Durchschnittsverbrauch liegt bei 1.600 kWh , jedoch sind Ampelanlagen im nicht innerstädtischen Bereich meist weniger in Nutzung und deutlich kleiner. 
+Daher wird mit einem Verbrauch von 1.000 kWh simuliert. Die Anzahl an Einheiten ist nun mit einem weiteren Skalierungsfaktor wählbar.
+Die Betrachtung vom Strombedarf in 1-Sekunden statt 15-Minuten-Schritten kann durch Interpolation erreicht werden. 
+Hierbei lassen sich alle Werte sekündlich abschätzen, wodurch ein Momentanverbrauch, welcher für die Simulation des Stroms im Netz und der genutzten Speichertechnologien wichtig ist, simulierbar ist. 
+Die Interpolation kann direkt in MatLab/Simulink durch sogenannte Look-Up-Tables durchgeführt werden.
+ 
+Abbildung 4: Excel-Tool zu Erstellung und Skalierung von Gesamtlastprofilen
+
+Zur Erstellung von zu importierenden Last- bzw. Gesamtlastprofilen steht ein selbstgebautes Excel-Tool zur Verfügung. 
+Dieses bietet die Möglichkeit, Skalierungs- und Einheitenfaktoren für die hinterlegten Lastprofile anzupassen. 
+Ein resultierendes Lastprofil wird ausgegeben und kann direkt in entsprechende Look-Up-Tables des Simulationsaufbaus importiert werden.
+
 \section{Stabilität in Inselnetzen}
 
 \section{Speichertechnologien in Inselnetzen}
