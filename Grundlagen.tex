@@ -12,7 +12,7 @@ Danach erfolgt die Ermittlung eines Konzepts zur Abschätzung von Verbräuchen m
 Ziel der Unterteilung ist zuerst einen Überblick über die Basis des zu modellierenden Inselnetzes zu schaffen. 
 Danach gilt es daraus pauschale Verbräuche unter Einbezug von Lastkurven zu ermitteln, welche in MatLab/Simulink simulationstauglich sind.
 
-\subsecction(Verbraucher am Stromnetz)
+\subsection(Verbraucher am Stromnetz)
 
 Die potentiell zu betrachtenden Verbraucher für das Inselnetz entsprechen dabei denen einer deutschen Kommune am deutschen Stromnetz. 
 Sie werden dabei in verschiedene Kategorien unterteilt und in folgenden Sub-Abschnitten genauer analysiert. 
@@ -38,8 +38,8 @@ Im Neubau liegt der Anteil der verbauten Wärmepumpen im Jahr 2022 bei ca. 57\%.
 Die Höhe des Energieverbrauches ist außerdem abhängig von der Anzahl der Bewohner des Wohngebäudes und dessen Größe als auch Zustand. 
 Im Gebiet Wohnen und Gebäude werden daher viele Annahmen und Hochrechnungen pro Kopf, pro Fläche oder pro Haushalt getätigt. Um die Verbraucher für verschiedene Simulationsszenarien vereinfacht zu ermitteln, wird hier wie im Folgenden beschrieben vorgegangen. 
 
-to do
-Abbildung 2: https://www.parbuilding.de/leitfaden-wohnungsbau/gebäudearten-wohnungstypen-bauweisen/typologie-für-wohngebäude/
+%to do
+%Abbildung 2: https://www.parbuilding.de/leitfaden-wohnungsbau/gebäudearten-wohnungstypen-bauweisen/typologie-für-wohngebäude/
 
 Wohngebäude lassen sich generell noch in weitere Unterkategorien aufgliedern.
 Dazu zählen Einfamilienhäuser, Mehrfamilienhäuser, große Mehrfamilienhäuser, Reihenhäuser, Hochhäuser und Doppelhaushälfte, sowie diverse Spezialfälle. 
@@ -79,11 +79,12 @@ Die vier resultierenden Verbrauchertypen werden in nachfolgender Tabelle aufgef�
         Heizung Wärmepumpe & 7,000 (7,083) & 30,000 (29,920) \\
         Heizung nicht abgebildet & 3,750 & 16,000 (15,840) \\
         \bottomrule
-    \end{tabula
+    \end{tabular}
+\end{table}
 
 Der Momentanverbrauch wird durch Lastprofile abgeschätzt und im entsprechenden Abschnitt bearbeitet.
 
-\subsubsection(Nichtwohngebäude (NWG))
+\subsubsection{Nichtwohngebäude (NWG)}
 
 Die Anzahl an Nichtwohngebäuden beläuft sich auf 21,5 Mio. in Deutschland, von denen 6 Mio. thermisch konditioniert sind. 
 Diese lassen sich allgemein in Dienstleistungsgebäude, beispielsweise Schulen, Büros, Gastro, Sport und Produktionsgebäude, beispielsweise Werkstätten, Lager, Betriebe, unterteilen. 
@@ -108,7 +109,7 @@ Pro E-Auto kommt man bei den durchschnittlich gefahrenen 15.000 km pro Jahr auf 
 Bei anderen E-Zapfsäulen ist auch eine Abschätzung in E-Auto-Jahresstromverbräuchen sinnig. 
 Da diese nicht mit einem privaten Speicher interagieren, wie bei privaten E-Zapfsäulen, lassen sich diese einfach zusammenfassen.
 
-\subsubcetion(Prosumer: Gebäude mit PV/Windkraft/Speicher)
+\subsubsection(Prosumer: Gebäude mit PV/Windkraft/Speicher)
 
 Als private Speicher, Windkraft und PV sind hier ebensolche gemeint, die einem WG oder NWG konkret zugeordnet werden können und keine eigenständigen, kommerziellen Anlagen sind. 
 Diese sind keine eigenen Verbraucher, aber ein Faktor bei der Findung von Verbrauchszahlen von den genutzten WG und NWG als auch der Elektromobilität.
@@ -240,6 +241,7 @@ Daher wurden Schätzfaktoren im Verhältnis zum Haushalt aufgestellt. Die genutz
         S0 & 1 \\
         \bottomrule
     \end{tabular}
+\end{table}
     
 Der Jahresverbrauch einer Straßenlaterne ist bei Nutzung von LEDs bei etwa 168 kWh. 
 Aus Simplifizierungsgründen wird mit dem Faktor 1 gearbeitet, also entspricht eine Einheit einem Zug von 6 Straßenlaternen. 
