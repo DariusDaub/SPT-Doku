@@ -16,36 +16,42 @@ Danach gilt es daraus pauschale Verbräuche unter Einbezug von Lastkurven zu erm
 
 Die potentiell zu betrachtenden Verbraucher für das Inselnetz entsprechen dabei denen einer deutschen Kommune am deutschen Stromnetz. 
 Sie werden dabei in verschiedene Kategorien unterteilt und in folgenden Sub-Abschnitten genauer analysiert. 
-Dabei erfolgt eine Differenzierung in Wohngebäude (WG), Nichtwohngebäude (NWG), die Interaktion dieser beiden Verbraucher mit eigenen Speichern, Windkraft und PV-Anlagen im Unterpunkt „Prosumer“, der Faktor Elektromobilität und weitere Verbraucher, die noch nicht betrachtet wurden. 
+Dabei erfolgt eine Differenzierung in Wohngebäude {WG}, Nichtwohngebäude {NWG}, die Interaktion dieser beiden Verbraucher mit eigenen Speichern, Windkraft und PV-Anlagen im Unterpunkt „Prosumer“, der Faktor Elektromobilität und weitere Verbraucher, die noch nicht betrachtet wurden. 
 Die für das Inselnetz relevanten Parameter sind hierbei der Stromverbrauch und das Lastprofil jeden Verbrauchers, sowie deren Vorkommen in einer durchschnittlichen, deutschen Kommune. 
 Außerdem wird noch die Möglichkeit der Einspeisung von Strom in ein Fernwärmenetz bzw. die Umwandlung von Strom in Wasserstoff als Power-to-Gas beschrieben.
 
-\subsubsection(Wohngebäude (WG))
+\subsubsection(Wohngebäude {WG})
 
 In Deutschland gibt es etwa 19,5 Mio. Wohngebäude, die an das Stromnetz angebunden sind. Dabei hat jedes Wohngebäude einen Energieverbrauch, der sich aus verschiedenen Faktoren zusammensetzt. 
 Diese lassen sich in Raumwärme, Warmwasser, Beleuchtung, Betrieb von Elektrogeräten und sonstiger Prozesswärme unterteilen. 
 
-to do
-Abbildung 1: Energieverbrauch WG 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=10cm]{Abbildungen/VerbraucherAbb1.jpg}
+    \caption{Energieverbrauch WG}\label{fig:Energieverbrauch_WG}
+\end{figure}
 
 Hierbei werden die Faktoren Elektrogeräte und Beleuchtung in der Regel durch Strom gedeckt. 
 Die Faktoren Warmwasser und Raumwärme sind abhängig vom eingebauten Heizungssystem. 
 Hierbei sind eine anteilige bis vollständige Erzeugung der Raumwärme und des Warmwassers durch eine strombetriebene Wärmepumpe, eine Stromheizung oder ein Wärmenetz möglich und für die Simulation relevant. 
 Dabei ist zu beachten, dass insbesondere bei Wärmepumpen der Wärmeenergieverbrauch stark vom Strombedarf abweicht. 
-Eine Umrechnung mit Hilfe der Jahresarbeitszahl (JAZ) ist möglich. 
+Eine Umrechnung mit Hilfe der Jahresarbeitszahl {JAZ} ist möglich. 
 Im Neubau liegt der Anteil der verbauten Wärmepumpen im Jahr 2022 bei ca. 57\%.
 
 Die Höhe des Energieverbrauches ist außerdem abhängig von der Anzahl der Bewohner des Wohngebäudes und dessen Größe als auch Zustand. 
 Im Gebiet Wohnen und Gebäude werden daher viele Annahmen und Hochrechnungen pro Kopf, pro Fläche oder pro Haushalt getätigt. Um die Verbraucher für verschiedene Simulationsszenarien vereinfacht zu ermitteln, wird hier wie im Folgenden beschrieben vorgegangen. 
 
-%to do
-%Abbildung 2: https://www.parbuilding.de/leitfaden-wohnungsbau/gebäudearten-wohnungstypen-bauweisen/typologie-für-wohngebäude/
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=10cm]{Abbildungen/VerbraucherAbb2.jpg}
+    \caption{Deutscher Wohngebäudebestand}\label{fig:Deutscher_Wohngebäudebestand}
+\end{figure}
 
 Wohngebäude lassen sich generell noch in weitere Unterkategorien aufgliedern.
 Dazu zählen Einfamilienhäuser, Mehrfamilienhäuser, große Mehrfamilienhäuser, Reihenhäuser, Hochhäuser und Doppelhaushälfte, sowie diverse Spezialfälle. 
 Um die Simulation der Verbraucher simpel zu halten, werden zum Verbraucher „Einfamilienhaus“ auch energetisch in der gleichen Größenordnung liegende Wohngebäudetypen gezählt, beispielsweise Reihen- und Zweifamilienhäuser. 
 Der Verbraucher „Mehrfamilienhaus“ umfasst äquivalent auch solche Wohngebäudetypen. 
-Große Mehrfamilienhäuser (ab 13 Wohnungen), Hochhäuser und mittelgroße bis große Wohnheime werden in der Praxis dazugezählt. 
+Große Mehrfamilienhäuser {ab 13 Wohnungen}, Hochhäuser und mittelgroße bis große Wohnheime werden in der Praxis dazugezählt. 
 Diese werden nicht in der Simulation dargestellt.
 Das liegt einerseits daran, dass es sich nicht um eine großstädtische Simulation handelt, andererseits daran, dass bei außergewöhnlich großen Wohngebäuden individuell stark abweichende Energieverbräuche – auch beim Stromverbrauch – entstehen. 
 Der Einbezug dieser übersteigt die Komplexität dieses Aspektes der Simulation.
@@ -84,7 +90,7 @@ Die vier resultierenden Verbrauchertypen werden in nachfolgender Tabelle aufgef�
 
 Der Momentanverbrauch wird durch Lastprofile abgeschätzt und im entsprechenden Abschnitt bearbeitet.
 
-\subsubsection{Nichtwohngebäude (NWG)}
+\subsubsection{Nichtwohngebäude {NWG}}
 
 Die Anzahl an Nichtwohngebäuden beläuft sich auf 21,5 Mio. in Deutschland, von denen 6 Mio. thermisch konditioniert sind. 
 Diese lassen sich allgemein in Dienstleistungsgebäude, beispielsweise Schulen, Büros, Gastro, Sport und Produktionsgebäude, beispielsweise Werkstätten, Lager, Betriebe, unterteilen. 
@@ -92,8 +98,11 @@ Der Energieverbrauch allgemein und einhergehend der Stromverbrauch ist hierbei s
 Während sich bei Dienstleistungsgebäuden die Verbrauchsfaktoren meist noch anteilig ähnlich derer bei Wohngebäuden verhalten, ist dies bei Produktionsgebäuden nicht der Fall. 
 Dies geht soweit, dass eine Pauschalisierung der Verbrauchsaufschlüsselung nicht möglich ist.
 
-abbildung hier 
-Abbildung 3: Endenergieverbrauch nach Sektoren
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=10cm]{Abbildungen/VerbraucherAbb3.jpg}
+    \caption{Endenergieverbrauch nach Sektoren}\label{fig:Endenergieverbrauch_nach_Sektoren}
+\end{figure}
 
 Trotz deutschlandweit bekannter Gesamtverbräuche ist der Energiebedarf in einer Kommune stark von lokalen Gewerbegebieten und einzelnen Großverbrauchern abhängig. 
 Diese sind für eine Simulation individuell abzuschätzen. Die Stromverbrauchsabschätzung ist dabei hauptsächlich produktabhängig und bedarf branchenüblicher Kennzahlen.
@@ -101,7 +110,7 @@ Diese sind für eine Simulation individuell abzuschätzen. Die Stromverbrauchsab
 \subsubsection(Elektromobilität)
 
 Im Abschnitt Elektromobilität als Verbraucher gilt es den Stromverbrauch durch Elektromobilität, also vorwiegend E-Autos zu bestimmen. 
-Diese kann dann einem bereits bekannten Verbraucher zuzuordnen ist, z.B. einem Einfamilienhaus oder einzeln oder zu mehreren (Bsp. Tankstelle) betrachtet werden.
+Diese kann dann einem bereits bekannten Verbraucher zuzuordnen ist, z.B. einem Einfamilienhaus oder einzeln oder zu mehreren {Bsp. Tankstelle} betrachtet werden.
 Mögliche Nutzer einer E-Ladesäule sind E-Autos, E-Motorräder und E-Bikes. 
 Um ein einfaches Modell zu erhalten, werden alle Nutzer einer E-Zapfsäule als E-Autos betrachtet, da diese absolut und verbrauchsmäßig der größte Nutzer sind. 
 Für private E-Zapfsäulen bietet es sich an, über gefahrene Kilometer und Verbrauch eine pauschale Abschätzung zu treffen. 
@@ -152,7 +161,7 @@ Dies hat damit zu tun, dass die Dichte an Straßenlaternen, als auch die genutzt
 Statistisch liegt der Stromverbrauch der Straßenbeleuchtung bei 40 bis 80 kWh pro Einwohner pro Jahr. 
 Es ist erwähnenswert, dass der Anschluss der Straßenbeleuchtung meist über separate Beleuchtungskabel erfolgt.
 
-\subsubsection(Umwandlung in Fernwärme/Power-to-Gas (Wasserstoff))
+\subsubsection(Umwandlung in Fernwärme/Power-to-Gas {Wasserstoff})
 
 Die Umwandlung in Wärme und Verteilung durch ein Fernwärmenetz ist eine mögliche Option zur Energieversorgung. 
 Ein solches kann der Simulation beigefügt werden und ist ein Spezialfall. 
@@ -252,7 +261,11 @@ Die Betrachtung vom Strombedarf in 1-Sekunden statt 15-Minuten-Schritten kann du
 Hierbei lassen sich alle Werte sekündlich abschätzen, wodurch ein Momentanverbrauch, welcher für die Simulation des Stroms im Netz und der genutzten Speichertechnologien wichtig ist, simulierbar ist. 
 Die Interpolation kann direkt in MatLab/Simulink durch sogenannte Look-Up-Tables durchgeführt werden.
  
-Abbildung 4: Excel-Tool zu Erstellung und Skalierung von Gesamtlastprofilen
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=10cm]{Abbildungen/VerbraucherAbb4.jpg}
+    \caption{Excel-Tool zu Erstellung und Skalierung von Gesamtlastprofilen}\label{fig:Excel-Tool_zu_Erstellung_und_Skalierung_von_Gesamtlastprofilen}
+\end{figure}
 
 Zur Erstellung von zu importierenden Last- bzw. Gesamtlastprofilen steht ein selbstgebautes Excel-Tool zur Verfügung. 
 Dieses bietet die Möglichkeit, Skalierungs- und Einheitenfaktoren für die hinterlegten Lastprofile anzupassen. 
