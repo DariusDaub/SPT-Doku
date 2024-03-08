@@ -441,6 +441,16 @@
       \verb https://www.statista.com/statistics/805966/population-of-the-faroe-islands-by-island/
       \endverb
     \endentry
+    \entry{energieexperten}{online}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.energie-experten.org/erneuerbare-energien/photovoltaik/stromspeicher/natrium-ionen-akku}}
+      \field{month}{3}
+      \field{note}{Updated: March 4, 2024}
+      \field{title}{Natrium-Ionen-Akkus: Preise, Funktion und Entwicklung der Hersteller}
+      \field{year}{2024}
+    \endentry
     \entry{uni-lecture}{online}{}
       \name{author}{1}{}{%
         {{hash=d198051d839092404bb9d818b8fbb4a5}{%
@@ -640,8 +650,8 @@
       \strng{authornamehash}{230087f74b72d6e2a87de41d1296e0b9}
       \strng{authorfullhash}{230087f74b72d6e2a87de41d1296e0b9}
       \field{extraname}{1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Wirtschaftlichkeit unterschiedlicher Nabenhöhen von Windenergieanlagen}
@@ -866,8 +876,8 @@
       \endverb
     \endentry
     \entry{noauthor_netztransparenz_nodate}{online}{}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labeltitlesource}{title}
       \field{title}{Netztransparenz {>} Regelenergie {>} Daten Regelreserve {>} Sekündliche Daten}
       \field{urlday}{6}
