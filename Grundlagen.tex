@@ -12,15 +12,15 @@ Danach erfolgt die Ermittlung eines Konzepts zur Abschätzung von Verbräuchen m
 Ziel der Unterteilung ist zuerst einen Überblick über die Basis des zu modellierenden Inselnetzes zu schaffen. 
 Danach gilt es daraus pauschale Verbräuche unter Einbezug von Lastkurven zu ermitteln, welche in MatLab/Simulink simulationstauglich sind.
 
-\subsection(Verbraucher am Stromnetz)
+\subsection{Verbraucher am Stromnetz}
 
 Die potentiell zu betrachtenden Verbraucher für das Inselnetz entsprechen dabei denen einer deutschen Kommune am deutschen Stromnetz. 
 Sie werden dabei in verschiedene Kategorien unterteilt und in folgenden Sub-Abschnitten genauer analysiert. 
-Dabei erfolgt eine Differenzierung in Wohngebäude {WG}, Nichtwohngebäude {NWG}, die Interaktion dieser beiden Verbraucher mit eigenen Speichern, Windkraft und PV-Anlagen im Unterpunkt „Prosumer“, der Faktor Elektromobilität und weitere Verbraucher, die noch nicht betrachtet wurden. 
+Dabei erfolgt eine Differenzierung in Wohngebäude (WG), Nichtwohngebäude (NWG), die Interaktion dieser beiden Verbraucher mit eigenen Speichern, Windkraft und PV-Anlagen im Unterpunkt „Prosumer“, der Faktor Elektromobilität und weitere Verbraucher, die noch nicht betrachtet wurden. 
 Die für das Inselnetz relevanten Parameter sind hierbei der Stromverbrauch und das Lastprofil jeden Verbrauchers, sowie deren Vorkommen in einer durchschnittlichen, deutschen Kommune. 
 Außerdem wird noch die Möglichkeit der Einspeisung von Strom in ein Fernwärmenetz bzw. die Umwandlung von Strom in Wasserstoff als Power-to-Gas beschrieben.
 
-\subsubsection(Wohngebäude {WG})
+\subsubsection{Wohngebäude (WG)}
 
 In Deutschland gibt es etwa 19,5 Mio. Wohngebäude, die an das Stromnetz angebunden sind. Dabei hat jedes Wohngebäude einen Energieverbrauch, der sich aus verschiedenen Faktoren zusammensetzt. 
 Diese lassen sich in Raumwärme, Warmwasser, Beleuchtung, Betrieb von Elektrogeräten und sonstiger Prozesswärme unterteilen. 
@@ -35,7 +35,7 @@ Hierbei werden die Faktoren Elektrogeräte und Beleuchtung in der Regel durch St
 Die Faktoren Warmwasser und Raumwärme sind abhängig vom eingebauten Heizungssystem. 
 Hierbei sind eine anteilige bis vollständige Erzeugung der Raumwärme und des Warmwassers durch eine strombetriebene Wärmepumpe, eine Stromheizung oder ein Wärmenetz möglich und für die Simulation relevant. 
 Dabei ist zu beachten, dass insbesondere bei Wärmepumpen der Wärmeenergieverbrauch stark vom Strombedarf abweicht. 
-Eine Umrechnung mit Hilfe der Jahresarbeitszahl {JAZ} ist möglich. 
+Eine Umrechnung mit Hilfe der Jahresarbeitszahl (JAZ) ist möglich. 
 Im Neubau liegt der Anteil der verbauten Wärmepumpen im Jahr 2022 bei ca. 57\%.
 
 Die Höhe des Energieverbrauches ist außerdem abhängig von der Anzahl der Bewohner des Wohngebäudes und dessen Größe als auch Zustand. 
@@ -51,7 +51,7 @@ Wohngebäude lassen sich generell noch in weitere Unterkategorien aufgliedern.
 Dazu zählen Einfamilienhäuser, Mehrfamilienhäuser, große Mehrfamilienhäuser, Reihenhäuser, Hochhäuser und Doppelhaushälfte, sowie diverse Spezialfälle. 
 Um die Simulation der Verbraucher simpel zu halten, werden zum Verbraucher „Einfamilienhaus“ auch energetisch in der gleichen Größenordnung liegende Wohngebäudetypen gezählt, beispielsweise Reihen- und Zweifamilienhäuser. 
 Der Verbraucher „Mehrfamilienhaus“ umfasst äquivalent auch solche Wohngebäudetypen. 
-Große Mehrfamilienhäuser {ab 13 Wohnungen}, Hochhäuser und mittelgroße bis große Wohnheime werden in der Praxis dazugezählt. 
+Große Mehrfamilienhäuser (ab 13 Wohnungen), Hochhäuser und mittelgroße bis große Wohnheime werden in der Praxis dazugezählt. 
 Diese werden nicht in der Simulation dargestellt.
 Das liegt einerseits daran, dass es sich nicht um eine großstädtische Simulation handelt, andererseits daran, dass bei außergewöhnlich großen Wohngebäuden individuell stark abweichende Energieverbräuche – auch beim Stromverbrauch – entstehen. 
 Der Einbezug dieser übersteigt die Komplexität dieses Aspektes der Simulation.
@@ -90,7 +90,7 @@ Die vier resultierenden Verbrauchertypen werden in nachfolgender Tabelle aufgef�
 
 Der Momentanverbrauch wird durch Lastprofile abgeschätzt und im entsprechenden Abschnitt bearbeitet.
 
-\subsubsection{Nichtwohngebäude {NWG}}
+\subsubsection{Nichtwohngebäude (NWG)}
 
 Die Anzahl an Nichtwohngebäuden beläuft sich auf 21,5 Mio. in Deutschland, von denen 6 Mio. thermisch konditioniert sind. 
 Diese lassen sich allgemein in Dienstleistungsgebäude, beispielsweise Schulen, Büros, Gastro, Sport und Produktionsgebäude, beispielsweise Werkstätten, Lager, Betriebe, unterteilen. 
@@ -107,10 +107,10 @@ Dies geht soweit, dass eine Pauschalisierung der Verbrauchsaufschlüsselung nich
 Trotz deutschlandweit bekannter Gesamtverbräuche ist der Energiebedarf in einer Kommune stark von lokalen Gewerbegebieten und einzelnen Großverbrauchern abhängig. 
 Diese sind für eine Simulation individuell abzuschätzen. Die Stromverbrauchsabschätzung ist dabei hauptsächlich produktabhängig und bedarf branchenüblicher Kennzahlen.
 
-\subsubsection(Elektromobilität)
+\subsubsection{Elektromobilität}
 
 Im Abschnitt Elektromobilität als Verbraucher gilt es den Stromverbrauch durch Elektromobilität, also vorwiegend E-Autos zu bestimmen. 
-Diese kann dann einem bereits bekannten Verbraucher zuzuordnen ist, z.B. einem Einfamilienhaus oder einzeln oder zu mehreren {Bsp. Tankstelle} betrachtet werden.
+Diese kann dann einem bereits bekannten Verbraucher zuzuordnen ist, z.B. einem Einfamilienhaus oder einzeln oder zu mehreren (Bsp. Tankstelle) betrachtet werden.
 Mögliche Nutzer einer E-Ladesäule sind E-Autos, E-Motorräder und E-Bikes. 
 Um ein einfaches Modell zu erhalten, werden alle Nutzer einer E-Zapfsäule als E-Autos betrachtet, da diese absolut und verbrauchsmäßig der größte Nutzer sind. 
 Für private E-Zapfsäulen bietet es sich an, über gefahrene Kilometer und Verbrauch eine pauschale Abschätzung zu treffen. 
@@ -118,7 +118,7 @@ Pro E-Auto kommt man bei den durchschnittlich gefahrenen 15.000 km pro Jahr auf 
 Bei anderen E-Zapfsäulen ist auch eine Abschätzung in E-Auto-Jahresstromverbräuchen sinnig. 
 Da diese nicht mit einem privaten Speicher interagieren, wie bei privaten E-Zapfsäulen, lassen sich diese einfach zusammenfassen.
 
-\subsubsection(Prosumer: Gebäude mit PV/Windkraft/Speicher)
+\subsubsection{Prosumer: Gebäude mit PV/Windkraft/Speicher}
 
 Als private Speicher, Windkraft und PV sind hier ebensolche gemeint, die einem WG oder NWG konkret zugeordnet werden können und keine eigenständigen, kommerziellen Anlagen sind. 
 Diese sind keine eigenen Verbraucher, aber ein Faktor bei der Findung von Verbrauchszahlen von den genutzten WG und NWG als auch der Elektromobilität.
@@ -149,7 +149,7 @@ Bei Nutzung der Mittelwerte für die Dimensionierung von PV-Anlagen pro Verbrauc
     \end{tabular}
 \end{table}
 
-\subsubsection(Weitere Verbraucher)
+\subsubsection{Weitere Verbraucher}
 
 Für eine Kommune als Inselnetz gibt es noch zwei weitere Verbraucher, dessen Einfluss in einem Inselnetz geprüft werden muss. 
 Dabei handelt es sich um Eisenbahn, ein Wärmenetz und Straßenbeleuchtung.
@@ -161,7 +161,7 @@ Dies hat damit zu tun, dass die Dichte an Straßenlaternen, als auch die genutzt
 Statistisch liegt der Stromverbrauch der Straßenbeleuchtung bei 40 bis 80 kWh pro Einwohner pro Jahr. 
 Es ist erwähnenswert, dass der Anschluss der Straßenbeleuchtung meist über separate Beleuchtungskabel erfolgt.
 
-\subsubsection(Umwandlung in Fernwärme/Power-to-Gas {Wasserstoff})
+\subsubsection{Umwandlung in Fernwärme/Power-to-Gas (Wasserstoff)}
 
 Die Umwandlung in Wärme und Verteilung durch ein Fernwärmenetz ist eine mögliche Option zur Energieversorgung. 
 Ein solches kann der Simulation beigefügt werden und ist ein Spezialfall. 
@@ -174,7 +174,7 @@ Bei Power-to-Gas handelt es sich um eine ähnliche Methode.
 Da der Wasserstoff in Speichern, statt in einem Netz gespeichert werden kann, ist die Nutzung flexibler und sogar der Export möglich. 
 Der Strom-zu-Strom-Wirkungsgrad, also inklusive der Umwandlung von Gas-to-Power, liegt bei etwa 70\%.
 
-\subsection(Verbrauchsermittlung auf Basis von Lastkurven)
+\subsection{Verbrauchsermittlung auf Basis von Lastkurven}
 
 Lastkurven dienen in der Elektrizitätswirtschaft dazu, den prognostizierten Strombedarf für verschiedene Verbraucher im Stromnetz abzuschätzen. 
 Diese Unterscheidung erfolgt zeitlich in 15-Minuten-Schritten. 
