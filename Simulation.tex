@@ -342,7 +342,7 @@ entspricht.
 Im Verlauf des Ladezustands zeigt sich, dass der Speicher über den ganzen Monat genug Reserve bereitstellen kann.
 Die kurzen Phasen mit geringer Frequenzabweichung genügen um einen nötigen Reservebetrieb weitestgehend zu vermeiden.
 Dazu ist allerdings zu erwähnen, dass während des gesamten Monats keine Differenz außerhalb der $\pm$ 200 Mhz Grenze erreicht wird
-und daher kein gefährdeter Zustand.
+und daher kein gefährdeter Zustand nötig wird.
 
 \begin{figure}[h!]
 	\centering
@@ -366,6 +366,16 @@ Um das Verhalten und die Übergänge im gefährdeten Zustand dennoch zu überpr�
 des Beispielszenarios der Übertragungsnetzbetreiber aus \parencite[]{Reservebetrieb} wiederholt.
 Abbildung \ref{FCRMessung3} zeigt die dabei aufgezeichneten Verläufe.
 
+Bei knapp 300 s bricht die Frequenz hierbei auf ca. 49,8 Hz ein.
+Der FCR-Speicher muss dabei in den gefährdeten Zustand wechseln und innerhalb weniger Sekunden
+die maximale Leistung zur Verfügung stellen.
+Im Verlauf der Batterieleistung sieht man, dass ohne Verzögerung 1 MW Leistung angelegt wird.
+Der SOC sinkt dabei drastisch und erreicht nach ungefähr 30 min die Grenze für den Reservebetrieb.
+Ab diesem Zeitpunkt wird die FCR-Provision unterbrochen und die Batterie lädt sich mit $500$ kW 
+bis zum Erreichen des erlaubten Arbeitsbereichs bei $35 \%$.
+Laut Vorgabe der Übertragungsnetzbetreiber darf dieses Nachladen maximal 2 Stunden dauern.
+Der Speicher in dieser Simulation braucht etwas über eine halbe Stunde und kann anschließend wieder
+Regelleistung zur Verfügung stellen.
 
 
 
