@@ -201,3 +201,30 @@
 \providecommand*{\pderiv}[3][]{%
     \frac{\partial^{#1}#2}%
     {\partial #3^{#1}}}
+
+\usepackage[headsepline,automark]{scrlayer-scrpage}
+
+% Kopf- und Fußzeilen ------------------------------------------------------
+\pagestyle{scrheadings}
+    
+% Kopf- und Fußzeile auch auf Kapitelanfangsseiten -------------------------
+\renewcommand*{\chapterpagestyle}{scrheadings}
+    
+% Schriftform der Kopfzeile ------------------------------------------------
+\renewcommand{\headfont}{\normalfont}
+    
+% Kopfzeile ----------------------------------------------------------------
+\ihead{
+    \parbox{11.8cm}{\normalsize{ \ }}\\
+    %\small{\untertitel}\\[2ex]
+    \textit{ \headmark}
+}
+\chead{
+        %\includegraphics[height=0.8cm]{Grafiken/EWENETZ_Logo.png}
+}
+\ohead{	
+        \includegraphics[height=1.4cm]{Abbildungen/Logo_HSB_Hochschule_Bremen.png}	
+}
+\setlength{\headheight}{21mm} % Höhe der Kopfzeile
+    
+\usepackage{pdfpages}
