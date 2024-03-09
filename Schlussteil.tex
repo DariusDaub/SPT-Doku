@@ -6,11 +6,15 @@ Die simulierte Zeit pro Sekunde sollte dafür vom Verhältnis von ungefähr 1:1 
 Generell sind bei beiden Simulationsmodellen im Aufbau viele Komponenten und Einflüsse vereinfacht worden. 
 Um eine realistischere Simulation zu erhalten, können diese genauer abgebildet werden.
 Bei den Stromerzeugern können Photovoltaikanlagen der Simulation hinzugefügt werden.
-Anhand von Faktoren wie dem Material der Solarzellen, dem Wirkungsgrad, installierter Leistung, Systemverlust, Neigung und Azimut, sowie Daten für die Solareinstrahlung des Standortes der Kommune kann ein komplexes Modell dieses Erzeugers in MatLab/Simulink erstellt werden.
+Anhand von Faktoren wie dem Material der Solarzellen, dem Wirkungsgrad, installierter Leistung, Systemverlust, Neigung und Azimut, sowie Daten für die Solareinstrahlung des Standortes der Kommune kann ein komplexes Modell dieses Erzeugers in MatLab/Simulink erstellt werden\cite{jrcpv}.
 Die Implementation des Erzeugers PV würde, da dieser sonneneinstrahlungsabhängig ist, zu einer komplexeren Fluktuation bei der Stromerzeugung im Netz führen. 
 Dies hat generellen Einfluss auf das Netz und die Dimensionierung, als auch Be- und Entladestrategien von Speichern.
   
-Abbildung 1: Betrachtung erneuerbarer Stromerzeuger für das Fallbeispiel Föröer-Inseln
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=14cm]{Abbildungen/AusblickAbb1.jpg}
+    \caption{Betrachtung potentieller erneuerbarer Stromerzeuger für das Fallbeispiel Färöer-Inseln\cite{faroer]}\label{fig:Stromerzeuger_Faroer}
+\end{figure}
 
 Außerdem kann die Modellierung eines Prosumers, bestehend aus einem Haus mit Wärmepumpe, PV-Anlage und Speicher, am Netz betrachtet werden.
 Die Modellierung ist hierbei komplex und deren Auswirkungen für das Netz können relevant sein.
