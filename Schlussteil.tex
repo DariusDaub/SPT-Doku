@@ -11,15 +11,8 @@ Bei den Stromerzeugern können Photovoltaikanlagen der Simulation hinzugefügt w
 Anhand von Faktoren wie dem Material der Solarzellen, dem Wirkungsgrad, installierter Leistung, Systemverlust, Neigung und Azimut, sowie Daten für die Solareinstrahlung des Standortes der Kommune kann ein komplexes Modell dieses Erzeugers in MatLab/Simulink erstellt werden\cite{jrcpv}.
 Die Implementation des Erzeugers PV würde, da dieser sonneneinstrahlungsabhängig ist, zu einer komplexeren Fluktuation bei der Stromerzeugung im Netz führen. 
 Dies hat generellen Einfluss auf das Netz und die Dimensionierung, als auch Be- und Entladestrategien von Speichern.
-Weitere erneuerbare Energien, die betrachtet werden können sind Gezeiten- und Wasserkraft (s. Abbildung).
+Weitere erneuerbare Energiequellen, die betrachtet werden können sind Geothermie-, Gezeiten- und Wasserkraft.
 Die Auswahl dieser regenerativen Energiequellen ist jedoch stark von der geographischen Lage des Inselnetzes abhängig.
-  
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=14cm]{Abbildungen/AusblickAbb1.jpg}
-    \caption{Betrachtung potentieller erneuerbarer Stromerzeuger für das Fallbeispiel Färöer-Inseln\cite{faroer}}\label{fig:Stromerzeuger_Faroer}
-\end{figure}
-
 Außerdem kann die Modellierung eines Prosumers, bestehend aus einem Haus mit Wärmepumpe, PV-Anlage und Speicher, am Netz betrachtet werden.
 Die Modellierung ist hierbei komplex und deren Auswirkungen für das Netz können relevant sein.
 Ursache dafür ist die Komplexität dieses Subsystem des Inselnetzes.
@@ -33,7 +26,7 @@ Auch bei den Speichersystemen sind Änderungen implementierbar.
 In beiden Modellen werden ausschließlich Batteriespeichersysteme modelliert.
 Eine Simulation eines Fernwärmenetzes als auch die Nutzung von Power-to-Gas und Gas-to-Power sind möglicher Erweiterungen für die Modelle.
 Die existierenden Batteriemodelle können auch präziser modelliert werden.
-Dabei ist die Betrachtung von elektrischen Batteriemodellen ein möglicher Schritt, der es ermöglichen würde, elektrische Phänomene im Netz genauer zu betrachten.
+Dabei ist die Betrachtung von elektrischen Batteriemodellen ein möglicher Schritt, der es ermöglichen würde, elektrische Phänomene wie z.B. Störfaktoren oder Kurzschlüsse, im Netz genauer zu betrachten.
 Dadurch können gleichzeitig die Aufgaben von Batteriespeichersystemen umfassender simuliert werden.
 Außerdem können in einer erweiterten Simulation auf Dauer weitere relevante Faktoren implementiert werden, beispielsweise ein Peak Shaving Algorithmus.
 Eine Darstellung von Redox-Flow-Batteriespeichern findet außerdem auch nicht statt, ist aber möglich und sinnvoll, insbesondere wenn ebendiese wirtschaftlich und technisch eine Alternative zu Lithium-Ionen-Batteriespeichern darstellen.
