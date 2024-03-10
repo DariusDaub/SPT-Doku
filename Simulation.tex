@@ -1,5 +1,5 @@
 \chapter{Modellbeschreibung}\label{Modellbeschreibung}
-\section{Erzeuger}
+\section{Erzeuger}\label{Erzeuger}
 
 Im folgenden wird gezeigt, auf welcher Grundlage die Erzeugungsanlagen in den jeweiligen Inselnetzen modelliert werden. In Anlehnung an den Abschlussbericht des Umweltbundesamtes zur Transformation der Stromerzeugung bis 2050 wird der Fokus ausschließlich auf die Modellierung von Windenergie- und Photovoltaikanlagen gelegt, da diese den Großteil der Erzeugung in allen betrachteten Szenarien darstellen. Zudem bieten sich diese Erzeugungsanlagen besonders für den autarken Einsatz in Inselnetzen an.
 
@@ -145,7 +145,7 @@ Der Strahlunfsluss $\Phi$ berechnet sich aus der Starhlungsdichte $E$ und der Fl
 	\Phi = E \cdot A
 \end{equation}
 
-Die Strahlungsdichte $E$ entspricht der gemesenenen Globalstrahlung der betrachtetten Wettestaiuonen.
+Die Strahlungsdichte $E$ entspricht der gemesenenen Globalstrahlung der betrachteten Wettestaiuonen.
 
 Die Leistung des Strahlungsflusses wird dabei mit dem Modulwirkungsgrad $\eta$ in elektrische Leistung umgewandelt. Die Verluste sind in \autoref{fig:VerlustePV} in einem Sankey-Diagramm Veranschaulicht. 
 
@@ -156,9 +156,9 @@ Die Leistung des Strahlungsflusses wird dabei mit dem Modulwirkungsgrad $\eta$ i
 	\label{fig:VerlustePV}
 \end{figure}
 
-Der hier angegebene Modulwirkunsggrad ist jedoch etwas veraltete und die Wirkungsgrade von Solarmodulen steigen kontinuierlich um etwa 0,3 - 0,5 \%-Punkte pro Jahr, sodass sich aktuell ein Wikrungsgrad von ungefähr 21~\% für kommerzielle Solarmodule ergibt. Im Betrieb wirken sich noch diverse andere nichtlineare Effekte auf den Modulwirkungsgrad aus wie z.B. die Modultemperatur, Verschattung oder die Verschmutzung der Module. Zudem ergeben sich noch zusätzliche Verluste in den Leitungen, Wechselrichtern und Transformatoren der Photovoltaikanlage. Die hier ntstehenden Verluste sind jedoch eher Vernachlässigbar, da beispielsweise Wechselrichter üblicherweise einen Wirkungsrad von 98~\% erreichen. Mit Betrachtung der sonstigen Einflusse auf den Wirkunsgrad wird ein mittlerer Wikrungsgrad von 18~\% zwischen der Strahlungsdichte und der elektrischen Leistung der Anlage angenommen. \cite{FaktenPV} 
+Der hier angegebene Modulwirkungsgrad ist jedoch etwas veraltete und die Wirkungsgrade von Solarmodulen steigen kontinuierlich um etwa 0,3 - 0,5 \%-Punkte pro Jahr, sodass sich aktuell ein Wikrungsgrad von ungefähr 21~\% für kommerzielle Solarmodule ergibt. Im Betrieb wirken sich noch diverse andere nichtlineare Effekte auf den Modulwirkungsgrad aus wie z.B. die Modultemperatur, Verschattung oder die Verschmutzung der Module. Zudem ergeben sich noch zusätzliche Verluste in den Leitungen, Wechselrichtern und Transformatoren der Photovoltaikanlage. Die hier ntstehenden Verluste sind jedoch eher Vernachlässigbar, da beispielsweise Wechselrichter üblicherweise einen Wirkungsrad von 98~\% erreichen. Mit Betrachtung der sonstigen Einflusse auf den Wirkunsgrad wird ein mittlerer Wikrungsgrad von 18~\% zwischen der Strahlungsdichte und der elektrischen Leistung der Anlage angenommen. \cite{FaktenPV} 
 
-Werden die beschriebenen Zusammenhänge in ein Simulink Modell transferiert, ergibt sich das Modell in \autoref{fig:PVModell}
+Werden die beschriebenen Zusammenhänge in ein Simulink-Modell transferiert, ergibt sich das Modell in \autoref{fig:PVModell}
 
 \begin{figure}[H]
 	\centering
@@ -224,7 +224,7 @@ Ausgängen für jede Spannungsphase sowie dem Ausgang der Messgrößen.
 Der Aufbau des Subsystems ist in Abbildung~\ref{BatModell1} gezeigt.
 Im Wesentlichen besteht das Modell aus einem Block zur Steuerung und Umsetzung der Betriebsstrategien, einem Block
 zur Berechnung des SOCs und einer dreiphasigen Last die für dieses Modell als einfacher Umrichter genutzt wird.
-Thermische Effekte, Verzögerungen oder Nicht-linearitäten wurden beim Entwurf dieses Modells gänzlich vernachlässigt.
+Thermische Effekte, Verzögerungen oder Nicht-Linearitäten wurden beim Entwurf dieses Modells gänzlich vernachlässigt.
 Auch Selbstentladungseffekte oder Aussagen über die Lebensdauer des Batteriespeichers können mit diesem Modell nicht 
 betrachtet werden.
 
@@ -248,7 +248,7 @@ mit
 \end{equation}
 Wobei hierbei die korrekte Form der Einheiten zu beachten ist.
 Ist die Kapazität der Batterie in $kWh$ gegeben muss das Integral der Leistung entsprechend umgerechnet werden.
-Desweitern muss der Momentanwert der Leistung zunächst aus Blind- und Wirkleistung bestimmt werden.
+Des Weiteren muss der Momentanwert der Leistung zunächst aus Blind- und Wirkleistung bestimmt werden.
 Abbildung~\ref{SOC} zeigt die Umsetzung der beiden Gleichungen~\ref{GL_SOC} und~\ref{GL_SOC2} im Simulink-Modell 
 wobei der anfängliche Ladezustand im Integral-Block als Anfangszustand hinterlegt ist.
 \begin{figure}[h!]
@@ -288,7 +288,7 @@ Dafür wurde innerhalb des Simulink-Speicherblocks ein Subsystem erstellt, dass 
 In der Mitte des Systems befindet sich ein Schalter der im Wesentlichen entscheidet ob Regelleistung bereitgestellt wird
 oder der SOC der Batterie korrigiert wird.
 Dafür werden zunächst mehrere Kriterien überprüft.
-Der Schalter gibt den oberen Pfad zur FCR-Provision weiter wenn die Frequenzabweichung außerhalb des Totbands von $\pm 10$ mHz liegt
+Der Schalter gibt den oberen Pfad zur FCR-Provision weiter wenn die Frequenzabweichung außerhalb des Totbandes von $\pm 10$ mHz liegt
 und der SOC im erlaubten Arbeitsbereich von 35 \% bis 65 \% liegt.
 Dieser Bereich ist durch die Übertragungsnetzbetreiber in \parencite[]{Reservebetrieb} festgelegt und ist abhängig vom Speicherverhältnis $\rho$.
 Die Relays nach den SOC-Bausteinen schalten jeweils ab $8,3 \%$ und $91,7 \%$ ab, sodass der Speicher in einen Reservebetrieb wechselt wie er in \parencite[]{Reservebetrieb}
@@ -363,8 +363,8 @@ Zwischen diesen Phasen wird der SOC entsprechend regeneriert.
 \end{figure}
 
 Um das Verhalten und die Übergänge im gefährdeten Zustand dennoch zu überprüfen wurde die Simulation mit den Frequenzdaten
-des Beispielszenarios der Übertragungsnetzbetreiber aus \parencite[]{Reservebetrieb} wiederholt.
-Abbildung \ref{FCRMessung3} zeigt die dabei aufgezeichneten Verläufe.
+des Beispielszenarios der Übertragungsnetzbetreiber aus~\parencite[]{Reservebetrieb} wiederholt.
+Abbildung~\ref{FCRMessung3} zeigt die dabei aufgezeichneten Verläufe.
 
 Bei knapp 300 s bricht die Frequenz hierbei auf ca. 49,8 Hz ein.
 Der FCR-Speicher muss dabei in den gefährdeten Zustand wechseln und innerhalb weniger Sekunden
@@ -382,6 +382,74 @@ Regelleistung zur Verfügung stellen.
 \section{Netzmodell}
 \subsection{Bilanziell}
 \subsection{Dreiphasig}\label{3phase}
+Um das Frequenzverhalten des Inselnetzes so gut es geht auszuwerten wurde ein dreiphasiges Simulink-Modell aufgebaut.
+Dabei wurde auf eine Vorlage zurückgegriffen welche anschließend an das geplante Inselnetz angepasst wurde.
+Die Frequenzmessung konnte dabei nur mit einem Diesel-Generator verlässlich umgesetzt werden, woraus sich ein paar Probleme ergeben
+die im Folgenden Abschnitt genauer erklärt werden.
+Das in~\ref{Speicher} eingeführte Speichermodell zur FCR-Erbringung wurde für diese Simulation ebenfalls genutzt.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=14cm]{Abbildungen/Dreiphasig.png}
+	\caption{Dreiphasiges Simulink-Modell eines Inselnetzes}\label{Mod:3phase}
+\end{figure}
+
+Abbildung~\ref{Mod:3phase} zeigt das gesamte Simulink-Modell mit allen Komponenten.
+Um eine Auswertung der Dreiphasen-Spannung und Frequenz zu ermöglichen mussten alle Berechnungen als kontinuierliche Zeiger-Simulation 
+durchgeführt werden.
+Der Rechenaufwand im Vergleich zu diskreten Simulationen ist dabei deutlich erhöht was uns nur eine eingeschränkte
+Auswertung im Bereich weniger Stunden erlaubte.
+
+\paragraph{Komponenten des Modells}
+Als Erzeuger für das hier simulierte Inselnetz dient in erster Linie die Windkraftanlage die bereits in Abschnitt~\ref{Erzeuger} beschrieben wurde.
+Zusätzlich speist der Diesel-Generator, über den die Frequenz gemessen wird, das Inselnetz mit Leistung.
+Um diese zusätzlich erbrachte Leistung etwas auszugleichen, wurde eine feste Last von 500 kW eingesetzt.
+
+Der tatsächliche Verbrauch des Inselnetzes wurde als variable Last umgesetzt.
+Diese Last wird mit den Profilen aus Abschnitt~\ref{Verbraucher} gespeist und gibt den entsprechenden Verbrauch ans das Inselnetz
+weiter.
+
+Um einen stabilen Anlauf des Inselnetzbetriebs zu ermöglichen ist das Netz zunächst an eine konstante Dreiphasen-Stromquelle 
+angeschlossen. 
+So wird das Netz die ersten 15 s mit 50 Hz Spannung gespeist bevor die Spannungsquelle getrennt wird und das Netz 
+eigenständig läuft.
+
+Zusätzlich zu dem FCR-Speichermodell ist ein weiterer Speicher implementiert der die Differenz zwischen erzeugter 
+Leistung der Windkraftanlage und verbrauchter Leistung der Lastprofile ausgleicht.
+Die Speichersteuerung reagiert dabei auf die Differenz zwischen aktuell erzeugter Windenergie und prognostiziertem Verbrauch.
+Dabei können sowohl die realen Profile der Verbraucher eingesetz werden als auch leicht veränderte um Fehler in der Prognose zu simulieren.
+Der entsprechende Speicher wurde mit 2 MW Leistung und einer Kapazität von 2MWh dimensioniert.
+Für einen dauerhaften Betrieb wäre ein deutlich größerer Speicher nötig allerdings konnte in dieser Simulation
+ein Einbruch der Frequenz durch das Abschalten des Speichers untersucht werden und damit die korrekte Funktion des FCR-Speichers.
+
+\paragraph{Umsetzung der Frequenzmessung}
+Um die Momentan-Frequenz des Inselnetzes zu überwachen wurde verschiedene Maßnahmen untersucht.
+Zum einen wurde eine Methode namens Zero Crossing Counts in Erwägung gezogen.
+Simulink bieten dafür einen fertigen Baustein, welche die Nulldurchgänge eines Signals zählt und als aktuellen Wert ausgibt.
+Teilt man nun die Anzahl der Nulldurchgänge durch die Simulationszeit, lässt sich die Frequenz des jeweiligen Signals bestimmen.
+Diese Frequenz ist allerdings als Mittelwert zu verstehen.
+Kurzfristige Schwankungen werden mit zunehmender Simulationszeit kaum berücksichtigt und ein genauer Wert der aktuellen
+Netzfrequenz ist so nicht darstellbar.
+
+Eine weitere Option basiert auf einem Simulink-Baustein namens Sequence Analyzer. 
+Dieser wird in der Simulation schon genutzt um die Amplitude der Netzspannung zu bestimmen.
+Zusätzlich kann dieser Block auch die Phase der Dreiphasen-Spannung ausgeben.
+Die Änderung dieser Phasen wird mit einem rotierenden Zeiger bei 50 Hz verglichen und eine aktuelle Signalfrequenz kann bestimmt werden.
+
+Auch nach langer Fehlersuche konnten wir mit dieser Methode leider keine eindeutige Frequenzmessung umsetzen.
+Schon relativ geringe Schwankungen der Netzfrequenz führten bei allen Versuchen dazu, dass die so berechnete Frequenz
+ausriss und sich teilweise bei Werten um $-500 Hz$ einstellte.
+
+Letztendlich mussten wir uns auf Grund des begrenzten Zeitrahmens für diese Projektarbeit dafür entscheiden die Frequenzmessung
+doch über den Synchrongenerator umzusetzen.
+
+Dabei wird die Frequenz des Generators selber gemessen.
+Da dieser synchron mit dem Netz gekoppelt ist entspricht diese in etwa auch der Netzfrequenz.
+Dabei ist allerdings das Trägheitsverhalten des Generators selber zu beachten.
+Durch die Massenträgheit ist der Frequenzverlauf des Generators deutlich geglättet.
+Durch die Bereitstellung von Momentanreserve werden kleinere Schwankungen quasi direkt vom Generator ausgeglichen.
+Der FCR-Speicher kommt in dieser Simulation daher nur eingeschränkt zum Einsatz.
+
 
 
 \chapter{Auswertung}
@@ -389,3 +457,57 @@ Regelleistung zur Verfügung stellen.
 \section{Bilanziell}
 
 \section{Dreiphasig}
+
+In diesem Abschnitt sollen die Ergebnisse der Simulationen mit dem dreiphasigen Inselnetzmodell diskutiert werden.
+Dafür werden zunächst die Parameter und Rahmenbedingungen der Simulation erläutert und anschließend verschiedene 
+aufgezeichnete Zeitverläufe präsentiert.
+Abschließend soll die Aussagekraft der durchgeführten Simulationen beurteilt und eventuelle Vorschläge 
+zur Verbesserung des Modells gemacht werden.
+
+\paragraph{Simulationsparameter}
+Um mehrere Simulationen durchzuführen und verschiedene Parameter zu prüfen wurden alle Simulationen auf die Dauer 
+des Beispielszenarios aus~\ref{Lade- und Entlade} beschränkt.
+
+Für die Durchführung einer ersten allgemeinen Simulation des Inselnetzes wurden die Verbraucher und die erzeugte
+Leistung der Windkraftanlage so ausgelegt, dass sie sich zu Spitzenzeiten in etwa ausgleichen.
+Dafür wurde das Lastprofil so gewählt, dass der Verbrauch während der Simulation zwischen 600 kW und 500 kW schwankt.
+Die Leistung der Windkraftturbinen schwankt dementsprechend zwischen 0 kW und 600 kW.
+
+Mit dieser Dimensionierung kann einerseits überprüft werden ob der Windkraft-Speicher die Differenz erfolgreich ausgleichen kann
+und andererseits muss dieser Speicher so durchgehend positive Leistung bereitstellen und erreicht daher die SOC-Untergrenze.
+Ab dieser muss der Speicher sich abschalten, es kommt zu einem Frequenzeinbruch und die FCR wird aktiviert.
+
+\paragraph{Messwerte und Ergebnisse}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=14cm]{Abbildungen/FreqBat2.png}
+	\caption{Verlauf der Netzfrequenz und FCR-Batterieleistung}\label{Verlauf1}
+\end{figure}
+
+Abbildung~\ref{Verlauf1} zeigt das Verhalten der Netzfrequenz und der Batteriewerte in der grundlegenden Simulation.
+Im Verlauf der Frequenz zeigt sich bei 15 s ein Einbruch auf ca 49,9 Hz. 
+Zu diesem Zeitpunkt wechselt das Netz in den Inselbetrieb.
+Die Batterie stellt sofort 500 kW und damit die halbe Primärrregelleistung zur Verfügung.
+Der Generator kann den Frequenzeinbruch abfangen und die Batterieleistung sinkt wieder auf 0 kW.
+Während eine konstante Frequenz von 50 Hz gehalten wird, strebt die Batterie einen SOC von 50 \% an.
+Da die Abweichung vom Soll-SOC so gering ausfällt zieht die Batterie dabei nur sehr wenig Leistung aus dem Netz.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=14cm]{Abbildungen/VerbrBat.png}
+	\caption{Verlauf der Windkraftleistung, des Lastprofils und der Batterieleistung}\label{Verlauf2}
+\end{figure}
+
+Abbildung~\ref{Verlauf2} zeigt den Verlauf der erzeugten Windkraftleistung im Vergleich zur verbrauchten Leistung
+und den dazugehörigen Verlauf der Windkraft-Batterieleistung.
+Man kann gut erkennen, dass die Batterie die Differenz aus erzeugter und verbrauchter Leistung exakt ausgleichen kann
+bis ihr SOC die kritische Grenze von 20 \% erreicht.
+In diesem Moment schaltet der Batteriespeicher ab und gibt keine Leistung mehr aus.
+In Abbildung~\ref{Verlauf1} bricht zu diesem Zeitpunkt die Frequenz ein.
+Diesmal ist der Generator allerdings nicht in der Lage genug Leistung auszugeben um die Frequenz wieder auf ihren
+ursprünglichen Wert einzustellen.
+Die Batterie zur FCR-Erbringung gibt nun einen konstanten Wert aus und verhindert ein weiteres Absinken der Frequenz aber
+es wäre weitere Regelreserve notwendig um wieder eine konstante Netzfrequenz von 50 Hz zu erreichen.
+ 
+\paragraph{Einordnung der Simulation und des Modells}

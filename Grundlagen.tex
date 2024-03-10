@@ -1,6 +1,6 @@
 \chapter{Theoretische Grundlagen}
 
-\section{Verbraucher in Inselnetzen}
+\section{Verbraucher in Inselnetzen}\label{Verbraucher}
 
 Der folgende Abschnitt befasst sich mit der Beschreibung der Stromverbraucher für das vorliegende Inselnetz. 
 Für eine fiktive Kommune gibt es verschiedene Verbrauchertypen, welche es näher zu untersuchen gilt. 
@@ -276,7 +276,7 @@ Ein resultierendes Lastprofil wird ausgegeben und kann direkt in entsprechende L
 \section{Speichertechnologien in Inselnetzen}
 
 \subsection{Gründe für den Einsatz von Speichern in Inselnetzen}
-Für diese Projektarbeit soll ein autarkes Inselnetz mit regenerativer Energieeerzeugung 
+Für diese Projektarbeit soll ein autarkes Inselnetz mit regenerativer Energieerzeugung 
 modelliert und simuliert werden.
 Aus verschiedenen Gründen, welche im Folgenden genauer erläutert werden sollen, ist der Einsatz von
 Speichertechnologien für die Umsetzung eines solchen Inselnetzes zwingend notwendig.
@@ -285,16 +285,16 @@ Grundlegend ist eine lückenlose Energieversorgung innerhalb eines Netzes nur m�
 eingespeist und abgenommen wird.
 Entscheidende Parameter für die Regelung der Energieerzeugung sind dabei vor Allem die Netzfrequenz 
 und -spannung.
-Das deutsche Verbundnetz ist dafür in vier Regelzonen unterteilt, welche widerrum in verschiedene
+Das deutsche Verbundnetz ist dafür in vier Regelzonen unterteilt, welche wiederrum in verschiedene
 Bilanzkreise unterteilt sind.
-Innerhalb dieser Bilanzkreise wird anhand von Vorraussagen für den nächsten Tag versucht
+Innerhalb dieser Bilanzkreise wird anhand von Voraussagen für den nächsten Tag versucht
 eingespeiste und entnommene Leistung auszuregeln.
 Durch den schwankenden Leistungsbedarf sind Abweichungen hier allerdings die Regel.
 Bei der Betrachtung eines regenerativen Inselnetzes kommt die volatile Natur von regenerativen Energieerzeugern
-als weiterer Faktor hinzu und erschwert eine korrekte Vorraussage enorm.
+als weiterer Faktor hinzu und erschwert eine korrekte Voraussage enorm.
 Diese Abweichungen der tatsächlich benötigten Leistung von der bereitgestellten führen zu Frequenzschwankungen
 welche sich wiederrum negativ auf die Netzstabilität auswirken.
-Zum Ausgleich dieser Schwankungen muss Regelernegie zur Verfügung gestellt werden.
+Zum Ausgleich dieser Schwankungen muss Regelenergie zur Verfügung gestellt werden.
 
 \begin{figure}[h!]
     \centering
@@ -306,12 +306,12 @@ Die benötigte Energie ist dabei unterteilt in Momentanreserve, Primärreserve, 
 und Tertiärreserve.
 Die Momentanreserve, welche geringe Frequenzabweichung direkt ausgleichen soll, wird im deutschen Verbundnetz
 durch die Schwungmasse der Kraftwerks-Synchronmaschinen bereit gestellt.
-Die Primärreserve hingegen greift erst ab einer Abweichung von $20\ mHz$ und musss nach spätestens 30 Sekunden
+Die Primärreserve hingegen greift erst ab einer Abweichung von $20\ mHz$ und muss nach spätestens 30 Sekunden
 sowie für mindestens 15 Minuten vollständig zur Verfügung stehen.
 Hierfür werden heute schon zunehmend Batteriespeicher eingesetzt.
 Zusätzlich wird nach 30 Sekunden die Sekundärregelleistung bereit gestellt, welche für eine Stunde verfügbar sein muss.
-Nach 15 Minuten wird diese dann von der Tertiärregelreserve abgelöst, welche ebenfalls fürr eine Stunde verfügbar sein muss.
-Die beiden letzten Regeleneergie-Kategorien werden in aller Regel von Kraftwerken in Teillast oder Kraftwerken mit kurzen Anfahrzeiten
+Nach 15 Minuten wird diese dann von der Tertiärregelreserve abgelöst, welche ebenfalls für eine Stunde verfügbar sein muss.
+Die beiden letzten Regelenergie-Kategorien werden in aller Regel von Kraftwerken in Teillast oder Kraftwerken mit kurzen Anfahrzeiten
 erzeugt.
 Zuletzt werden einzelne Netzabschnitte vom Netz getrennt um einen Zusammenbruch des Bilanzkreises zu vermeiden.
 Dieses Vorgehen bleibt allerdings die äußerste Maßnahme und soll in aller Regel vermieden werden.
@@ -334,7 +334,7 @@ Lithium-Ionen-Batterien an~\parencite{mantar_gundogdu_battery_2018}.
 
 Beim Prinzip der VSM wird versucht die Frequenzstabilität zu verbessern indem Speicher an das Netz angeschlossen werden
 die im Wesentlichen das Trägheitsverhalten von mechanischen Schwungmassen in Generatoren imitieren.
-Gerade kleiner Inselnetzen welche vor allem durch regenrative Energien betrieben werden könnten hierdurch profitieren.
+Gerade kleiner Inselnetzen welche vor allem durch regenerative Energien betrieben werden könnten hierdurch profitieren.
 Auf Grund des kontinuierlichen Energieaustausches mit dem Netz bieten sich für die Umsetzung von VSM-Anlagen vor allem
 Speicher mit hoher Lebensdauer und Zyklenzahl an~\parencite{boxleitner_virtuelle_2009}.
 
@@ -343,7 +343,7 @@ Speicher mit hoher Lebensdauer und Zyklenzahl an~\parencite{boxleitner_virtuelle
 In Deutschland sind die Übertragungsnetzbetreiber dafür verantwortlich die Frequenz innerhalb ihrer Regelzone auf möglichst
 50 Hz zuhalten.
 Dafür stehen Ihnen die oben genannten Regelreserveprodukte zur Verfügung, welche von unterschiedlichen Teilnehmern
-des Regelreservemartkes bereit gestellt werden können.
+des Regelreservemarktes bereit gestellt werden können.
 Die verschiedenen Übertragungsnetzbetreiber kooperieren dabei im Netzregelverbund, welcher ein Konzept darstellt,
 die Vorhaltung von Regelreserve technisch und wirtschaftlich zu optimieren.
 In Zukunft ist ein solches, stark koordiniertes Vorgehen auch auf zentraleuropäischer Ebene geplant.
@@ -385,7 +385,7 @@ Batteriespeicher und insbesondere Lithium-Ionen-Batterien für eine Auswahl der 
 Im Folgenden sollen verschiedene Methoden zur Umsetzung von FCR- und EFR-Speichern mit Hilfe von Batteriespeichern 
 diskutiert und vorgestellt werden.
 
-Beim Betrieb von Batteriespeichern zur Bereistellung von Regelleistung ist der limitierende Faktor der Kapazitäten zu bedenken.
+Beim Betrieb von Batteriespeichern zur Bereitstellung von Regelleistung ist der limitierende Faktor der Kapazitäten zu bedenken.
 Durch den so genannten State of Charge (SOC) kann ausgedrückt werden, wie viel Prozent ihrer Kapazität einer Batterie noch zur Verfügung stehen.
 Um möglichst zu jedem Zeitpunkt die Anforderungen an die PCR oder EFR erfüllen zu können ist eine intelligente
 SOC-Steuerung daher unerlässlich.
@@ -408,7 +408,7 @@ Der Grundgedanke sieht vor, dass ein Ziel-SOC von z.B. 50 \% festgelegt wird und
 Frequenzabweichung innerhalb der Grenzwerte Leistung ausgetauscht werden kann, um den optimalen SOC zu erreichen.
 Die maximale Leistung die dabei genutzt werden darf, ist in Deutschland beschränkt.
 So darf über 50 Hz keine Leistungsabgabe mehr erfolgen und unter 50 Hz keine Leistungsaufnahme,
-sofern allerdings innerhalb des Totbands dem linearen Verlauf der Leistungskurve gefolgt wird,
+sofern allerdings innerhalb des Totbandes dem linearen Verlauf der Leistungskurve gefolgt wird,
 ist ein Leistungsaustausch zulässig~\parencite[]{marchgraber_modellierung_2019}.
 
 \begin{figure}[h!]
@@ -417,7 +417,7 @@ ist ein Leistungsaustausch zulässig~\parencite[]{marchgraber_modellierung_2019}
     \caption{Flussdiagramm zur Deadband-Strategie aus~\parencite[]{noauthor_soc_nodate}}\label{FlowPCR}
 \end{figure}
 
-Abbildung~\ref{FlowPCR} zeigt ein Flussdiagramm zur Ausnutzung des Totbands.
+Abbildung~\ref{FlowPCR} zeigt ein Flussdiagramm zur Ausnutzung des Totbandes.
 Ein Nachteil dieser Methode bleibt allerdings, dass nur bei geringen Abweichungen der Netzfrequenz und nur mit begrenzter 
 Geschwindigkeit der Ziel-SOC hergestellt werden kann. 
 Eine Überdimensionierung des Speichers, um auch bei längeren Störungen Regelleistung bereitstellen zu können, bleibt
