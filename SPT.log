@@ -1,0 +1,3414 @@
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.10.21)  11 MAR 2024 00:15
+ restricted system commands enabled.
+ file:line:error style messages enabled.
+**c:/Users/user/OneDrive/Dokumente/GitHub/SPT-Doku/SPT
+(c:/Users/user/OneDrive/Dokumente/GitHub/SPT-Doku/SPT.tex
+LaTeX2e <2023-06-01> patch level 1
+L3 programming layer <2023-10-10>
+Lua module: luaotfload 2023-08-31 3.26 Lua based OpenType font support
+Lua module: lualibs 2023-07-13 2.76 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2023-07-13 2.76 ConTeXt Lua libraries -- extended collection.
+luaotfload | conf : Root cache directory is "C:/texlive/2023/texmf-var/luatex-cache/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2023-08-19.lua" from kpse-resolved path "c:/texlive/2023/texmf-dist/tex/luatex/luaotfload/fontloader-2023-08-19.lua".
+Lua-only attribute luaotfload@noligature = 1
+luaotfload | init : Context OpenType loader version 3.133
+Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' in `hpack_filter'.
+Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
+Inserting `luaotfload.define_font' in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 2
+luaotfload | conf : Root cache directory is "C:/texlive/2023/texmf-var/luatex-cache/generic/names".
+Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
+Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
+Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
+Inserting `luaotfload.harf.glyphstream' in `glyph_stream_provider'.
+Inserting `luaotfload.harf.finalize_vlist' in `post_linebreak_filter'.
+Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
+Inserting `luaotfload.cleanup_files' in `wrapup_run'.
+Inserting `luaotfload.harf.finalize_unicode' in `finish_pdffile'.
+Inserting `luaotfload.glyphinfo' in `glyph_info'.
+Lua-only attribute luaotfload.letterspace_done = 3
+Inserting `luaotfload.aux.set_sscale_dimens' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_font_index' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.patch_cambria_domh' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
+Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
+Inserting `tracingstacklevels' in `input_level_string'. (c:/texlive/2023/texmf-dist/tex/latex/koma-script/scrreprt.cls
+Document Class: scrreprt 2023/07/07 v3.41 KOMA-Script document class (report)
+(c:/texlive/2023/texmf-dist/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2023/07/07 v3.41 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
+ (c:/texlive/2023/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2023/07/07 v3.41 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
+ (c:/texlive/2023/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2023/07/07 v3.41 KOMA-Script package (file load hooks)
+ (c:/texlive/2023/texmf-dist/tex/latex/koma-script/scrlfile-hook.sty
+Package: scrlfile-hook 2023/07/07 v3.41 KOMA-Script package (using LaTeX hooks)
+ (c:/texlive/2023/texmf-dist/tex/latex/koma-script/scrlogo.sty
+Package: scrlogo 2023/07/07 v3.41 KOMA-Script package (logo)
+))) (c:/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+Applying: [2021/05/01] Usage of raw or classic option list on input line 252.
+Already applied: [0000/00/00] Usage of raw or classic option list on input line 368.
+)) (c:/texlive/2023/texmf-dist/tex/latex/koma-script/tocbasic.sty
+Package: tocbasic 2023/07/07 v3.41 KOMA-Script package (handling toc-files)
+\scr@dte@tocline@numberwidth=\skip48
+\scr@dte@tocline@numbox=\box51
+)
+Package tocbasic Info: omitting babel extension for `toc'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `toc' on input line 135.
+ (c:/texlive/2023/texmf-dist/tex/latex/base/fleqn.clo
+File: fleqn.clo 2016/12/29 v1.2b Standard LaTeX option (flush left equations)
+\mathindent=\skip49
+Applying: [2015/01/01] Make \[ robust on input line 50.
+LaTeX Info: Redefining \[ on input line 51.
+Already applied: [0000/00/00] Make \[ robust on input line 62.
+Applying: [2015/01/01] Make \] robust on input line 74.
+LaTeX Info: Redefining \] on input line 75.
+Already applied: [0000/00/00] Make \] robust on input line 83.
+)
+Class scrreprt Info: File `scrsize12pt.clo' used to setup font sizes on input line 2688.
+ (c:/texlive/2023/texmf-dist/tex/latex/koma-script/scrsize12pt.clo
+File: scrsize12pt.clo 2023/07/07 v3.41 KOMA-Script font size class option (12pt)
+luaotfload | db : Font names database loaded from C:/texlive/2023/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz) (c:/texlive/2023/texmf-dist/tex/latex/koma-script/typearea.sty
+Package: typearea 2023/07/07 v3.41 KOMA-Script package (type area)
+\ta@bcor=\skip50
+\ta@div=\count183
+\ta@hblk=\skip51
+\ta@vblk=\skip52
+\ta@temp=\skip53
+\footheight=\skip54
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 12
+(typearea)             BCOR = 2.84526pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 445.99701pt
+(typearea)              DIV departure   = -5%
+(typearea)              \evensidemargin = 4.9081pt
+(typearea)              \oddsidemargin  = 4.9081pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 635.5pt
+(typearea)              \topmargin      = -41.72441pt
+(typearea)              \headheight     = 18.125pt
+(typearea)              \headsep        = 21.75pt
+(typearea)              \topskip        = 12.0pt
+(typearea)              \footskip       = 50.75pt
+(typearea)              \baselineskip   = 14.5pt
+(typearea)              on input line 1799.
+)
+\c@part=\count184
+\c@chapter=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\scr@dte@chapter@maxnumwidth=\skip55
+Class scrreprt Info: using compatibility default `afterindent=bysign'
+(scrreprt)           for `\chapter on input line 5994.
+\scr@dte@section@maxnumwidth=\skip56
+Class scrreprt Info: using compatibility default `runin=bysign'
+(scrreprt)           for `\section on input line 6005.
+Class scrreprt Info: using compatibility default `afterindent=bysign'
+(scrreprt)           for `\section on input line 6005.
+\scr@dte@part@maxnumwidth=\skip57
+Class scrreprt Info: using compatibility default `afterindent=true'
+(scrreprt)           for `\part on input line 6014.
+\scr@dte@subsection@maxnumwidth=\skip58
+Class scrreprt Info: using compatibility default `runin=bysign'
+(scrreprt)           for `\subsection on input line 6024.
+Class scrreprt Info: using compatibility default `afterindent=bysign'
+(scrreprt)           for `\subsection on input line 6024.
+\scr@dte@subsubsection@maxnumwidth=\skip59
+Class scrreprt Info: using compatibility default `runin=bysign'
+(scrreprt)           for `\subsubsection on input line 6034.
+Class scrreprt Info: using compatibility default `afterindent=bysign'
+(scrreprt)           for `\subsubsection on input line 6034.
+\scr@dte@paragraph@maxnumwidth=\skip60
+Class scrreprt Info: using compatibility default `runin=bysign'
+(scrreprt)           for `\paragraph on input line 6045.
+Class scrreprt Info: using compatibility default `afterindent=bysign'
+(scrreprt)           for `\paragraph on input line 6045.
+\scr@dte@subparagraph@maxnumwidth=\skip61
+Class scrreprt Info: using compatibility default `runin=bysign'
+(scrreprt)           for `\subparagraph on input line 6055.
+Class scrreprt Info: using compatibility default `afterindent=bysign'
+(scrreprt)           for `\subparagraph on input line 6055.
+\abovecaptionskip=\skip62
+\belowcaptionskip=\skip63
+\c@pti@nb@sid@b@x=\box52
+Package tocbasic Info: omitting babel extension for `lof'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lof' on input line 7240.
+\scr@dte@figure@maxnumwidth=\skip64
+\c@figure=\count191
+Package tocbasic Info: omitting babel extension for `lot'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lot' on input line 7257.
+\scr@dte@table@maxnumwidth=\skip65
+\c@table=\count192
+Class scrreprt Info: Redefining `\numberline' on input line 7428.
+\bibindent=\dimen139
+) (./defs.tex (c:/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+ (c:/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: luatex.def on input line 227.
+ (c:/texlive/2023/texmf-dist/tex/latex/graphics-def/luatex.def
+File: luatex.def 2022/09/22 v1.2d Graphics/color driver for luatex
+) (c:/texlive/2023/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
+ (c:/texlive/2023/texmf-dist/tex/latex/tools/array.sty
+Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen140
+\ar@mcellbox=\box53
+\extrarowheight=\dimen141
+\NC@list=\toks18
+\extratabsurround=\skip66
+\backup@length=\skip67
+\ar@cellbox=\box54
+)
+\everycr=\toks19
+\minrowclearance=\skip68
+\rownum=\count193
+) (c:/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+ (c:/texlive/2023/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+)) (c:/texlive/2023/texmf-dist/tex/latex/siunitx/siunitx.sty
+Package: siunitx 2023-10-07 v3.3.7 A comprehensive (SI) units package
+\l__siunitx_number_uncert_offset_int=\count194
+\l__siunitx_number_exponent_fixed_int=\count195
+\l__siunitx_number_min_decimal_int=\count196
+\l__siunitx_number_min_integer_int=\count197
+\l__siunitx_number_round_precision_int=\count198
+\l__siunitx_number_lower_threshold_int=\count199
+\l__siunitx_number_upper_threshold_int=\count266
+\l__siunitx_number_group_first_int=\count267
+\l__siunitx_number_group_size_int=\count268
+\l__siunitx_number_group_minimum_int=\count269
+\l__siunitx_angle_tmp_dim=\dimen142
+\l__siunitx_angle_marker_box=\box55
+\l__siunitx_angle_unit_box=\box56
+\l__siunitx_compound_count_int=\count270
+ (c:/texlive/2023/texmf-dist/tex/latex/translations/translations.sty
+Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
+ (c:/texlive/2023/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count271
+) (c:/texlive/2023/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (c:/texlive/2023/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (c:/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+) (c:/texlive/2023/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks20
+)) (c:/texlive/2023/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks21
+\ex@=\dimen143
+))
+\l__siunitx_table_tmp_box=\box57
+\l__siunitx_table_tmp_dim=\dimen144
+\l__siunitx_table_column_width_dim=\dimen145
+\l__siunitx_table_integer_box=\box58
+\l__siunitx_table_decimal_box=\box59
+\l__siunitx_table_uncert_box=\box60
+\l__siunitx_table_before_box=\box61
+\l__siunitx_table_after_box=\box62
+\l__siunitx_table_before_dim=\dimen146
+\l__siunitx_table_carry_dim=\dimen147
+\l__siunitx_unit_tmp_int=\count272
+\l__siunitx_unit_position_int=\count273
+\l__siunitx_unit_total_int=\count274
+) (c:/texlive/2023/texmf-dist/tex/latex/pgf-spectra/pgf-spectra.sty
+Package: pgf-spectra 27/04/2023 pgf-spectra v3.0.1
+ (c:/texlive/2023/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/texlive/2023/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks22
+\pgfutil@tempdima=\dimen148
+\pgfutil@tempdimb=\dimen149
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box63
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (c:/texlive/2023/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2023/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (c:/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (c:/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (c:/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: luatex.def on input line 107.
+)
+\Gin@req@height=\dimen150
+\Gin@req@width=\dimen151
+) (c:/texlive/2023/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks23
+\pgfkeys@temptoks=\toks24
+ (c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks25
+))
+\pgf@x=\dimen152
+\pgf@y=\dimen153
+\pgf@xa=\dimen154
+\pgf@ya=\dimen155
+\pgf@xb=\dimen156
+\pgf@yb=\dimen157
+\pgf@xc=\dimen158
+\pgf@yc=\dimen159
+\pgf@xd=\dimen160
+\pgf@yd=\dimen161
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count275
+\c@pgf@countb=\count276
+\c@pgf@countc=\count277
+\c@pgf@countd=\count278
+\t@pgf@toka=\toks26
+\t@pgf@tokb=\toks27
+\t@pgf@tokc=\toks28
+\pgf@sys@id@count=\count279
+ (c:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-luatex.def
+ (c:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-luatex.def
+File: pgfsys-luatex.def 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+))) (c:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count280
+\pgfsyssoftpath@bigbuffer@items=\count281
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen162
+\pgfmath@count=\count282
+\pgfmath@box=\box64
+\pgfmath@toks=\toks29
+\pgfmath@stack@operand=\toks30
+\pgfmath@stack@operation=\toks31
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count283
+)) (c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen163
+\pgf@picmaxx=\dimen164
+\pgf@picminy=\dimen165
+\pgf@picmaxy=\dimen166
+\pgf@pathminx=\dimen167
+\pgf@pathmaxx=\dimen168
+\pgf@pathminy=\dimen169
+\pgf@pathmaxy=\dimen170
+\pgf@xx=\dimen171
+\pgf@xy=\dimen172
+\pgf@yx=\dimen173
+\pgf@yy=\dimen174
+\pgf@zx=\dimen175
+\pgf@zy=\dimen176
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen177
+\pgf@path@lasty=\dimen178
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen179
+\pgf@shorten@start@additional=\dimen180
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box65
+\pgf@hbox=\box66
+\pgf@layerbox@main=\box67
+\pgf@picture@serial@count=\count284
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen181
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen182
+\pgf@pt@y=\dimen183
+\pgf@pt@temp=\dimen184
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen185
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen186
+\pgf@sys@shading@range@num=\count285
+\pgf@shadingcount=\count286
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box68
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (c:/texlive/2023/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box69
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2023/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen187
+\pgf@nodesepend=\dimen188
+) (c:/texlive/2023/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (c:/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/texlive/2023/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen189
+\pgffor@skip=\dimen190
+\pgffor@stack=\toks32
+\pgffor@toks=\toks33
+)) (c:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count287
+\pgfplotmarksize=\dimen191
+)
+\tikz@lastx=\dimen192
+\tikz@lasty=\dimen193
+\tikz@lastxsaved=\dimen194
+\tikz@lastysaved=\dimen195
+\tikz@lastmovetox=\dimen196
+\tikz@lastmovetoy=\dimen197
+\tikzleveldistance=\dimen198
+\tikzsiblingdistance=\dimen199
+\tikz@figbox=\box70
+\tikz@figbox@bg=\box71
+\tikz@tempbox=\box72
+\tikz@tempbox@bg=\box73
+\tikztreelevel=\count288
+\tikznumberofchildren=\count289
+\tikznumberofcurrentchild=\count290
+\tikz@fig@count=\count291
+ (c:/texlive/2023/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count292
+\pgfmatrixcurrentcolumn=\count293
+\pgf@matrix@numberofcolumns=\count294
+)
+\tikz@expandcount=\count295
+ (c:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (c:/texlive/2023/texmf-dist/tex/latex/pgf-spectra/pgf-spectra.data.NIST.tex) (c:/texlive/2023/texmf-dist/tex/latex/pgf-spectra/pgf-spectra.input.library.tex)
+\pgfspectra@counta=\count296
+\pgfspectra@countb=\count297
+\pgfspectra@countc=\count298
+\pgfspectra@countd=\count299
+\pgfspectrawl=\dimen256
+\pgfspectra@i=\dimen257
+\@pgfspectra@gamma=\dimen258
+\wlc@lorr=\dimen259
+\wlc@lorg=\dimen260
+\wlc@lorb=\dimen261
+) (c:/texlive/2023/texmf-dist/tex/latex/pgfplots/pgfplots.sty (c:/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
+ (c:/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex (c:/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+Package pgfplots info on input line 124: Initializing with LUA version Lua 5.3
+\pgfplots@luabackend@table=\catcodetable14
+\t@pgfplots@toka=\toks34
+\t@pgfplots@tokb=\toks35
+\t@pgfplots@tokc=\toks36
+\pgfplots@tmpa=\dimen262
+\c@pgfplots@coordindex=\count300
+\c@pgfplots@scanlineindex=\count301
+ (c:/texlive/2023/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex)) (c:/texlive/2023/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex (c:/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)
+Package pgfplots: loading complementary utilities for your pgf version...
+\t@pgf@toka=\toks37
+\t@pgf@tokb=\toks38
+\t@pgf@tokc=\toks39
+(c:/texlive/2023/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfutil-common-lists.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgf/libraries/luamath/pgflibraryluamath.code.tex)
+Package pgfplots info on input line 290: luamath library shipped with pgf 3.1.10 is up-to-date
+) (c:/texlive/2023/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
+Package pgfplots info on input line 82: Found new luatex: initializing lua commands instead of write18 (shell-escape)
+ (c:/texlive/2023/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count302
+) (c:/texlive/2023/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
+\c@pgfplotstable@counta=\count303
+\t@pgfplotstable@a=\toks40
+) (c:/texlive/2023/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex (c:/texlive/2023/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)) (c:/texlive/2023/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count304
+ (c:/texlive/2023/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-luatex.def))) (c:/texlive/2023/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex (c:/texlive/2023/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex)) (c:/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex (c:/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex (c:/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex))) (c:/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex) (c:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (c:/texlive/2023/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen263
+\pgfdecoratedremainingdistance=\dimen264
+\pgfdecoratedinputsegmentcompleteddistance=\dimen265
+\pgfdecoratedinputsegmentremainingdistance=\dimen266
+\pgf@decorate@distancetomove=\dimen267
+\pgf@decorate@repeatstate=\count305
+\pgfdecorationsegmentamplitude=\dimen268
+\pgfdecorationsegmentlength=\dimen269
+)
+\tikz@lib@dec@box=\box74
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (c:/texlive/2023/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (c:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (c:/texlive/2023/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (c:/texlive/2023/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua.code.tex)
+\pgfplots@numplots=\count306
+\pgfplots@xmin@reg=\dimen270
+\pgfplots@xmax@reg=\dimen271
+\pgfplots@ymin@reg=\dimen272
+\pgfplots@ymax@reg=\dimen273
+\pgfplots@zmin@reg=\dimen274
+\pgfplots@zmax@reg=\dimen275
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+\figureheight=\skip69
+\figurewidth=\skip70
+ (c:/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowinset=\dimen276
+\pgfarrowlength=\dimen277
+\pgfarrowwidth=\dimen278
+\pgfarrowlinewidth=\dimen279
+) (c:/texlive/2023/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.patchplots.code.tex) (c:/texlive/2023/texmf-dist/tex/latex/grffile/grffile.sty
+Package: grffile 2019/11/11 v2.1 Extended file name support for graphics (legacy)
+Package grffile Info: This package is an empty stub for compatibility on input line 40.
+) (c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip71
+
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen280
+) (c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count307
+LaTeX Info: Redefining \frac on input line 236.
+\uproot@=\count308
+\leftroot@=\count309
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count310
+\DOTSCASE@=\count311
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box75
+\strutbox@=\box76
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen281
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count312
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count313
+\dotsspace@=\muskip16
+\c@parentequation=\count314
+\dspbrk@lvl=\count315
+\tag@help=\toks41
+\row@=\count316
+\column@=\count317
+\maxfields@=\count318
+\andhelp@=\toks42
+\eqnshift@=\dimen282
+\alignsep@=\dimen283
+\tagshift@=\dimen284
+\tagwidth@=\dimen285
+\totwidth@=\dimen286
+\lineht@=\dimen287
+\@envbody=\toks43
+\multlinegap=\skip72
+\multlinetaggap=\skip73
+\mathdisplay@stack=\toks44
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+) (c:/texlive/2023/texmf-dist/tex/latex/matlab-prettifier/matlab-prettifier.sty
+Package: matlab-prettifier 2014/06/19 v0.3 A package for prettyprinting Matlab source code
+ (c:/texlive/2023/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+) (c:/texlive/2023/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count319
+\lst@gtempboxa=\box77
+\lst@token=\toks45
+\lst@length=\count320
+\lst@currlwidth=\dimen288
+\lst@column=\count321
+\lst@pos=\count322
+\lst@lostspace=\dimen289
+\lst@width=\dimen290
+\lst@newlines=\count323
+\lst@lineno=\count324
+\lst@maxwidth=\dimen291
+ (c:/texlive/2023/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+\c@lstnumber=\count325
+\lst@skipnumbers=\count326
+\lst@framebox=\box78
+) (c:/texlive/2023/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2023/02/27 1.9 listings configuration
+))
+Package: listings 2023/02/27 1.9 (Carsten Heinz)
+\netBracketCount@mlpr=\count327
+\blkLvl@mlpr=\count328
+\blkLvlAtClassdef@mlpr=\count329
+\emHeight@mlpr=\skip74
+\jayDepth@mlpr=\skip75
+\sectionRuleOffset@mlpr=\skip76
+\toks@mlpr=\toks46
+) (c:/texlive/2023/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count330
+\float@exts=\toks47
+\float@box=\box79
+\@float@everytoks=\toks48
+\@floatcapt=\box80
+) (c:/texlive/2023/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+ (c:/texlive/2023/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (c:/texlive/2023/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen292
+\captionmargin=\dimen293
+\caption@leftmargin=\dimen294
+\caption@rightmargin=\dimen295
+\caption@width=\dimen296
+\caption@indent=\dimen297
+\caption@parindent=\dimen298
+\caption@hangindent=\dimen299
+Package caption Info: KOMA-Script document class detected.
+ (c:/texlive/2023/texmf-dist/tex/latex/caption/caption-koma.sto
+File: caption-koma.sto 2023/09/08 v2.0e Adaption of the caption package to the KOMA-Script document classes (AR)
+))
+\c@caption@flags=\count331
+\c@continuedfloat=\count332
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: KOMA-Script scrextend package detected.
+\caption@addmargin@hsize=\dimen300
+\caption@addmargin@linewidth=\dimen301
+)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count333
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count334
+) (c:/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+) (c:/texlive/2023/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (c:/texlive/2023/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count335
+\Gm@cntv=\count336
+\c@Gm@tempcnt=\count337
+\Gm@bindingoffset=\dimen302
+\Gm@wd@mp=\dimen303
+\Gm@odd@mp=\dimen304
+\Gm@even@mp=\dimen305
+\Gm@layoutwidth=\dimen306
+\Gm@layoutheight=\dimen307
+\Gm@layouthoffset=\dimen308
+\Gm@layoutvoffset=\dimen309
+\Gm@dimlist=\toks49
+) (c:/texlive/2023/texmf-dist/tex/latex/fontspec/fontspec.sty (c:/texlive/2023/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (c:/texlive/2023/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2023-10-10 L3 programming layer (loader) 
+ (c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-luatex.def
+File: l3backend-luatex.def 2023-10-10 L3 backend support: PDF output (LuaTeX)
+\l__color_backend_stack_int=\count338
+Inserting `l3color' in `luaotfload.parse_color'.
+\l__pdf_internal_box=\box81
+))
+Package: xparse 2023-10-10 L3 Experimental document command parser
+)
+Package: fontspec 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
+Lua module: fontspec 2022/01/15 2.8a Font selection for XeLaTeX and LuaLaTeX (c:/texlive/2023/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
+Package: fontspec-luatex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
+\l__fontspec_script_int=\count339
+\l__fontspec_language_int=\count340
+\l__fontspec_strnum_int=\count341
+\l__fontspec_tmp_int=\count342
+\l__fontspec_tmpa_int=\count343
+\l__fontspec_tmpb_int=\count344
+\l__fontspec_tmpc_int=\count345
+\l__fontspec_em_int=\count346
+\l__fontspec_emdef_int=\count347
+\l__fontspec_strong_int=\count348
+\l__fontspec_strongdef_int=\count349
+\l__fontspec_tmpa_dim=\dimen310
+\l__fontspec_tmpb_dim=\dimen311
+\l__fontspec_tmpc_dim=\dimen312
+ (c:/texlive/2023/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+) (c:/texlive/2023/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (c:/texlive/2023/texmf-dist/tex/latex/mwe/mwe.sty
+Package: mwe 2018/03/30 v0.5 Package to support minimal working examples (MWE)
+ (c:/texlive/2023/texmf-dist/tex/latex/lipsum/lipsum.sty (c:/texlive/2023/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2023-10-10 LaTeX2e option processing using LaTeX3 keys
+)
+Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
+\g__lipsum_par_int=\count350
+\l__lipsum_a_int=\count351
+\l__lipsum_b_int=\count352
+ (c:/texlive/2023/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex)) (c:/texlive/2023/texmf-dist/tex/latex/blindtext/blindtext.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+ (c:/texlive/2023/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count353
+\c@Blindtext=\count354
+\c@blind@countparstart=\count355
+\blind@countxx=\count356
+\blindtext@numBlindtext=\count357
+\blind@countyy=\count358
+\c@blindlist=\count359
+\c@blindlistlevel=\count360
+\c@blindlist@level=\count361
+\blind@listitem=\count362
+\c@blind@listcount=\count363
+\c@blind@levelcount=\count364
+\blind@mathformula=\count365
+\blind@Mathformula=\count366
+\c@blind@randomcount=\count367
+\c@blind@randommax=\count368
+\c@blind@pangramcount=\count369
+\c@blind@pangrammax=\count370
+)) (c:/texlive/2023/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2023/09/29 v3.95 The Babel package
+ (c:/texlive/2023/texmf-dist/tex/generic/babel/luababel.def
+\bbl@readstream=\read3
+\l@dumylang=\language2
+Package babel Info: Non-standard hyphenation setup on input line 118.
+\l@nohyphenation=\language3
+\l@vietnamese=\language4
+\l@hebrew=\language5
+\l@german-x-2023-03-06=\language6
+\l@ngerman-x-2023-03-06=\language7
+\l@afrikaans=\language8
+\l@ancientgreek=\language9
+\l@ibycus=\language10
+\l@arabic=\language11
+\l@armenian=\language12
+\l@basque=\language13
+\l@belarusian=\language14
+\l@bulgarian=\language15
+\l@catalan=\language16
+\l@pinyin=\language17
+\l@churchslavonic=\language18
+\l@coptic=\language19
+\l@croatian=\language20
+\l@czech=\language21
+\l@danish=\language22
+\l@dutch=\language23
+\l@ukenglish=\language24
+\l@usenglishmax=\language25
+\l@esperanto=\language26
+\l@estonian=\language27
+\l@ethiopic=\language28
+\l@farsi=\language29
+\l@finnish=\language30
+\l@schoolfinnish=\language31
+\l@french=\language32
+\l@friulan=\language33
+\l@galician=\language34
+\l@georgian=\language35
+\l@german=\language36
+\l@ngerman=\language37
+\l@swissgerman=\language38
+\l@greek=\language39
+\l@monogreek=\language40
+\l@hungarian=\language41
+\l@icelandic=\language42
+\l@assamese=\language43
+\l@bengali=\language44
+\l@gujarati=\language45
+\l@hindi=\language46
+\l@kannada=\language47
+\l@malayalam=\language48
+\l@marathi=\language49
+\l@oriya=\language50
+\l@pali=\language51
+\l@panjabi=\language52
+\l@tamil=\language53
+\l@telugu=\language54
+\l@indonesian=\language55
+\l@interlingua=\language56
+\l@irish=\language57
+\l@italian=\language58
+\l@kurmanji=\language59
+\l@classiclatin=\language60
+\l@latin=\language61
+\l@liturgicallatin=\language62
+\l@latvian=\language63
+\l@lithuanian=\language64
+\l@macedonian=\language65
+\l@mongolian=\language66
+\l@mongolianlmc=\language67
+\l@bokmal=\language68
+\l@nynorsk=\language69
+\l@occitan=\language70
+\l@piedmontese=\language71
+\l@polish=\language72
+\l@portuguese=\language73
+\l@romanian=\language74
+\l@romansh=\language75
+\l@russian=\language76
+\l@sanskrit=\language77
+\l@serbian=\language78
+\l@serbianc=\language79
+\l@slovak=\language80
+\l@slovenian=\language81
+\l@spanish=\language82
+\l@swedish=\language83
+\l@thai=\language84
+\l@turkish=\language85
+\l@turkmen=\language86
+\l@ukrainian=\language87
+\l@uppersorbian=\language88
+\l@welsh=\language89
+\babelcatcodetablenum=\catcodetable15
+\bbl@pattcodes=\catcodetable16
+)
+\babel@savecnt=\count371
+\U@D=\dimen313
+\l@unhyphenated=\language90
+ (c:/texlive/2023/texmf-dist/tex/generic/babel/luababel.def
+\bbl@attr@locale=\attribute4
+) (c:/texlive/2023/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language24). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language24). Reported on input line 108.
+) (c:/texlive/2023/texmf-dist/tex/generic/babel-german/ngerman.ldf
+Language: ngerman 2021/02/27 v2.13 German support for babel (post-1996 orthography)
+ (c:/texlive/2023/texmf-dist/tex/generic/babel-german/ngermanb.ldf
+Language: ngermanb 2021/02/27 v2.13 German support for babel (post-1996 orthography)
+Package babel Info: Making " an active character on input line 122.
+ (c:/texlive/2023/texmf-dist/tex/generic/hyph-utf8/loadhyph/loadhyph-de-1996.tex UTF-8 German hyphenation patterns (reformed orthography) (c:/texlive/2023/texmf-dist/tex/generic/hyph-utf8/patterns/tex/hyph-de-1996.tex German Hyphenation Patterns (Reformed Orthography, 2006) `dehyphn-x' 2021-02-26 (WL)))))) (c:/texlive/2023/texmf-dist/tex/generic/babel/locale/de/babel-ngerman.tex
+Package babel Info: Importing font and identification data for ngerman
+(babel)             from babel-de.ini. Reported on input line 11.
+) (c:/texlive/2023/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
+Package babel Info: Importing font and identification data for english
+(babel)             from babel-en.ini. Reported on input line 11.
+) (c:/texlive/2023/texmf-dist/tex/generic/babel/locale/de/babel-ngerman.tex
+Package babel Info: Importing basic data for ngerman
+(babel)             from babel-de.ini. Reported on input line 11.
+) (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (c:/texlive/2023/texmf-dist/tex/latex/trfsigns/trfsigns.sty
+Package: trfsigns 
+) (c:/texlive/2023/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
+ (c:/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count372
+\calc@Bcount=\count373
+\calc@Adimen=\dimen314
+\calc@Bdimen=\dimen315
+\calc@Askip=\skip77
+\calc@Bskip=\skip78
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count374
+\calc@Cskip=\skip79
+) (c:/texlive/2023/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+\g_MT_multlinerow_int=\count375
+\l_MT_multwidth_dim=\dimen316
+\origjot=\skip80
+\l_MT_shortvdotswithinadjustabove_dim=\dimen317
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen318
+\l_MT_above_intertext_sep=\dimen319
+\l_MT_below_intertext_sep=\dimen320
+\l_MT_above_shortintertext_sep=\dimen321
+\l_MT_below_shortintertext_sep=\dimen322
+\xmathstrut@box=\box82
+\xmathstrut@dim=\dimen323
+) (c:/texlive/2023/texmf-dist/tex/latex/libertinus-otf/libertinus-otf.sty
+Package: libertinus-otf 2023/09/21 v. 0.32 (Herbert Voss) Supports libertinus fonts for lualatex and xelatex.
+ (c:/texlive/2023/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+) (c:/texlive/2023/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+) (c:/texlive/2023/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+ (c:/texlive/2023/texmf-dist/tex/generic/xkeyval/xkeyval.tex (c:/texlive/2023/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks50
+\XKV@tempa@toks=\toks51
+)
+\XKV@depth=\count376
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (c:/texlive/2023/texmf-dist/tex/latex/unicode-math/unicode-math.sty
+Package: unicode-math 2023/08/13 v0.8r Unicode maths in XeLaTeX and LuaLaTeX
+ (c:/texlive/2023/texmf-dist/tex/latex/unicode-math/unicode-math-luatex.sty
+Package: unicode-math-luatex 2023/08/13 v0.8r Unicode maths in XeLaTeX and LuaLaTeX
+ (c:/texlive/2023/texmf-dist/tex/latex/base/fix-cm.sty
+Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
+ (c:/texlive/2023/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
+)) (c:/texlive/2023/texmf-dist/tex/lualatex/lualatex-math/lualatex-math.sty
+Package: lualatex-math 2022/01/01 v1.12 Patches for mathematics typesetting with LuaLaTeX
+Lua module: lualatex-math 2013/08/03 1.3 Patches for mathematics typesetting with LuaLaTeX)
+\g__um_fam_int=\count377
+\g__um_fonts_used_int=\count378
+\l__um_primecount_int=\count379
+\g__um_primekern_muskip=\muskip17
+ (c:/texlive/2023/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex)))
+
+Package fontspec Info: Font family 'LibertinusSerif(0)' created for font
+(fontspec)             'LibertinusSerif' with options [Ligatures =
+(fontspec)             TeX,SmallCapsFeatures={Letters=SmallCaps},RawFeature={+hv-kern},RawFeature
+(fontspec)             = {+tnum;+lnum},Scale = 1,UprightFont =
+(fontspec)             *-Regular,ItalicFont = *-Italic,ItalicFeatures = {
+(fontspec)             SmallCapsFont = *-Italic },SlantedFont =
+(fontspec)             *-Regular,SlantedFeatures= {FakeSlant=0.2},BoldFont =
+(fontspec)             *-Bold,BoldFeatures = { SmallCapsFont =
+(fontspec)             *-Bold},BoldItalicFont =
+(fontspec)             *-BoldItalic,BoldItalicFeatures = { SmallCapsFont =
+(fontspec)             *-BoldItalic },BoldSlantedFont=
+(fontspec)             *-Bold,BoldSlantedFeatures= {FakeSlant=0.2,
+(fontspec)             SmallCapsFont = *-Bold},SmallCapsFont =
+(fontspec)             *-Regular,SmallCapsFeatures={Letters=SmallCaps},Extension
+(fontspec)             = .otf].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Regular.otf]:mode=node;script=latn;language=dflt;+tlig;+hv-kern;+tnum;+lnum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Regular.otf]:mode=node;script=latn;language=dflt;+tlig;+hv-kern;+tnum;+lnum;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Bold.otf]:mode=node;script=latn;language=dflt;+tlig;+hv-kern;+tnum;+lnum;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Bold.otf]:mode=node;script=latn;language=dflt;+tlig;+hv-kern;+tnum;+lnum;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Italic.otf]:mode=node;script=latn;language=dflt;+tlig;+hv-kern;+tnum;+lnum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Italic.otf]:mode=node;script=latn;language=dflt;+tlig;+hv-kern;+tnum;+lnum;+smcp;"
+(fontspec)             - 'slanted' (m/sl) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Regular.otf]:mode=node;script=latn;language=dflt;slant=0.2;+tlig;+hv-kern;+tnum;+lnum;"
+(fontspec)             - 'slanted small caps'  (m/scsl) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Regular.otf]:mode=node;script=latn;language=dflt;slant=0.2;+tlig;+hv-kern;+tnum;+lnum;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-BoldItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+hv-kern;+tnum;+lnum;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-BoldItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+hv-kern;+tnum;+lnum;+smcp;"
+(fontspec)             - 'bold slanted' (b/sl) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Bold.otf]:mode=node;script=latn;language=dflt;slant=0.2;+tlig;+hv-kern;+tnum;+lnum;"
+(fontspec)             - 'bold slanted small caps'  (b/scsl) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Bold.otf]:mode=node;script=latn;language=dflt;slant=0.2;+tlig;+hv-kern;+tnum;+lnum;+smcp;"
+
+
+Package fontspec Info: Font family 'LibertinusSerif(1)' created for font
+(fontspec)             'LibertinusSerif' with options
+(fontspec)             [Renderer=Basic,RawFeature = {+tnum;+lnum},Scale =
+(fontspec)             1,UprightFont = *-Regular,ItalicFont =
+(fontspec)             *-Italic,ItalicFeatures = { SmallCapsFont = *-Italic
+(fontspec)             },SlantedFont = *-Regular,SlantedFeatures=
+(fontspec)             {FakeSlant=0.2},BoldFont = *-Bold,BoldFeatures = {
+(fontspec)             SmallCapsFont = *-Bold},BoldItalicFont =
+(fontspec)             *-BoldItalic,BoldItalicFeatures = { SmallCapsFont =
+(fontspec)             *-BoldItalic },BoldSlantedFont=
+(fontspec)             *-Bold,BoldSlantedFeatures= {FakeSlant=0.2,
+(fontspec)             SmallCapsFont = *-Bold},SmallCapsFont =
+(fontspec)             *-Regular,SmallCapsFeatures={Letters=SmallCaps},Extension
+(fontspec)             = .otf].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Regular.otf]:mode=base;script=latn;language=dflt;+tnum;+lnum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Regular.otf]:mode=base;script=latn;language=dflt;+tnum;+lnum;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Bold.otf]:mode=base;script=latn;language=dflt;+tnum;+lnum;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Bold.otf]:mode=base;script=latn;language=dflt;+tnum;+lnum;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Italic.otf]:mode=base;script=latn;language=dflt;+tnum;+lnum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Italic.otf]:mode=base;script=latn;language=dflt;+tnum;+lnum;+smcp;"
+(fontspec)             - 'slanted' (m/sl) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Regular.otf]:mode=base;script=latn;language=dflt;slant=0.2;+tnum;+lnum;"
+(fontspec)             - 'slanted small caps'  (m/scsl) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Regular.otf]:mode=base;script=latn;language=dflt;slant=0.2;+tnum;+lnum;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-BoldItalic.otf]:mode=base;script=latn;language=dflt;+tnum;+lnum;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-BoldItalic.otf]:mode=base;script=latn;language=dflt;+tnum;+lnum;+smcp;"
+(fontspec)             - 'bold slanted' (b/sl) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Bold.otf]:mode=base;script=latn;language=dflt;slant=0.2;+tnum;+lnum;"
+(fontspec)             - 'bold slanted small caps'  (b/scsl) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Bold.otf]:mode=base;script=latn;language=dflt;slant=0.2;+tnum;+lnum;+smcp;"
+
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/LibertinusSerif(1)/m/n on input line 232.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/LibertinusSerif(1)/m/it on input line 232.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/LibertinusSerif(1)/b/n on input line 232.
+LaTeX Font Info:    Font shape `TU/LibertinusSerif(0)/m/n' will be
+(Font)              scaled to size 12.0pt on input line 232.
+
+Package fontspec Info: Font family 'LibertinusSerif(2)' created for font
+(fontspec)             'LibertinusSerif' with options [RawFeature =
+(fontspec)             {+tnum;+lnum},Scale = 1,UprightFont =
+(fontspec)             *-Regular,ItalicFont = *-Italic,ItalicFeatures = {
+(fontspec)             SmallCapsFont = *-Italic },SlantedFont =
+(fontspec)             *-Regular,SlantedFeatures= {FakeSlant=0.2},BoldFont =
+(fontspec)             *-Semibold,BoldFeatures = { SmallCapsFont = *-Semibold
+(fontspec)             },BoldItalicFont = *-SemiboldItalic,BoldItalicFeatures
+(fontspec)             = { SmallCapsFont = *-SemiboldItalic },BoldSlantedFont=
+(fontspec)             *-Semibold,BoldSlantedFeatures = {FakeSlant=0.2,
+(fontspec)             SmallCapsFont = *-Semibold },SmallCapsFont =
+(fontspec)             *-Regular,SmallCapsFeatures={Letters=SmallCaps},Extension
+(fontspec)             = .otf].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Regular.otf]:mode=node;script=latn;language=dflt;+tnum;+lnum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Regular.otf]:mode=node;script=latn;language=dflt;+tnum;+lnum;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Semibold.otf]:mode=node;script=latn;language=dflt;+tnum;+lnum;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Semibold.otf]:mode=node;script=latn;language=dflt;+tnum;+lnum;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Italic.otf]:mode=node;script=latn;language=dflt;+tnum;+lnum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Italic.otf]:mode=node;script=latn;language=dflt;+tnum;+lnum;+smcp;"
+(fontspec)             - 'slanted' (m/sl) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Regular.otf]:mode=node;script=latn;language=dflt;slant=0.2;+tnum;+lnum;"
+(fontspec)             - 'slanted small caps'  (m/scsl) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Regular.otf]:mode=node;script=latn;language=dflt;slant=0.2;+tnum;+lnum;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-SemiboldItalic.otf]:mode=node;script=latn;language=dflt;+tnum;+lnum;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-SemiboldItalic.otf]:mode=node;script=latn;language=dflt;+tnum;+lnum;+smcp;"
+(fontspec)             - 'bold slanted' (b/sl) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Semibold.otf]:mode=node;script=latn;language=dflt;slant=0.2;+tnum;+lnum;"
+(fontspec)             - 'bold slanted small caps'  (b/scsl) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Semibold.otf]:mode=node;script=latn;language=dflt;slant=0.2;+tnum;+lnum;+smcp;"
+
+
+Package fontspec Info: Font family 'LibertinusSerif(3)' created for font
+(fontspec)             'LibertinusSerif' with options [RawFeature =
+(fontspec)             {+onum},Scale = 1,UprightFont = *-Regular,ItalicFont =
+(fontspec)             *-Italic,ItalicFeatures = { SmallCapsFont = *-Italic
+(fontspec)             },SlantedFont = *-Regular,SlantedFeatures=
+(fontspec)             {FakeSlant=0.2},BoldFont = *-Bold,BoldFeatures = {
+(fontspec)             SmallCapsFont = *-Bold},BoldItalicFont =
+(fontspec)             *-BoldItalic,BoldItalicFeatures = { SmallCapsFont =
+(fontspec)             *-BoldItalic },BoldSlantedFont=
+(fontspec)             *-Bold,BoldSlantedFeatures = {FakeSlant=0.2,
+(fontspec)             SmallCapsFont = *-Bold},SmallCapsFont =
+(fontspec)             *-Regular,SmallCapsFeatures={Letters=SmallCaps},Extension
+(fontspec)             = .otf].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Regular.otf]:mode=node;script=latn;language=dflt;+onum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Regular.otf]:mode=node;script=latn;language=dflt;+onum;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Bold.otf]:mode=node;script=latn;language=dflt;+onum;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Bold.otf]:mode=node;script=latn;language=dflt;+onum;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Italic.otf]:mode=node;script=latn;language=dflt;+onum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Italic.otf]:mode=node;script=latn;language=dflt;+onum;+smcp;"
+(fontspec)             - 'slanted' (m/sl) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Regular.otf]:mode=node;script=latn;language=dflt;slant=0.2;+onum;"
+(fontspec)             - 'slanted small caps'  (m/scsl) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Regular.otf]:mode=node;script=latn;language=dflt;slant=0.2;+onum;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-BoldItalic.otf]:mode=node;script=latn;language=dflt;+onum;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-BoldItalic.otf]:mode=node;script=latn;language=dflt;+onum;+smcp;"
+(fontspec)             - 'bold slanted' (b/sl) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Bold.otf]:mode=node;script=latn;language=dflt;slant=0.2;+onum;"
+(fontspec)             - 'bold slanted small caps'  (b/scsl) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Bold.otf]:mode=node;script=latn;language=dflt;slant=0.2;+onum;+smcp;"
+
+
+Package fontspec Info: Font family 'LibertinusSerif(4)' created for font
+(fontspec)             'LibertinusSerif' with options [RawFeature =
+(fontspec)             {+tnum;-onum},Scale = 1,UprightFont =
+(fontspec)             *-Regular,ItalicFont = *-Italic,ItalicFeatures = {
+(fontspec)             SmallCapsFont = *-Italic },SlantedFont =
+(fontspec)             *-Regular,SlantedFeatures= {FakeSlant=0.2},BoldFont =
+(fontspec)             *-Bold,BoldFeatures = { SmallCapsFont =
+(fontspec)             *-Bold},BoldItalicFont =
+(fontspec)             *-BoldItalic,BoldItalicFeatures = { SmallCapsFont =
+(fontspec)             *-BoldItalic },BoldSlantedFont=
+(fontspec)             *-Bold,BoldSlantedFeatures = {FakeSlant=0.2,
+(fontspec)             SmallCapsFont = *-Bold},SmallCapsFont =
+(fontspec)             *-Regular,SmallCapsFeatures={Letters=SmallCaps},Extension
+(fontspec)             = .otf].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Regular.otf]:mode=node;script=latn;language=dflt;+tnum;-onum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Regular.otf]:mode=node;script=latn;language=dflt;+tnum;-onum;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Bold.otf]:mode=node;script=latn;language=dflt;+tnum;-onum;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Bold.otf]:mode=node;script=latn;language=dflt;+tnum;-onum;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Italic.otf]:mode=node;script=latn;language=dflt;+tnum;-onum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Italic.otf]:mode=node;script=latn;language=dflt;+tnum;-onum;+smcp;"
+(fontspec)             - 'slanted' (m/sl) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Regular.otf]:mode=node;script=latn;language=dflt;slant=0.2;+tnum;-onum;"
+(fontspec)             - 'slanted small caps'  (m/scsl) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Regular.otf]:mode=node;script=latn;language=dflt;slant=0.2;+tnum;-onum;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-BoldItalic.otf]:mode=node;script=latn;language=dflt;+tnum;-onum;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-BoldItalic.otf]:mode=node;script=latn;language=dflt;+tnum;-onum;+smcp;"
+(fontspec)             - 'bold slanted' (b/sl) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Bold.otf]:mode=node;script=latn;language=dflt;slant=0.2;+tnum;-onum;"
+(fontspec)             - 'bold slanted small caps'  (b/scsl) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSerif-Bold.otf]:mode=node;script=latn;language=dflt;slant=0.2;+tnum;-onum;+smcp;"
+
+
+Package fontspec Info: Font family 'LibertinusSans(0)' created for font
+(fontspec)             'LibertinusSans' with options [Ligatures =
+(fontspec)             TeX,SmallCapsFeatures={Letters=SmallCaps},RawFeature={+hv-kern},Extension
+(fontspec)             = .otf,RawFeature = {+tnum;+lnum},Scale = 1,UprightFont
+(fontspec)             = *-Regular,ItalicFont = *-Italic,ItalicFeatures = {
+(fontspec)             SmallCapsFont = *-Italic },SlantedFont =
+(fontspec)             *-Regular,SlantedFeatures= {FakeSlant=0.2},BoldFont =
+(fontspec)             *-Bold,BoldFeatures = { SmallCapsFont = *-Bold
+(fontspec)             },BoldItalicFont = *-Italic,BoldItalicFeatures =
+(fontspec)             {RawFeature={embolden=3},SmallCapsFont = *-Italic
+(fontspec)             },BoldSlantedFont= *-Bold,BoldSlantedFeatures =
+(fontspec)             {FakeSlant=0.2, SmallCapsFont = *-Bold },SmallCapsFont
+(fontspec)             = *-Regular,SmallCapsFeatures={Letters=SmallCaps}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Regular.otf]:mode=node;script=latn;language=dflt;+tlig;+hv-kern;+tnum;+lnum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Regular.otf]:mode=node;script=latn;language=dflt;+tlig;+hv-kern;+tnum;+lnum;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Bold.otf]:mode=node;script=latn;language=dflt;+tlig;+hv-kern;+tnum;+lnum;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Bold.otf]:mode=node;script=latn;language=dflt;+tlig;+hv-kern;+tnum;+lnum;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Italic.otf]:mode=node;script=latn;language=dflt;+tlig;+hv-kern;+tnum;+lnum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Italic.otf]:mode=node;script=latn;language=dflt;+tlig;+hv-kern;+tnum;+lnum;+smcp;"
+(fontspec)             - 'slanted' (m/sl) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Regular.otf]:mode=node;script=latn;language=dflt;slant=0.2;+tlig;+hv-kern;+tnum;+lnum;"
+(fontspec)             - 'slanted small caps'  (m/scsl) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Regular.otf]:mode=node;script=latn;language=dflt;slant=0.2;+tlig;+hv-kern;+tnum;+lnum;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Italic.otf]:mode=node;script=latn;language=dflt;+tlig;+hv-kern;+tnum;+lnum;embolden=3;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Italic.otf]:mode=node;script=latn;language=dflt;+tlig;+hv-kern;+tnum;+lnum;embolden=3;+smcp;"
+(fontspec)             - 'bold slanted' (b/sl) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Bold.otf]:mode=node;script=latn;language=dflt;slant=0.2;+tlig;+hv-kern;+tnum;+lnum;"
+(fontspec)             - 'bold slanted small caps'  (b/scsl) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Bold.otf]:mode=node;script=latn;language=dflt;slant=0.2;+tlig;+hv-kern;+tnum;+lnum;+smcp;"
+
+
+Package fontspec Info: Font family 'LibertinusSans(1)' created for font
+(fontspec)             'LibertinusSans' with options [Renderer=Basic,Extension
+(fontspec)             = .otf,RawFeature = {+tnum;+lnum},Scale = 1,UprightFont
+(fontspec)             = *-Regular,ItalicFont = *-Italic,ItalicFeatures = {
+(fontspec)             SmallCapsFont = *-Italic },SlantedFont =
+(fontspec)             *-Regular,SlantedFeatures= {FakeSlant=0.2},BoldFont =
+(fontspec)             *-Bold,BoldFeatures = { SmallCapsFont = *-Bold
+(fontspec)             },BoldItalicFont = *-Italic,BoldItalicFeatures =
+(fontspec)             {RawFeature={embolden=3},SmallCapsFont = *-Italic
+(fontspec)             },BoldSlantedFont= *-Bold,BoldSlantedFeatures =
+(fontspec)             {FakeSlant=0.2, SmallCapsFont = *-Bold },SmallCapsFont
+(fontspec)             = *-Regular,SmallCapsFeatures={Letters=SmallCaps}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Regular.otf]:mode=base;script=latn;language=dflt;+tnum;+lnum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Regular.otf]:mode=base;script=latn;language=dflt;+tnum;+lnum;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Bold.otf]:mode=base;script=latn;language=dflt;+tnum;+lnum;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Bold.otf]:mode=base;script=latn;language=dflt;+tnum;+lnum;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Italic.otf]:mode=base;script=latn;language=dflt;+tnum;+lnum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Italic.otf]:mode=base;script=latn;language=dflt;+tnum;+lnum;+smcp;"
+(fontspec)             - 'slanted' (m/sl) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Regular.otf]:mode=base;script=latn;language=dflt;slant=0.2;+tnum;+lnum;"
+(fontspec)             - 'slanted small caps'  (m/scsl) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Regular.otf]:mode=base;script=latn;language=dflt;slant=0.2;+tnum;+lnum;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Italic.otf]:mode=base;script=latn;language=dflt;+tnum;+lnum;embolden=3;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Italic.otf]:mode=base;script=latn;language=dflt;+tnum;+lnum;embolden=3;+smcp;"
+(fontspec)             - 'bold slanted' (b/sl) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Bold.otf]:mode=base;script=latn;language=dflt;slant=0.2;+tnum;+lnum;"
+(fontspec)             - 'bold slanted small caps'  (b/scsl) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Bold.otf]:mode=base;script=latn;language=dflt;slant=0.2;+tnum;+lnum;+smcp;"
+
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/LibertinusSans(1)/m/n on input line 312.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/LibertinusSans(1)/b/n on input line 312.
+
+Package fontspec Info: Font family 'LibertinusSans(2)' created for font
+(fontspec)             'LibertinusSans' with options [RawFeature =
+(fontspec)             {+onum;+pnum},Scale = 1,UprightFont =
+(fontspec)             *-Regular,ItalicFont = *-Italic,ItalicFeatures = {
+(fontspec)             SmallCapsFont = *-Italic },SlantedFont =
+(fontspec)             *-Regular,SlantedFeatures= {FakeSlant=0.2},BoldFont =
+(fontspec)             *-Bold,BoldFeatures = { SmallCapsFont = *-Bold
+(fontspec)             },BoldItalicFont = *-Italic,BoldItalicFeatures =
+(fontspec)             {RawFeature={embolden=3}},BoldSlantedFont=
+(fontspec)             *-Bold,BoldSlantedFeatures = {FakeSlant=0.2,
+(fontspec)             SmallCapsFont = *-Bold },SmallCapsFont =
+(fontspec)             *-Regular,SmallCapsFeatures={Letters=SmallCaps},Extension
+(fontspec)             = .otf].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Regular.otf]:mode=node;script=latn;language=dflt;+onum;+pnum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Regular.otf]:mode=node;script=latn;language=dflt;+onum;+pnum;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Bold.otf]:mode=node;script=latn;language=dflt;+onum;+pnum;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Bold.otf]:mode=node;script=latn;language=dflt;+onum;+pnum;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Italic.otf]:mode=node;script=latn;language=dflt;+onum;+pnum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Italic.otf]:mode=node;script=latn;language=dflt;+onum;+pnum;+smcp;"
+(fontspec)             - 'slanted' (m/sl) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Regular.otf]:mode=node;script=latn;language=dflt;slant=0.2;+onum;+pnum;"
+(fontspec)             - 'slanted small caps'  (m/scsl) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Regular.otf]:mode=node;script=latn;language=dflt;slant=0.2;+onum;+pnum;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Italic.otf]:mode=node;script=latn;language=dflt;+onum;+pnum;embolden=3;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Regular.otf]:mode=node;script=latn;language=dflt;+onum;+pnum;embolden=3;+smcp;"
+(fontspec)             - 'bold slanted' (b/sl) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Bold.otf]:mode=node;script=latn;language=dflt;slant=0.2;+onum;+pnum;"
+(fontspec)             - 'bold slanted small caps'  (b/scsl) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Bold.otf]:mode=node;script=latn;language=dflt;slant=0.2;+onum;+pnum;+smcp;"
+
+
+Package fontspec Info: Font family 'LibertinusSans(3)' created for font
+(fontspec)             'LibertinusSans' with options [RawFeature =
+(fontspec)             {+lnum;-onum;+tnum},Scale = 1,UprightFont =
+(fontspec)             *-Regular,ItalicFont = *-Italic,ItalicFeatures = {
+(fontspec)             SmallCapsFont = *-Italic },SlantedFont =
+(fontspec)             *-Regular,SlantedFeatures= {FakeSlant=0.2},BoldFont =
+(fontspec)             *-Bold,BoldFeatures = { SmallCapsFont = *-Bold
+(fontspec)             },BoldItalicFont = *-Italic,BoldItalicFeatures =
+(fontspec)             {RawFeature={embolden=3}},BoldSlantedFont=
+(fontspec)             *-Bold,BoldSlantedFeatures = {FakeSlant=0.2,
+(fontspec)             SmallCapsFont = *-Bold },SmallCapsFont =
+(fontspec)             *-Regular,SmallCapsFeatures={Letters=SmallCaps},Extension
+(fontspec)             = .otf].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Regular.otf]:mode=node;script=latn;language=dflt;+lnum;-onum;+tnum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Regular.otf]:mode=node;script=latn;language=dflt;+lnum;-onum;+tnum;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Bold.otf]:mode=node;script=latn;language=dflt;+lnum;-onum;+tnum;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Bold.otf]:mode=node;script=latn;language=dflt;+lnum;-onum;+tnum;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Italic.otf]:mode=node;script=latn;language=dflt;+lnum;-onum;+tnum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Italic.otf]:mode=node;script=latn;language=dflt;+lnum;-onum;+tnum;+smcp;"
+(fontspec)             - 'slanted' (m/sl) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Regular.otf]:mode=node;script=latn;language=dflt;slant=0.2;+lnum;-onum;+tnum;"
+(fontspec)             - 'slanted small caps'  (m/scsl) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Regular.otf]:mode=node;script=latn;language=dflt;slant=0.2;+lnum;-onum;+tnum;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Italic.otf]:mode=node;script=latn;language=dflt;+lnum;-onum;+tnum;embolden=3;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Regular.otf]:mode=node;script=latn;language=dflt;+lnum;-onum;+tnum;embolden=3;+smcp;"
+(fontspec)             - 'bold slanted' (b/sl) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Bold.otf]:mode=node;script=latn;language=dflt;slant=0.2;+lnum;-onum;+tnum;"
+(fontspec)             - 'bold slanted small caps'  (b/scsl) with NFSS spec.:
+(fontspec)             <->s*[1]"[LibertinusSans-Bold.otf]:mode=node;script=latn;language=dflt;slant=0.2;+lnum;-onum;+tnum;+smcp;"
+
+
+Package fontspec Info: LibertinusMono-Regular scale = 0.8666632415839297.
+
+
+Package fontspec Info: LibertinusMono-Regular scale = 0.8666632415839297.
+
+luaotfload | aux : font no 44 (nil) does not define feature smcp for script latn with language dflt
+
+Package fontspec Info: LibertinusMono-Regular scale = 0.8666632415839297.
+
+luaotfload | aux : font no 44 (nil) does not define feature smcp for script latn with language dflt
+
+Package fontspec Info: LibertinusMono-Regular scale = 0.8666632415839297.
+
+luaotfload | aux : font no 44 (nil) does not define feature smcp for script latn with language dflt
+
+Package fontspec Info: LibertinusMono-Regular scale = 0.8666632415839297.
+
+luaotfload | aux : font no 44 (nil) does not define feature smcp for script latn with language dflt
+
+Package fontspec Info: LibertinusMono-Regular scale = 0.8666632415839297.
+
+luaotfload | aux : font no 44 (nil) does not define feature smcp for script latn with language dflt
+
+Package fontspec Info: Font family 'LibertinusMono(0)' created for font
+(fontspec)             'LibertinusMono' with options
+(fontspec)             [WordSpace={1,0,0},HyphenChar=None,PunctuationSpace=WordSpace,RawFeature
+(fontspec)             = {+tnum; +lnum},Scale = MatchLowercase,FakeStretch =
+(fontspec)             0.9,UprightFont = *-Regular,ItalicFont =
+(fontspec)             *-Regular,ItalicFeatures = {FakeSlant=0.2},SlantedFont
+(fontspec)             = *-Regular,SlantedFeatures= {FakeSlant=0.2},BoldFont =
+(fontspec)             *-Regular,BoldFeatures =
+(fontspec)             {RawFeature={embolden=3}},BoldItalicFont =
+(fontspec)             *-Regular,BoldItalicFeatures={FakeSlant=0.2,RawFeature={embolden=3}},Extension
+(fontspec)             = .otf].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[0.8666632415839297]"[LibertinusMono-Regular.otf]:mode=node;script=latn;language=dflt;extend=0.9;+tnum;
+(fontspec)             +lnum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
+(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
+(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
+(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[0.8666632415839297]"[LibertinusMono-Regular.otf]:mode=node;script=latn;language=dflt;extend=0.9;+tnum;
+(fontspec)             +lnum;embolden=3;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
+(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
+(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
+(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[0.8666632415839297]"[LibertinusMono-Regular.otf]:mode=node;script=latn;language=dflt;extend=0.9;slant=0.2;+tnum;
+(fontspec)             +lnum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
+(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
+(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
+(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
+(fontspec)             - 'slanted' (m/sl) with NFSS spec.:
+(fontspec)             <->s*[0.8666632415839297]"[LibertinusMono-Regular.otf]:mode=node;script=latn;language=dflt;extend=0.9;slant=0.2;+tnum;
+(fontspec)             +lnum;"
+(fontspec)             - 'slanted small caps'  (m/scsl) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
+(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
+(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
+(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[0.8666632415839297]"[LibertinusMono-Regular.otf]:mode=node;script=latn;language=dflt;extend=0.9;slant=0.2;+tnum;
+(fontspec)             +lnum;embolden=3;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
+(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
+(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
+(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
+
+
+Package fontspec Info: LibertinusMono-Regular scale = 0.8666632415839297.
+
+
+Package fontspec Info: LibertinusMono-Regular scale = 0.8666632415839297.
+
+luaotfload | aux : font no 47 (nil) does not define feature smcp for script latn with language dflt
+
+Package fontspec Info: LibertinusMono-Regular scale = 0.8666632415839297.
+
+luaotfload | aux : font no 47 (nil) does not define feature smcp for script latn with language dflt
+
+Package fontspec Info: LibertinusMono-Regular scale = 0.8666632415839297.
+
+luaotfload | aux : font no 47 (nil) does not define feature smcp for script latn with language dflt
+
+Package fontspec Info: LibertinusMono-Regular scale = 0.8666632415839297.
+
+luaotfload | aux : font no 47 (nil) does not define feature smcp for script latn with language dflt
+
+Package fontspec Info: LibertinusMono-Regular scale = 0.8666632415839297.
+
+luaotfload | aux : font no 47 (nil) does not define feature smcp for script latn with language dflt
+
+Package fontspec Info: Font family 'LibertinusMono(1)' created for font
+(fontspec)             'LibertinusMono' with options
+(fontspec)             [Renderer=Basic,RawFeature = {+tnum; +lnum},Scale =
+(fontspec)             MatchLowercase,FakeStretch = 0.9,UprightFont =
+(fontspec)             *-Regular,ItalicFont = *-Regular,ItalicFeatures =
+(fontspec)             {FakeSlant=0.2},SlantedFont =
+(fontspec)             *-Regular,SlantedFeatures= {FakeSlant=0.2},BoldFont =
+(fontspec)             *-Regular,BoldFeatures =
+(fontspec)             {RawFeature={embolden=3}},BoldItalicFont =
+(fontspec)             *-Regular,BoldItalicFeatures={FakeSlant=0.2,RawFeature={embolden=3}},Extension
+(fontspec)             = .otf].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[0.8666632415839297]"[LibertinusMono-Regular.otf]:mode=base;script=latn;language=dflt;extend=0.9;+tnum;
+(fontspec)             +lnum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[0.8666632415839297]"[LibertinusMono-Regular.otf]:mode=base;script=latn;language=dflt;extend=0.9;+tnum;
+(fontspec)             +lnum;embolden=3;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[0.8666632415839297]"[LibertinusMono-Regular.otf]:mode=base;script=latn;language=dflt;extend=0.9;slant=0.2;+tnum;
+(fontspec)             +lnum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+(fontspec)             - 'slanted' (m/sl) with NFSS spec.:
+(fontspec)             <->s*[0.8666632415839297]"[LibertinusMono-Regular.otf]:mode=base;script=latn;language=dflt;extend=0.9;slant=0.2;+tnum;
+(fontspec)             +lnum;"
+(fontspec)             - 'slanted small caps'  (m/scsl) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[0.8666632415839297]"[LibertinusMono-Regular.otf]:mode=base;script=latn;language=dflt;extend=0.9;slant=0.2;+tnum;
+(fontspec)             +lnum;embolden=3;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/LibertinusMono(1)/m/n on input line 369.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/LibertinusMono(1)/b/n on input line 369.
+
+*************************************
+* Using libertinus math *
+*************************************
+
+Package fontspec Info: Font family 'LibertinusMath-Regular.otf(0)' created for
+(fontspec)             font 'LibertinusMath-Regular.otf' with options
+(fontspec)             [Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,RawFeature={mathfontdimen=xetex}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[LibertinusMath-Regular.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+
+Package fontspec Info: Font family 'LibertinusMath-Regular.otf(1)' created for
+(fontspec)             font 'LibertinusMath-Regular.otf' with options
+(fontspec)             [Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=10.8-},{Size=8.4-10.8,Font=LibertinusMath-Regular.otf,Style=MathScript},{Size=-8.4,Font=LibertinusMath-Regular.otf,Style=MathScriptScript}},RawFeature={mathfontdimen=xetex}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <10.8->"[LibertinusMath-Regular.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;"<8.4-10.8>"[LibertinusMath-Regular.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;+ssty=0;"<-8.4>"[LibertinusMath-Regular.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 377.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/LibertinusMath-Regular.otf(1)/m/n on input line 377.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 377.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/LibertinusMath-Regular.otf(1)/b/n on input line 377.
+
+Package fontspec Info: Font family 'LibertinusMath-Regular.otf(2)' created for
+(fontspec)             font 'LibertinusMath-Regular.otf' with options
+(fontspec)             [Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=10.8-},{Size=8.4-10.8,Font=LibertinusMath-Regular.otf,Style=MathScript},{Size=-8.4,Font=LibertinusMath-Regular.otf,Style=MathScriptScript}},RawFeature={mathfontdimen=xetex},RawFeature={mathfontdimen=tex2}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <10.8->"[LibertinusMath-Regular.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;mathfontdimen=tex2;"<8.4-10.8>"[LibertinusMath-Regular.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;mathfontdimen=tex2;+ssty=0;"<-8.4>"[LibertinusMath-Regular.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;mathfontdimen=tex2;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 377.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> TU/LibertinusMath-Regular.otf(2)/m/n on input line 377.
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 377.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> TU/LibertinusMath-Regular.otf(2)/b/n on input line 377.
+
+Package fontspec Info: Font family 'LibertinusMath-Regular.otf(3)' created for
+(fontspec)             font 'LibertinusMath-Regular.otf' with options
+(fontspec)             [Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=10.8-},{Size=8.4-10.8,Font=LibertinusMath-Regular.otf,Style=MathScript},{Size=-8.4,Font=LibertinusMath-Regular.otf,Style=MathScriptScript}},RawFeature={mathfontdimen=xetex},RawFeature={mathfontdimen=tex3}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <10.8->"[LibertinusMath-Regular.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;mathfontdimen=tex3;"<8.4-10.8>"[LibertinusMath-Regular.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;mathfontdimen=tex3;+ssty=0;"<-8.4>"[LibertinusMath-Regular.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;mathfontdimen=tex3;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 377.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> TU/LibertinusMath-Regular.otf(3)/m/n on input line 377.
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 377.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> TU/LibertinusMath-Regular.otf(3)/b/n on input line 377.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 377.
+(c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 377.
+ (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Redeclaring math version `bold' on input line 379.
+
+Package fontspec Info: Font family 'LibertinusMath-Regular.otf(4)' created for
+(fontspec)             font 'LibertinusMath-Regular.otf' with options
+(fontspec)             [Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,RawFeature={mathfontdimen=xetex},RawFeature={embolden=3}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[LibertinusMath-Regular.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;embolden=3;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+
+Package fontspec Info: Font family 'LibertinusMath-Regular.otf(5)' created for
+(fontspec)             font 'LibertinusMath-Regular.otf' with options
+(fontspec)             [Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=10.8-},{Size=8.4-10.8,Font=LibertinusMath-Regular.otf,Style=MathScript},{Size=-8.4,Font=LibertinusMath-Regular.otf,Style=MathScriptScript}},RawFeature={mathfontdimen=xetex},RawFeature={embolden=3}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <10.8->"[LibertinusMath-Regular.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;embolden=3;"<8.4-10.8>"[LibertinusMath-Regular.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;embolden=3;+ssty=0;"<-8.4>"[LibertinusMath-Regular.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;embolden=3;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 379.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/m/n --> TU/LibertinusMath-Regular.otf(5)/m/n on input line 379.
+
+Package fontspec Info: Font family 'LibertinusMath-Regular.otf(6)' created for
+(fontspec)             font 'LibertinusMath-Regular.otf' with options
+(fontspec)             [Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=10.8-},{Size=8.4-10.8,Font=LibertinusMath-Regular.otf,Style=MathScript},{Size=-8.4,Font=LibertinusMath-Regular.otf,Style=MathScriptScript}},RawFeature={mathfontdimen=xetex},RawFeature={embolden=3},RawFeature={mathfontdimen=tex2}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <10.8->"[LibertinusMath-Regular.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;embolden=3;mathfontdimen=tex2;"<8.4-10.8>"[LibertinusMath-Regular.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;embolden=3;mathfontdimen=tex2;+ssty=0;"<-8.4>"[LibertinusMath-Regular.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;embolden=3;mathfontdimen=tex2;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 379.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/m/n --> TU/LibertinusMath-Regular.otf(6)/m/n on input line 379.
+
+Package fontspec Info: Font family 'LibertinusMath-Regular.otf(7)' created for
+(fontspec)             font 'LibertinusMath-Regular.otf' with options
+(fontspec)             [Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=10.8-},{Size=8.4-10.8,Font=LibertinusMath-Regular.otf,Style=MathScript},{Size=-8.4,Font=LibertinusMath-Regular.otf,Style=MathScriptScript}},RawFeature={mathfontdimen=xetex},RawFeature={embolden=3},RawFeature={mathfontdimen=tex3}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <10.8->"[LibertinusMath-Regular.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;embolden=3;mathfontdimen=tex3;"<8.4-10.8>"[LibertinusMath-Regular.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;embolden=3;mathfontdimen=tex3;+ssty=0;"<-8.4>"[LibertinusMath-Regular.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;embolden=3;mathfontdimen=tex3;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 379.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> TU/LibertinusMath-Regular.otf(7)/m/n on input line 379.
+
+Package fontspec Info: Font family 'LinBiolinum_K.otf(0)' created for font
+(fontspec)             'LinBiolinum_K.otf' with options
+(fontspec)             [BoldFont={},ItalicFont={},SmallCapsFont={},RawFeature=+liga].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[LinBiolinum_K.otf]:mode=node;script=latn;language=dflt;+liga;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+
+Package fontspec Info: Font family 'LibertinusKeyboard-Regular.otf(0)' created
+(fontspec)             for font 'LibertinusKeyboard-Regular.otf' with options
+(fontspec)             [BoldFont={},ItalicFont={},SmallCapsFont={},RawFeature=+liga].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[LibertinusKeyboard-Regular.otf]:mode=node;script=latn;language=dflt;+liga;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+luaotfload | aux : font no 78 (nil) does not define feature smcp for script latn with language dflt
+
+Package fontspec Info: Font family 'LibertinusSerifDisplay-Regular.otf(0)'
+(fontspec)             created for font 'LibertinusSerifDisplay-Regular.otf'
+(fontspec)             with options [].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[LibertinusSerifDisplay-Regular.otf]:mode=node;script=latn;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+luaotfload | aux : font no 81 (nil) does not define feature smcp for script latn with language dflt
+
+Package fontspec Info: Font family 'LibertinusSerifInitials-Regular.otf(0)'
+(fontspec)             created for font 'LibertinusSerifInitials-Regular.otf'
+(fontspec)             with options [].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[LibertinusSerifInitials-Regular.otf]:mode=node;script=latn;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+) (c:/texlive/2023/texmf-dist/tex/latex/anonymouspro/AnonymousPro.sty
+Package: AnonymousPro 2019/07/07 v2.2 Support for AnonymousPro Fonts (AE)
+ (c:/texlive/2023/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+ (c:/texlive/2023/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)))
+luaotfload | cache : Lookup cache loaded from C:/texlive/2023/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc.
+luaotfload | aux : font no 83 (nil) defines no feature for script latn
+luaotfload | aux : font no 83 (nil) defines no feature for script dflt
+
+Package fontspec Info: AnonymousPro scale = 0.9426917284409414.
+
+
+Package fontspec Info: AnonymousPro scale = 0.9426917284409414.
+
+
+Package fontspec Info: AnonymousPro/B scale = 0.9426917284409414.
+
+
+Package fontspec Info: AnonymousPro/I scale = 0.9426917284409414.
+
+
+Package fontspec Info: AnonymousPro/BI scale = 0.9426917284409414.
+
+
+Package fontspec Info: Font family 'AnonymousPro(0)' created for font
+(fontspec)             'AnonymousPro' with options
+(fontspec)             [WordSpace={1,0,0},HyphenChar=None,PunctuationSpace=WordSpace,Scale=MatchLowercase,FakeStretch=0.85].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[0.9426917284409414]"AnonymousPro:mode=node;language=dflt;extend=0.85;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
+(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
+(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
+(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[0.9426917284409414]"AnonymousPro/B:mode=node;language=dflt;extend=0.85;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
+(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
+(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
+(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[0.9426917284409414]"AnonymousPro/I:mode=node;language=dflt;extend=0.85;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
+(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
+(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
+(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[0.9426917284409414]"AnonymousPro/BI:mode=node;language=dflt;extend=0.85;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
+(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
+(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
+(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
+
+ (c:/texlive/2023/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2023/03/13 v3.1a Micro-typographical refinements (RS)
+\MT@toks=\toks52
+\MT@tempbox=\box83
+\MT@count=\count380
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1059.
+LaTeX Info: Redefining \leftprotrusion on input line 1060.
+\MT@prot@toks=\toks53
+LaTeX Info: Redefining \rightprotrusion on input line 1078.
+LaTeX Info: Redefining \textls on input line 1368.
+\MT@outer@kern=\dimen324
+LaTeX Info: Redefining \textmicrotypecontext on input line 1988.
+\MT@listname@count=\count381
+ (c:/texlive/2023/texmf-dist/tex/latex/microtype/microtype-luatex.def
+File: microtype-luatex.def 2023/03/13 v3.1a Definitions specific to luatex (RS)
+Lua module: microtype 2023/03/13 3.1a microtype module.
+Module microtype Info: overwriting function `keepligature' on input line 63
+LaTeX Info: Redefining \lsstyle on input line 688.
+LaTeX Info: Redefining \lslig on input line 688.
+\MT@outer@space=\skip81
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+ (c:/texlive/2023/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2023/03/13 v3.1a microtype main configuration file (RS)
+)) (c:/texlive/2023/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2022-09-14 v5.2n context-sensitive quotations (JAW)
+\csq@reset=\count382
+\csq@gtype=\count383
+\csq@glevel=\count384
+\csq@qlevel=\count385
+\csq@maxlvl=\count386
+\csq@tshold=\count387
+\csq@ltx@everypar=\toks54
+ (c:/texlive/2023/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2022-09-14 v5.2n csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+ (c:/texlive/2023/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+))
+Package csquotes Info: Allocating character ".
+ (c:/texlive/2023/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip82
+\enit@outerparindent=\dimen325
+\enit@toks=\toks55
+\enit@inbox=\box84
+\enit@count@id=\count388
+\enitdp@description=\count389
+) (c:/texlive/2023/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen326
+\lightrulewidth=\dimen327
+\cmidrulewidth=\dimen328
+\belowrulesep=\dimen329
+\belowbottomsep=\dimen330
+\aboverulesep=\dimen331
+\abovetopsep=\dimen332
+\cmidrulesep=\dimen333
+\cmidrulekern=\dimen334
+\defaultaddspace=\dimen335
+\@cmidla=\count390
+\@cmidlb=\count391
+\@aboverulesep=\dimen336
+\@belowrulesep=\dimen337
+\@thisruleclass=\count392
+\@lastruleclass=\count393
+\@thisrulewidth=\dimen338
+) (c:/texlive/2023/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
+ (c:/texlive/2023/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count394
+ (c:/texlive/2023/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+)) (c:/texlive/2023/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+) (c:/texlive/2023/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count395
+\c@listtotal=\count396
+\c@listcount=\count397
+\c@liststart=\count398
+\c@liststop=\count399
+\c@citecount=\count400
+\c@citetotal=\count401
+\c@multicitecount=\count402
+\c@multicitetotal=\count403
+\c@instcount=\count404
+\c@maxnames=\count405
+\c@minnames=\count406
+\c@maxitems=\count407
+\c@minitems=\count408
+\c@citecounter=\count409
+\c@maxcitecounter=\count410
+\c@savedcitecounter=\count411
+\c@uniquelist=\count412
+\c@uniquename=\count413
+\c@refsection=\count414
+\c@refsegment=\count415
+\c@maxextratitle=\count416
+\c@maxextratitleyear=\count417
+\c@maxextraname=\count418
+\c@maxextradate=\count419
+\c@maxextraalpha=\count420
+\c@abbrvpenalty=\count421
+\c@highnamepenalty=\count422
+\c@lownamepenalty=\count423
+\c@maxparens=\count424
+\c@parenlevel=\count425
+\blx@tempcnta=\count426
+\blx@tempcntb=\count427
+\blx@tempcntc=\count428
+\c@blx@maxsection=\count429
+\blx@maxsegment@0=\count430
+\blx@notetype=\count431
+\blx@parenlevel@text=\count432
+\blx@parenlevel@foot=\count433
+\blx@sectionciteorder@0=\count434
+\blx@sectionciteorderinternal@0=\count435
+\blx@entrysetcounter=\count436
+\blx@biblioinstance=\count437
+\labelnumberwidth=\skip83
+\labelalphawidth=\skip84
+\biblabelsep=\skip85
+\bibitemsep=\skip86
+\bibnamesep=\skip87
+\bibinitsep=\skip88
+\bibparsep=\skip89
+\bibhang=\skip90
+\blx@bcfin=\read4
+\blx@bcfout=\write4
+\blx@langwohyphens=\language91
+\c@mincomprange=\count438
+\c@maxcomprange=\count439
+\c@mincompwidth=\count440
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+ (c:/texlive/2023/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2023/03/05 v3.19 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'ieee.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count441
+\c@savedafterword=\count442
+\c@annotator=\count443
+\c@savedannotator=\count444
+\c@author=\count445
+\c@savedauthor=\count446
+\c@bookauthor=\count447
+\c@savedbookauthor=\count448
+\c@commentator=\count449
+\c@savedcommentator=\count450
+\c@editor=\count451
+\c@savededitor=\count452
+\c@editora=\count453
+\c@savededitora=\count454
+\c@editorb=\count455
+\c@savededitorb=\count456
+\c@editorc=\count457
+\c@savededitorc=\count458
+\c@foreword=\count459
+\c@savedforeword=\count460
+\c@holder=\count461
+\c@savedholder=\count462
+\c@introduction=\count463
+\c@savedintroduction=\count464
+\c@namea=\count465
+\c@savednamea=\count466
+\c@nameb=\count467
+\c@savednameb=\count468
+\c@namec=\count469
+\c@savednamec=\count470
+\c@translator=\count471
+\c@savedtranslator=\count472
+\c@shortauthor=\count473
+\c@savedshortauthor=\count474
+\c@shorteditor=\count475
+\c@savedshorteditor=\count476
+\c@labelname=\count477
+\c@savedlabelname=\count478
+\c@institution=\count479
+\c@savedinstitution=\count480
+\c@lista=\count481
+\c@savedlista=\count482
+\c@listb=\count483
+\c@savedlistb=\count484
+\c@listc=\count485
+\c@savedlistc=\count486
+\c@listd=\count487
+\c@savedlistd=\count488
+\c@liste=\count489
+\c@savedliste=\count490
+\c@listf=\count491
+\c@savedlistf=\count492
+\c@location=\count493
+\c@savedlocation=\count494
+\c@organization=\count495
+\c@savedorganization=\count496
+\c@origlocation=\count497
+\c@savedoriglocation=\count498
+\c@origpublisher=\count499
+\c@savedorigpublisher=\count500
+\c@publisher=\count501
+\c@savedpublisher=\count502
+\c@language=\count503
+\c@savedlanguage=\count504
+\c@origlanguage=\count505
+\c@savedoriglanguage=\count506
+\c@pageref=\count507
+\c@savedpageref=\count508
+\shorthandwidth=\skip91
+\shortjournalwidth=\skip92
+\shortserieswidth=\skip93
+\shorttitlewidth=\skip94
+\shortauthorwidth=\skip95
+\shorteditorwidth=\skip96
+\locallabelnumberwidth=\skip97
+\locallabelalphawidth=\skip98
+\localshorthandwidth=\skip99
+\localshortjournalwidth=\skip100
+\localshortserieswidth=\skip101
+\localshorttitlewidth=\skip102
+\localshortauthorwidth=\skip103
+\localshorteditorwidth=\skip104
+Package biblatex Info: Trying to load enhanced support for Unicode engines...
+Package biblatex Info: ... file 'blx-unicode.def' found.
+ (c:/texlive/2023/texmf-dist/tex/latex/biblatex/blx-unicode.def)
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+ (c:/texlive/2023/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (c:/texlive/2023/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
+\c@textcitecount=\count509
+\c@textcitetotal=\count510
+\c@textcitemaxnames=\count511
+\c@biburlbigbreakpenalty=\count512
+\c@biburlbreakpenalty=\count513
+\c@biburlnumpenalty=\count514
+\c@biburlucpenalty=\count515
+\c@biburllcpenalty=\count516
+\biburlbigskip=\muskip19
+\biburlnumskip=\muskip20
+\biburlucskip=\muskip21
+\biburllcskip=\muskip22
+\c@smartand=\count517
+)
+Package biblatex Info: Trying to load bibliography style 'ieee'...
+Package biblatex Info: ... file 'ieee.bbx' found.
+ (c:/texlive/2023/texmf-dist/tex/latex/biblatex-ieee/ieee.bbx
+File: ieee.bbx 2021/12/06 v1.3f biblatex bibliography style
+Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.bbx' found.
+ (c:/texlive/2023/texmf-dist/tex/latex/biblatex/bbx/numeric-comp.bbx
+File: numeric-comp.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+ (c:/texlive/2023/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+ (c:/texlive/2023/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count518
+\c@bbx:relatedtotal=\count519
+))))
+Package biblatex Info: Trying to load citation style 'ieee'...
+Package biblatex Info: ... file 'ieee.cbx' found.
+ (c:/texlive/2023/texmf-dist/tex/latex/biblatex-ieee/ieee.cbx
+File: ieee.cbx 2021/12/06 v1.3f biblatex citation style
+Package biblatex Info: Trying to load citation style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.cbx' found.
+ (c:/texlive/2023/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
+File: numeric-comp.cbx 2023/03/05 v3.19 biblatex citation style (PK/MW)
+\c@cbx@tempcnta=\count520
+\c@cbx@tempcntb=\count521
+\c@cbx@tempcntc=\count522
+\c@cbx@tempcntd=\count523
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\cites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+ (c:/texlive/2023/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: LuaTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Document encoding is UTF8 ....
+Package biblatex Info: ... and expl3
+(biblatex)             2023-10-10 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+ (c:/texlive/2023/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
+Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
+)) (c:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryintersections.code.tex (c:/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryintersections.code.tex
+\pgf@intersect@solutions=\count524
+)) (c:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryangles.code.tex
+File: tikzlibraryangles.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary3d.code.tex
+File: tikzlibrary3d.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2023/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2023-07-08 v7.01b Hypertext links for LaTeX
+ (c:/texlive/2023/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (c:/texlive/2023/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (c:/texlive/2023/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (c:/texlive/2023/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (c:/texlive/2023/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (c:/texlive/2023/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2023-08-07 v2.53 Cross-referencing by name of section
+ (c:/texlive/2023/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (c:/texlive/2023/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count525
+)
+\@linkdim=\dimen339
+\Hy@linkcounter=\count526
+\Hy@pagecounter=\count527
+ (c:/texlive/2023/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2023-07-08 v7.01b Hyperref: PDFDocEncoding definition (HO)
+) (c:/texlive/2023/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count528
+ (c:/texlive/2023/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2023-07-08 v7.01b Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Option `colorlinks' set `false' on input line 4050.
+Package hyperref Info: Option `hyperfootnotes' set `false' on input line 4050.
+Package hyperref Info: Option `pageanchor' set `true' on input line 4050.
+Package hyperref Info: Hyper figures OFF on input line 4167.
+Package hyperref Info: Link nesting OFF on input line 4172.
+Package hyperref Info: Hyper index ON on input line 4175.
+Package hyperref Info: Plain pages OFF on input line 4182.
+Package hyperref Info: Backreferencing OFF on input line 4187.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4434.
+\c@Hy@tempcnt=\count529
+LaTeX Info: Redefining \url on input line 4772.
+\XeTeXLinkMargin=\dimen340
+ (c:/texlive/2023/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (c:/texlive/2023/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count530
+\Field@Width=\dimen341
+\Fld@charsize=\dimen342
+Package hyperref Info: Hyper figures OFF on input line 6051.
+Package hyperref Info: Link nesting OFF on input line 6056.
+Package hyperref Info: Hyper index ON on input line 6059.
+Package hyperref Info: backreferencing OFF on input line 6066.
+Package hyperref Info: Link coloring OFF on input line 6071.
+Package hyperref Info: Link coloring with OCG OFF on input line 6076.
+Package hyperref Info: PDF/A mode OFF on input line 6081.
+ (c:/texlive/2023/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count531
+\c@Item=\count532
+)
+Package hyperref Info: Driver (autodetected): hluatex.
+ (c:/texlive/2023/texmf-dist/tex/latex/hyperref/hluatex.def
+File: hluatex.def 2023-07-08 v7.01b Hyperref driver for luaTeX
+ (c:/texlive/2023/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
+) (c:/texlive/2023/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
+with kernel methods
+)
+\Fld@listcount=\count533
+\c@bookmark@seq@number=\count534
+ (c:/texlive/2023/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+ (c:/texlive/2023/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
+)
+\Hy@SectionHShift=\skip105
+) (c:/texlive/2023/texmf-dist/tex/latex/koma-script/scrlayer-scrpage.sty
+Package: scrlayer-scrpage 2023/07/07 v3.41 KOMA-Script package (end user interface for scrlayer)
+ (c:/texlive/2023/texmf-dist/tex/latex/koma-script/scrlayer.sty
+Package: scrlayer 2023/07/07 v3.41 KOMA-Script package (defining layers and page styles)
+Package scrlayer Info: patching LaTeX kernel macro \pagestyle on input line 2183.
+)
+Package scrlayer-scrpage Info: Makeing stand-alone element `pagehead' from
+(scrlayer-scrpage)             alias to `pageheadfoot' on input line 1106.
+)
+1: section
+1: chapter
+1: chapter
+1: section
+) (c:/texlive/2023/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2022/12/19 v0.5x Insert pages of external PDF documents (AM)
+ (c:/texlive/2023/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
+\ESO@tempdima=\dimen343
+\ESO@tempdimb=\dimen344
+)
+\AM@pagewidth=\dimen345
+\AM@pageheight=\dimen346
+\AM@fboxrule=\dimen347
+ (c:/texlive/2023/texmf-dist/tex/latex/pdfpages/ppluatex.def
+File: ppluatex.def 2022/12/19 v0.5x Pdfpages driver for LuaTeX (AM)
+)
+\pdfpages@includegraphics@status=\count535
+\AM@pagebox=\box85
+\AM@global@opts=\toks56
+\AM@pagecnt=\count536
+\AM@toc@title=\toks57
+\AM@lof@heading=\toks58
+\c@AM@survey=\count537
+\AM@templatesizebox=\box86
+)
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
+ (./SPT.aux (./Titel.aux) (c:/texlive/2023/texmf-dist/tex/generic/dehyph-exptl/dehyphn-x-2023-03-06.tex dehyph-exptl: using a TeX engine with native UTF-8 support. (c:/texlive/2023/texmf-dist/tex/generic/dehyph-exptl/dehyphn-x-2023-03-06.pat German Hyphenation Patterns (Reformed Orthography, 2006) `dehyphn-x' 2023-03-06 (WL))) (./toc.aux) (./Einleitung.aux) (./Grundlagen.aux) (./Technikstand.aux) (./Simulation.aux
+
+LaTeX Warning: Label `fig:helgolandBilanzOhne' multiply defined.
+
+) (./Schlussteil.aux) (./appendix.aux))
+\openout1 = SPT.aux
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+ (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count538
+\scratchdimen=\dimen348
+\scratchbox=\box87
+\nofMPsegments=\count539
+\nofMParguments=\count540
+\everyMPshowfont=\toks59
+\MPscratchCnt=\count541
+\MPscratchDim=\dimen349
+\MPnumerator=\count542
+\makeMPintoPDFobject=\count543
+\everyMPtoPDFconversion=\toks60
+) (c:/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (c:/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+)) (c:/texlive/2023/texmf-dist/tex/latex/translations/translations-basic-dictionary-german.trsl
+File: translations-basic-dictionary-german.trsl (german translation file `translations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 29.
+ (c:/texlive/2023/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 29.
+
+Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
+
+\c@lstlisting=\count544
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+*geometry* driver: auto-detecting
+*geometry* detected driver: luatex
+*geometry* verbose mode - [ preamble ] result:
+* driver: luatex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* bindingoffset: 2.84526pt
+* modes: 
+* h-part:(L,W,R)=(74.33282pt, 445.99701pt, 74.33284pt)
+* v-part:(T,H,B)=(70.42058pt, 635.5pt, 139.12636pt)
+* \paperwidth=597.50793pt
+* \paperheight=845.04694pt
+* \textwidth=445.99701pt
+* \textheight=635.5pt
+* \oddsidemargin=4.9081pt
+* \evensidemargin=2.06284pt
+* \topmargin=-41.72441pt
+* \headheight=59.75078pt
+* \headsep=21.75pt
+* \topskip=12.0pt
+* \footskip=50.75pt
+* \marginparwidth=49.55522pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+Package unicode-math Warning: Using \overbracket and \underbracket from
+(unicode-math)                `mathtools' package.
+(unicode-math)                 
+(unicode-math)                 Use \Uoverbracket and \Uunderbracket for
+(unicode-math)                original `unicode-math' definition.
+
+
+Package unicode-math Warning: I'm going to overwrite the following commands
+(unicode-math)                from the `mathtools' package: 
+(unicode-math)                 
+(unicode-math)                     \dblcolon, \coloneqq, \Coloneqq, \eqqcolon.
+(unicode-math)                
+(unicode-math)                 
+(unicode-math)                 Note that since I won't overwrite the other
+(unicode-math)                colon-like commands, using them will lead to
+(unicode-math)                inconsistencies.
+
+LaTeX Info: Redefining \microtypecontext on input line 29.
+Package microtype Info: Applying patch `item' on input line 29.
+Package microtype Info: Applying patch `toc' on input line 29.
+Package microtype Info: Applying patch `eqnum' on input line 29.
+Package microtype Info: Applying patch `footnote' on input line 29.
+Package microtype Info: Applying patch `verbatim' on input line 29.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+LaTeX Info: Redefining \showhyphens on input line 29.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `LibertinusSerif' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package csquotes Info: Redefining character " on input line 29.
+Package biblatex Info: Trying to load language 'ngerman'...
+Package biblatex Info: ... file 'ngerman.lbx' found.
+(c:/texlive/2023/texmf-dist/tex/latex/biblatex/lbx/ngerman.lbx
+File: ngerman.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+Package biblatex Info: Trying to load language 'german'...
+Package biblatex Info: ... file 'german.lbx' found.
+ (c:/texlive/2023/texmf-dist/tex/latex/biblatex/lbx/german.lbx
+File: german.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load language 'german'...
+Package biblatex Info: ... file 'german.lbx' found.
+ (c:/texlive/2023/texmf-dist/tex/latex/biblatex/lbx/german.lbx
+File: german.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+))
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ (c:/texlive/2023/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+)
+Package biblatex Info: LuaTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+
+\openout4 = SPT.bcf
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'SPT.bbl' found.
+ (./SPT.bbl)
+Package biblatex Info: Reference section=0 on input line 29.
+Package biblatex Info: Reference segment=0 on input line 29.
+Package hyperref Info: Link coloring OFF on input line 29.
+ (./SPT.out) (./SPT.out)
+\@outlinefile=\write5
+
+\openout5 = SPT.out
+Class scrreprt Info: loading recommended package `bookmark'.
+(scrreprt)           Using `bookmark' together with `hyperref' is recommended,
+(scrreprt)           because of handling of possible bookmark level gaps.
+(scrreprt)           You can avoid loading `bookmark' with KOMA-Script option
+(scrreprt)           `bookmarkpackage=false' before \begin{document} and
+(scrreprt)           you can avoid this message adding:
+(scrreprt)             \usepackage{bookmark}
+(scrreprt)           before \begin{document} on input line 29.
+ (c:/texlive/2023/texmf-dist/tex/latex/bookmark/bookmark.sty
+Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
+ (c:/texlive/2023/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
+File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
+\BKM@id=\count545
+)) (c:/texlive/2023/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+ (c:/texlive/2023/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
+ (c:/texlive/2023/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
+\openout2 = Titel.aux
+ (./Titel.tex
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: luatex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(56.9055pt, 526.37607pt, 14.22636pt)
+* v-part:(T,H,B)=(19.91692pt, 796.67728pt, 28.45274pt)
+* \paperwidth=597.50793pt
+* \paperheight=845.04694pt
+* \textwidth=526.37607pt
+* \textheight=796.67728pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-133.85385pt
+* \headheight=59.75078pt
+* \headsep=21.75pt
+* \topskip=12.0pt
+* \footskip=50.75pt
+* \marginparwidth=49.55522pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+<HSB.png, id=7, 365.365pt x 138.5175pt>
+File: HSB.png Graphic file (type png)
+<use HSB.png>
+Package luatex.def Info: HSB.png  used on input line 10.
+(luatex.def)             Requested size: 199.16928pt x 75.5085pt.
+luaotfload | aux : font no 97 (nil) does not define feature smcp for script latn with language dflt
+luaotfload | aux : font no 98 (nil) does not define feature smcp for script latn with language dflt
+luaotfload | aux : font no 99 (nil) does not define feature smcp for script latn with language dflt
+luaotfload | aux : font no 100 (nil) does not define feature smcp for script latn with language dflt
+
+Package fontspec Info: Font family 'OpenSans(0)' created for font 'Open Sans'
+(fontspec)             with options [Ligatures =
+(fontspec)             TeX,SmallCapsFeatures={Letters=SmallCaps},RawFeature={+hv-kern}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"OpenSans:mode=node;script=latn;language=dflt;+tlig;+hv-kern;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"OpenSans/B:mode=node;script=latn;language=dflt;+tlig;+hv-kern;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"OpenSans/I:mode=node;script=latn;language=dflt;+tlig;+hv-kern;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"OpenSans/BI:mode=node;script=latn;language=dflt;+tlig;+hv-kern;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `OpenSans' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `LibertinusMath-Regular.otf' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ (c:/texlive/2023/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+) (c:/texlive/2023/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+Underfull \hbox (badness 10000) in paragraph at lines 57--62
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--70
+
+ []
+
+[1
+
+
+
+
+
+{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}<./HSB.png>])
+\openout2 = toc.aux
+ (./toc.tex
+LaTeX Font Info:    Font shape `TU/LibertinusSans(0)/m/n' will be
+(Font)              scaled to size 12.0pt on input line 2.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `LibertinusSans' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `TU/LibertinusSans(0)/b/n' will be
+(Font)              scaled to size 12.0pt on input line 2.
+LaTeX Font Info:    Font shape `TU/LibertinusSans(0)/b/n' will be
+(Font)              scaled to size 24.88pt on input line 2.
+Package tocbasic Info: character protrusion at toc deactivated on input line 2.
+ (./SPT.toc
+LaTeX Font Info:    Font shape `TU/LibertinusSerif(0)/m/it' will be
+(Font)              scaled to size 12.0pt on input line 40.
+<Abbildungen/Logo_HSB_Hochschule_Bremen.png, id=74, 133.83333pt x 51.02396pt>
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 40.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [1
+
+
+
+
+
+<./Abbildungen/Logo_HSB_Hochschule_Bremen.png>])
+\tf@toc=\write6
+
+\openout6 = SPT.toc
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 3.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [2]
+Package tocbasic Info: character protrusion at lof deactivated on input line 3.
+ (./SPT.lof
+Overfull \hbox (2.26714pt too wide) in paragraph at lines 9--9
+ [][] [][]\TU/LibertinusSerif(0)/m/n/12 Fre-quenz-schwan-kun-gen durch Un-gleich-ge-wicht von er-zeug-ter und ver-brauch- 
+ []
+
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 34.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+[3
+
+])
+\tf@lof=\write7
+
+\openout7 = SPT.lof
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 4.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [4]
+Package tocbasic Info: character protrusion at lot deactivated on input line 4.
+ (./SPT.lot)
+\tf@lot=\write8
+
+\openout8 = SPT.lot
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 6.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [5
+
+])
+\openout2 = Einleitung.aux
+ (./Einleitung.tex
+chapter 1.
+
+Class scrreprt Warning: \float@addtolists detected!
+(scrreprt)              Implementation of \float@addtolist became
+(scrreprt)              deprecated in KOMA-Script v3.01 2008/11/14 and
+(scrreprt)              has been replaced by several more flexible
+(scrreprt)              features of package `tocbasic`.
+(scrreprt)              Since Version 3.12 support for deprecated
+(scrreprt)              \float@addtolist interface has been
+(scrreprt)              restricted to only some of the KOMA-Script
+(scrreprt)              features and been removed from others.
+(scrreprt)              Loading of package `scrhack' may help to
+(scrreprt)              avoid this warning, if you are using a
+(scrreprt)              a package that still implements the
+(scrreprt)              deprecated \float@addtolist interface.
+
+)
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 32.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
+[1
+
+
+
+
+
+]
+\openout2 = Grundlagen.aux
+ (./Grundlagen.tex
+chapter 2.
+LaTeX Font Info:    Font shape `TU/LibertinusSans(0)/b/n' will be
+(Font)              scaled to size 17.28pt on input line 3.
+LaTeX Font Info:    Font shape `TU/LibertinusSans(0)/b/n' will be
+(Font)              scaled to size 14.4pt on input line 15.
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 27.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+[2
+
+
+
+
+]
+<Abbildungen/VerbraucherAbb1.jpg, id=350, 411.03563pt x 231.11343pt>
+File: Abbildungen/VerbraucherAbb1.jpg Graphic file (type jpg)
+<use Abbildungen/VerbraucherAbb1.jpg>
+Package luatex.def Info: Abbildungen/VerbraucherAbb1.jpg  used on input line 30.
+(luatex.def)             Requested size: 398.33858pt x 223.97522pt.
+LaTeX Font Info:    Font shape `TU/LibertinusSerif(0)/m/n' will be
+(Font)              scaled to size 8.0pt on input line 31.
+<Abbildungen/VerbraucherAbb2.jpg, id=351, 455.45157pt x 280.04625pt>
+File: Abbildungen/VerbraucherAbb2.jpg Graphic file (type jpg)
+<use Abbildungen/VerbraucherAbb2.jpg>
+Package luatex.def Info: Abbildungen/VerbraucherAbb2.jpg  used on input line 46.
+(luatex.def)             Requested size: 398.33858pt x 244.93301pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 69.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+[3<./Abbildungen/VerbraucherAbb1.jpg>]
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 69.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [4<./Abbildungen/VerbraucherAbb2.jpg>]
+LaTeX Font Info:    Font shape `TU/LibertinusSerif(0)/m/n' will be
+(Font)              scaled to size 9.6pt on input line 71.
+LaTeX Font Info:    Font shape `TU/LibertinusSerif(0)/m/n' will be
+(Font)              scaled to size 7.2pt on input line 71.
+LaTeX Font Info:    Font shape `TU/LibertinusSerif(0)/b/n' will be
+(Font)              scaled to size 12.0pt on input line 83.
+<Abbildungen/VerbraucherAbb3.jpg, id=362, 441.90094pt x 301.125pt>
+File: Abbildungen/VerbraucherAbb3.jpg Graphic file (type jpg)
+<use Abbildungen/VerbraucherAbb3.jpg>
+Package luatex.def Info: Abbildungen/VerbraucherAbb3.jpg  used on input line 103.
+(luatex.def)             Requested size: 398.33858pt x 271.45108pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 120.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+[5]
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 137.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [6<./Abbildungen/VerbraucherAbb3.jpg>]
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 176.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [7]
+Overfull \hbox (182.22691pt too wide) in paragraph at lines 194--219
+ [][] 
+ []
+
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 235.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+[8]
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 235.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [9]
+<Abbildungen/VerbraucherAbb4.jpg, id=397, 455.45157pt x 172.39406pt>
+File: Abbildungen/VerbraucherAbb4.jpg Graphic file (type jpg)
+<use Abbildungen/VerbraucherAbb4.jpg>
+Package luatex.def Info: Abbildungen/VerbraucherAbb4.jpg  used on input line 267.
+(luatex.def)             Requested size: 398.33858pt x 150.77866pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 275.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+[10]
+<Abbildungen/Stabilität.png, id=403, 354.72525pt x 166.82326pt>
+File: Abbildungen/Stabilität.png Graphic file (type png)
+<use Abbildungen/Stabilität.png>
+Package luatex.def Info: Abbildungen/Stabilität.png  used on input line 281.
+(luatex.def)             Requested size: 356.79897pt x 167.80031pt.
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 287.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [11<./Abbildungen/VerbraucherAbb4.jpg><./Abbildungen/Stabilität.png>]
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 328.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [12]
+<Abbildungen/Sollfrequenz.png, id=420, 749.04843pt x 375.65344pt>
+File: Abbildungen/Sollfrequenz.png Graphic file (type png)
+<use Abbildungen/Sollfrequenz.png>
+Package luatex.def Info: Abbildungen/Sollfrequenz.png  used on input line 356.
+(luatex.def)             Requested size: 170.71652pt x 85.61317pt.
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 373.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [13<./Abbildungen/Sollfrequenz.png>]
+LaTeX Font Info:    Font shape `TU/AnonymousPro(0)/m/n' will be
+(Font)              scaled to size 11.31226pt on input line 380.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `AnonymousPro' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 405.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [14]
+<Abbildungen/_Flussdiagramm (1).png, id=442, 1767.60374pt x 1251.67625pt>
+File: Abbildungen/_Flussdiagramm (1).png Graphic file (type png)
+<use Abbildungen/_Flussdiagramm (1).png>
+Package luatex.def Info: Abbildungen/_Flussdiagramm (1).png  used on input line 426.
+(luatex.def)             Requested size: 312.9803pt x 221.62498pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 437.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+[15]
+<Abbildungen/DroopControl.png, id=451, 404.26031pt x 328.97906pt>
+File: Abbildungen/DroopControl.png Graphic file (type png)
+<use Abbildungen/DroopControl.png>
+Package luatex.def Info: Abbildungen/DroopControl.png  used on input line 450.
+(luatex.def)             Requested size: 227.62204pt x 185.236pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 460.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+[16<./Abbildungen/_Flussdiagramm (1).png>]
+<Abbildungen/DBFlow.png, id=462, 1905.1175pt x 2221.29875pt>
+File: Abbildungen/DBFlow.png Graphic file (type png)
+<use Abbildungen/DBFlow.png>
+Package luatex.def Info: Abbildungen/DBFlow.png  used on input line 471.
+(luatex.def)             Requested size: 227.62204pt x 265.39194pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Abbildungen/DroopErweitert.png, id=466, 446.41782pt x 365.11406pt>
+File: Abbildungen/DroopErweitert.png Graphic file (type png)
+<use Abbildungen/DroopErweitert.png>
+Package luatex.def Info: Abbildungen/DroopErweitert.png  used on input line 489.
+(luatex.def)             Requested size: 170.71652pt x 139.62502pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 493.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+[17<./Abbildungen/DroopControl.png>])
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 33.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [18<./Abbildungen/DBFlow.png><./Abbildungen/DroopErweitert.png>]
+\openout2 = Technikstand.aux
+ (./Technikstand.tex
+chapter 3.
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 23.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+[19
+
+
+
+
+]
+<Abbildungen/StandDerTechnikAbb1.jpg, id=503, 302.0886pt x 225.9642pt>
+File: Abbildungen/StandDerTechnikAbb1.jpg Graphic file (type jpg)
+<use Abbildungen/StandDerTechnikAbb1.jpg>
+Package luatex.def Info: Abbildungen/StandDerTechnikAbb1.jpg  used on input line 26.
+(luatex.def)             Requested size: 398.33858pt x 297.98402pt.
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 51.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [20<./Abbildungen/StandDerTechnikAbb1.jpg>]
+<Abbildungen/StandDerTechnikAbb2.jpg, id=510, 262.73157pt x 161.10187pt>
+File: Abbildungen/StandDerTechnikAbb2.jpg Graphic file (type jpg)
+<use Abbildungen/StandDerTechnikAbb2.jpg>
+Package luatex.def Info: Abbildungen/StandDerTechnikAbb2.jpg  used on input line 54.
+(luatex.def)             Requested size: 398.33858pt x 244.26282pt.
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 71.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [21<./Abbildungen/StandDerTechnikAbb2.jpg>]
+<Abbildungen/StandDerTechnikAbb3.png, id=517, 455.45157pt x 273.27094pt>
+File: Abbildungen/StandDerTechnikAbb3.png Graphic file (type png)
+<use Abbildungen/StandDerTechnikAbb3.png>
+Package luatex.def Info: Abbildungen/StandDerTechnikAbb3.png  used on input line 74.
+(luatex.def)             Requested size: 398.33858pt x 239.00722pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--91
+[]|\TU/LibertinusSerif(0)/b/n/12 Energie-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--91
+\TU/LibertinusSerif(0)/b/n/12 dichte
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--91
+[]|\TU/LibertinusSerif(0)/b/n/12 Wirkungs-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--91
+[]|\TU/LibertinusSerif(0)/b/n/12 Le-bens-dau-
+ []
+
+
+Overfull \hbox (11.47736pt too wide) in paragraph at lines 91--91
+[]|\TU/LibertinusSerif(0)/b/n/12 Zyklenlebens-
+ []
+
+
+Overfull \hbox (2.68454pt too wide) in paragraph at lines 91--91
+[]|\TU/LibertinusSerif(0)/b/n/12 Temperatur-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--93
+[]|\TU/LibertinusSerif(0)/b/n/12 Kos-ten
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--94
+[]|\TU/LibertinusSerif(0)/m/n/12 Lithium-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--95
+[]|\TU/LibertinusSerif(0)/m/n/12 Natrium-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+[]|\TU/LibertinusSerif(0)/m/n/12 Nickel-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+[]|\TU/LibertinusSerif(0)/m/n/12 Natrium-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+[]|\TU/LibertinusSerif(0)/m/n/12 +300 bis
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--98
+[]|\TU/LibertinusSerif(0)/m/n/12 Redox-Flow
+ []
+
+
+Overfull \hbox (78.97469pt too wide) in paragraph at lines 89--101
+ [][] 
+ []
+
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 134.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+[22<./Abbildungen/StandDerTechnikAbb3.png>]
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 151.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [23]
+<Abbildungen/StandDerTechnikAbb4jpg.jpg, id=536, 455.301pt x 253.602pt>
+File: Abbildungen/StandDerTechnikAbb4jpg.jpg Graphic file (type jpg)
+<use Abbildungen/StandDerTechnikAbb4jpg.jpg>
+Package luatex.def Info: Abbildungen/StandDerTechnikAbb4jpg.jpg  used on input line 185.
+(luatex.def)             Requested size: 398.33858pt x 221.88185pt.
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 187.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [24]
+Overfull \hbox (68.10693pt too wide) in paragraph at lines 199--207
+ [][] 
+ []
+
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 217.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+[25<./Abbildungen/StandDerTechnikAbb4jpg.jpg>])
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 34.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [26]
+\openout2 = Simulation.aux
+ (./Simulation.tex
+chapter 4.
+Package epstopdf Info: Source file: <Abbildungen/Wetter20bis22.eps>
+(epstopdf)                    date: 2024-03-10 20:02:08
+(epstopdf)                    size: 536612 bytes
+(epstopdf)             Output file: <Abbildungen/Wetter20bis22-eps-converted-to.pdf>
+(epstopdf)                    date: 2024-03-10 20:02:08
+(epstopdf)                    size: 158833 bytes
+(epstopdf)             Command: <repstopdf --outfile=Abbildungen/Wetter20bis22-eps-converted-to.pdf Abbildungen/Wetter20bis22.eps>
+(epstopdf)             \includegraphics on input line 24.
+Package epstopdf Info: Output file is already uptodate.
+
+warning  (file Abbildungen/Wetter20bis22-eps-converted-to.pdf) (pdf inclusion): PDF inclusion: found PDF version '1.7', but at most version '1.5' allowed
+<Abbildungen/Wetter20bis22-eps-converted-to.pdf, id=561, 451.6875pt x 150.5625pt>
+File: Abbildungen/Wetter20bis22-eps-converted-to.pdf Graphic file (type pdf)
+<use Abbildungen/Wetter20bis22-eps-converted-to.pdf>
+Package luatex.def Info: Abbildungen/Wetter20bis22-eps-converted-to.pdf  used on input line 24.
+(luatex.def)             Requested size: 445.99701pt x 148.67365pt.
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 28.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+[27
+
+
+
+
+]
+
+LaTeX Warning: Citation '' on page 28 undefined on input line 40.
+
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 50.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+[28<./Abbildungen/Wetter20bis22-eps-converted-to.pdf>]
+<Abbildungen/Enercon E115.png, id=589, 792.71156pt x 313.17pt>
+File: Abbildungen/Enercon E115.png Graphic file (type png)
+<use Abbildungen/Enercon E115.png>
+Package luatex.def Info: Abbildungen/Enercon E115.png  used on input line 62.
+(luatex.def)             Requested size: 401.39458pt x 158.57727pt.
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 84.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [29<./Abbildungen/Enercon E115.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 101--101
+[]|\TU/LibertinusSerif(0)/b/n/12 Rau-hig-keits-län-
+ []
+
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 125.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+[30]
+<Abbildungen/ModellWEAeinfach.png, id=611, 711.8595pt x 109.00725pt>
+File: Abbildungen/ModellWEAeinfach.png Graphic file (type png)
+<use Abbildungen/ModellWEAeinfach.png>
+Package luatex.def Info: Abbildungen/ModellWEAeinfach.png  used on input line 132.
+(luatex.def)             Requested size: 401.39458pt x 61.46611pt.
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 136.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [31]
+<Abbildungen/ModellWEA.png, id=617, 536.0025pt x 343.2825pt>
+File: Abbildungen/ModellWEA.png Graphic file (type png)
+<use Abbildungen/ModellWEA.png>
+Package luatex.def Info: Abbildungen/ModellWEA.png  used on input line 141.
+(luatex.def)             Requested size: 401.39458pt x 257.06837pt.
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 152.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [32<./Abbildungen/ModellWEAeinfach.PNG><./Abbildungen/ModellWEA.PNG>]
+<Abbildungen/WirkungsgradPV.png, id=629, 314.6154pt x 233.4321pt>
+File: Abbildungen/WirkungsgradPV.png Graphic file (type png)
+<use Abbildungen/WirkungsgradPV.png>
+Package luatex.def Info: Abbildungen/WirkungsgradPV.png  used on input line 166.
+(luatex.def)             Requested size: 312.19653pt x 231.65057pt.
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 172.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [33<./Abbildungen/WirkungsgradPV.png>]
+<Abbildungen/PVModell.png, id=640, 649.2255pt x 149.96025pt>
+File: Abbildungen/PVModell.png Graphic file (type png)
+<use Abbildungen/PVModell.png>
+Package luatex.def Info: Abbildungen/PVModell.png  used on input line 177.
+(luatex.def)             Requested size: 401.39458pt x 92.7158pt.
+
+
+LaTeX Warning: Reference `ch:Theorie' on page 34 undefined on input line 186.
+
+<Abbildungen/LastBilanziell.png, id=642, 624.53325pt x 440.847pt>
+File: Abbildungen/LastBilanziell.png Graphic file (type png)
+<use Abbildungen/LastBilanziell.png>
+Package luatex.def Info: Abbildungen/LastBilanziell.png  used on input line 190.
+(luatex.def)             Requested size: 401.39458pt x 283.33176pt.
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 194.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+[34<./Abbildungen/PVModell.PNG>]
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 206.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [35<./Abbildungen/LastBilanziell.PNG>]
+<Abbildungen/BatterieBlackBox.png, id=659, 694.84593pt x 219.06844pt>
+File: Abbildungen/BatterieBlackBox.png Graphic file (type png)
+<use Abbildungen/BatterieBlackBox.png>
+Package luatex.def Info: Abbildungen/BatterieBlackBox.png  used on input line 235.
+(luatex.def)             Requested size: 227.62204pt x 71.7613pt.
+<Abbildungen/Speicher Ebene1.png, id=661, 980.91469pt x 456.20438pt>
+File: Abbildungen/Speicher Ebene1.png Graphic file (type png)
+<use Abbildungen/Speicher Ebene1.png>
+Package luatex.def Info: Abbildungen/Speicher Ebene1.png  used on input line 243.
+(luatex.def)             Requested size: 398.33858pt x 185.256pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 253.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+[36<./Abbildungen/BatterieBlackBox.png>]
+LaTeX Font Info:    Font shape `TU/LibertinusSerif(1)/m/n' will be
+(Font)              scaled to size 12.0pt on input line 270.
+LaTeX Font Info:    Font shape `TU/LibertinusSerif(1)/m/n' will be
+(Font)              scaled to size 9.6pt on input line 270.
+LaTeX Font Info:    Font shape `TU/LibertinusSerif(1)/m/n' will be
+(Font)              scaled to size 7.2pt on input line 270.
+<Abbildungen/SOC.png, id=674, 1368.61313pt x 335.75438pt>
+File: Abbildungen/SOC.png Graphic file (type png)
+<use Abbildungen/SOC.png>
+Package luatex.def Info: Abbildungen/SOC.png  used on input line 279.
+(luatex.def)             Requested size: 341.43306pt x 83.75906pt.
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 282.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [37<./Abbildungen/Speicher Ebene1.png>]
+<Abbildungen/Steuerung.png, id=690, 1327.96124pt x 512.66531pt>
+File: Abbildungen/Steuerung.png Graphic file (type png)
+<use Abbildungen/Steuerung.png>
+Package luatex.def Info: Abbildungen/Steuerung.png  used on input line 307.
+(luatex.def)             Requested size: 398.33858pt x 153.7773pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 323.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+[38<./Abbildungen/SOC.png>]
+<Abbildungen/SOC-Rest.png, id=703, 841.64438pt x 424.58624pt>
+File: Abbildungen/SOC-Rest.png Graphic file (type png)
+<use Abbildungen/SOC-Rest.png>
+Package luatex.def Info: Abbildungen/SOC-Rest.png  used on input line 337.
+(luatex.def)             Requested size: 341.43306pt x 172.24155pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 347.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+[39<./Abbildungen/Steuerung.png>]
+<Abbildungen/SteuerungFCR.png, id=714, 903.375pt x 602.25pt>
+File: Abbildungen/SteuerungFCR.png Graphic file (type png)
+<use Abbildungen/SteuerungFCR.png>
+Package luatex.def Info: Abbildungen/SteuerungFCR.png  used on input line 355.
+(luatex.def)             Requested size: 398.33858pt x 265.56056pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Abbildungen/SteuerungFCR2.png, id=717, 903.375pt x 602.25pt>
+File: Abbildungen/SteuerungFCR2.png Graphic file (type png)
+<use Abbildungen/SteuerungFCR2.png>
+Package luatex.def Info: Abbildungen/SteuerungFCR2.png  used on input line 372.
+(luatex.def)             Requested size: 398.33858pt x 265.56056pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Abbildungen/SteuerungFCR3.png, id=719, 903.375pt x 602.25pt>
+File: Abbildungen/SteuerungFCR3.png Graphic file (type png)
+<use Abbildungen/SteuerungFCR3.png>
+Package luatex.def Info: Abbildungen/SteuerungFCR3.png  used on input line 384.
+(luatex.def)             Requested size: 398.33858pt x 265.56056pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 391.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+[40<./Abbildungen/SOC-Rest.png>]
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 392.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [41<./Abbildungen/SteuerungFCR.png><./Abbildungen/SteuerungFCR2.png>]
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 409.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [42<./Abbildungen/SteuerungFCR3.png>]
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 424.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [43]
+<Abbildungen/Bilanziell.png, id=748, 540.8205pt x 285.4665pt>
+File: Abbildungen/Bilanziell.png Graphic file (type png)
+<use Abbildungen/Bilanziell.png>
+Package luatex.def Info: Abbildungen/Bilanziell.png  used on input line 427.
+(luatex.def)             Requested size: 401.39458pt x 211.87349pt.
+<Abbildungen/Auswertung.png, id=750, 825.0825pt x 437.83575pt>
+File: Abbildungen/Auswertung.png Graphic file (type png)
+<use Abbildungen/Auswertung.png>
+Package luatex.def Info: Abbildungen/Auswertung.png  used on input line 446.
+(luatex.def)             Requested size: 401.39458pt x 213.0048pt.
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 450.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [44<./Abbildungen/Bilanziell.PNG>]
+<Abbildungen/Dreiphasig.png, id=758, 845.40843pt x 599.99156pt>
+File: Abbildungen/Dreiphasig.png Graphic file (type png)
+<use Abbildungen/Dreiphasig.png>
+Package luatex.def Info: Abbildungen/Dreiphasig.png  used on input line 462.
+(luatex.def)             Requested size: 398.33858pt x 282.70102pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `Verbraucher' on page 45 undefined on input line 478.
+
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 480.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+[45<./Abbildungen/Auswertung.PNG>]
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 502.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [46<./Abbildungen/Dreiphasig.png>]
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 524.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [47]
+chapter 5.
+<Abbildungen/Stromverbrauch.png, id=782, 1110.0672pt x 549.9747pt>
+File: Abbildungen/Stromverbrauch.png Graphic file (type png)
+<use Abbildungen/Stromverbrauch.png>
+Package luatex.def Info: Abbildungen/Stromverbrauch.png  used on input line 539.
+(luatex.def)             Requested size: 356.79897pt x 176.76755pt.
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 559.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+[48
+
+<./Abbildungen/Stromverbrauch.png>]
+Package epstopdf Info: Source file: <Abbildungen/Gesamtlast.eps>
+(epstopdf)                    date: 2024-03-10 20:02:08
+(epstopdf)                    size: 38540 bytes
+(epstopdf)             Output file: <Abbildungen/Gesamtlast-eps-converted-to.pdf>
+(epstopdf)                    date: 2024-03-10 20:02:08
+(epstopdf)                    size: 10262 bytes
+(epstopdf)             Command: <repstopdf --outfile=Abbildungen/Gesamtlast-eps-converted-to.pdf Abbildungen/Gesamtlast.eps>
+(epstopdf)             \includegraphics on input line 565.
+Package epstopdf Info: Output file is already uptodate.
+
+warning  (file Abbildungen/Gesamtlast-eps-converted-to.pdf) (pdf inclusion): PDF inclusion: found PDF version '1.7', but at most version '1.5' allowed
+<Abbildungen/Gesamtlast-eps-converted-to.pdf, id=790, 602.25pt x 225.84375pt>
+File: Abbildungen/Gesamtlast-eps-converted-to.pdf Graphic file (type pdf)
+<use Abbildungen/Gesamtlast-eps-converted-to.pdf>
+Package luatex.def Info: Abbildungen/Gesamtlast-eps-converted-to.pdf  used on input line 565.
+(luatex.def)             Requested size: 356.79897pt x 133.80492pt.
+<Abbildungen/StromverbrauchHelgoland.png, id=792, 434.22224pt x 251.13824pt>
+File: Abbildungen/StromverbrauchHelgoland.png Graphic file (type png)
+<use Abbildungen/StromverbrauchHelgoland.png>
+Package luatex.def Info: Abbildungen/StromverbrauchHelgoland.png  used on input line 578.
+(luatex.def)             Requested size: 267.60092pt x 154.76907pt.
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 582.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+[49<./Abbildungen/Gesamtlast-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <Abbildungen/HelgolandLeistungOhne.eps>
+(epstopdf)                    date: 2024-03-10 20:02:08
+(epstopdf)                    size: 192637 bytes
+(epstopdf)             Output file: <Abbildungen/HelgolandLeistungOhne-eps-converted-to.pdf>
+(epstopdf)                    date: 2024-03-10 20:02:08
+(epstopdf)                    size: 178003 bytes
+(epstopdf)             Command: <repstopdf --outfile=Abbildungen/HelgolandLeistungOhne-eps-converted-to.pdf Abbildungen/HelgolandLeistungOhne.eps>
+(epstopdf)             \includegraphics on input line 606.
+Package epstopdf Info: Output file is already uptodate.
+
+warning  (file Abbildungen/HelgolandLeistungOhne-eps-converted-to.pdf) (pdf inclusion): PDF inclusion: found PDF version '1.7', but at most version '1.5' allowed
+<Abbildungen/HelgolandLeistungOhne-eps-converted-to.pdf, id=812, 903.375pt x 451.6875pt>
+File: Abbildungen/HelgolandLeistungOhne-eps-converted-to.pdf Graphic file (type pdf)
+<use Abbildungen/HelgolandLeistungOhne-eps-converted-to.pdf>
+Package luatex.def Info: Abbildungen/HelgolandLeistungOhne-eps-converted-to.pdf  used on input line 606.
+(luatex.def)             Requested size: 445.99701pt x 223.0036pt.
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 610.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+[50<./Abbildungen/StromverbrauchHelgoland.png>]
+Package epstopdf Info: Source file: <Abbildungen/HelgolandBilanzOhne.eps>
+(epstopdf)                    date: 2024-03-10 20:02:08
+(epstopdf)                    size: 88944 bytes
+(epstopdf)             Output file: <Abbildungen/HelgolandBilanzOhne-eps-converted-to.pdf>
+(epstopdf)                    date: 2024-03-10 20:02:08
+(epstopdf)                    size: 81511 bytes
+(epstopdf)             Command: <repstopdf --outfile=Abbildungen/HelgolandBilanzOhne-eps-converted-to.pdf Abbildungen/HelgolandBilanzOhne.eps>
+(epstopdf)             \includegraphics on input line 615.
+Package epstopdf Info: Output file is already uptodate.
+
+warning  (file Abbildungen/HelgolandBilanzOhne-eps-converted-to.pdf) (pdf inclusion): PDF inclusion: found PDF version '1.7', but at most version '1.5' allowed
+<Abbildungen/HelgolandBilanzOhne-eps-converted-to.pdf, id=820, 903.375pt x 150.5625pt>
+File: Abbildungen/HelgolandBilanzOhne-eps-converted-to.pdf Graphic file (type pdf)
+<use Abbildungen/HelgolandBilanzOhne-eps-converted-to.pdf>
+Package luatex.def Info: Abbildungen/HelgolandBilanzOhne-eps-converted-to.pdf  used on input line 615.
+(luatex.def)             Requested size: 445.99701pt x 74.33452pt.
+
+LaTeX Warning: Reference `fig:' on page 51 undefined on input line 620.
+
+Package epstopdf Info: Source file: <Abbildungen/HelgolandBilanzOhne.eps>
+(epstopdf)                    date: 2024-03-10 20:02:08
+(epstopdf)                    size: 88944 bytes
+(epstopdf)             Output file: <Abbildungen/HelgolandBilanzOhne-eps-converted-to.pdf>
+(epstopdf)                    date: 2024-03-10 20:02:08
+(epstopdf)                    size: 81511 bytes
+(epstopdf)             Command: <repstopdf --outfile=Abbildungen/HelgolandBilanzOhne-eps-converted-to.pdf Abbildungen/HelgolandBilanzOhne.eps>
+(epstopdf)             \includegraphics on input line 624.
+Package epstopdf Info: Output file is already uptodate.
+File: Abbildungen/HelgolandBilanzOhne-eps-converted-to.pdf Graphic file (type pdf)
+<use Abbildungen/HelgolandBilanzOhne-eps-converted-to.pdf>
+Package luatex.def Info: Abbildungen/HelgolandBilanzOhne-eps-converted-to.pdf  used on input line 624.
+(luatex.def)             Requested size: 445.99701pt x 74.33452pt.
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 628.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+[51<./Abbildungen/HelgolandLeistungOhne-eps-converted-to.pdf><./Abbildungen/HelgolandBilanzOhne-eps-converted-to.pdf>]
+<Abbildungen/FreqBat2.png, id=841, 903.375pt x 451.9284pt>
+File: Abbildungen/FreqBat2.png Graphic file (type png)
+<use Abbildungen/FreqBat2.png>
+Package luatex.def Info: Abbildungen/FreqBat2.png  used on input line 654.
+(luatex.def)             Requested size: 398.33858pt x 199.27664pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Abbildungen/VerbrBat.png, id=843, 903.375pt x 451.9284pt>
+File: Abbildungen/VerbrBat.png Graphic file (type png)
+<use Abbildungen/VerbrBat.png>
+Package luatex.def Info: Abbildungen/VerbrBat.png  used on input line 668.
+(luatex.def)             Requested size: 398.33858pt x 199.27664pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 682.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+[52]
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 690.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [53<./Abbildungen/FreqBat2.png><./Abbildungen/VerbrBat.png>]
+<Abbildungen/FreqBat3.png, id=860, 903.375pt x 451.9284pt>
+File: Abbildungen/FreqBat3.png Graphic file (type png)
+<use Abbildungen/FreqBat3.png>
+Package luatex.def Info: Abbildungen/FreqBat3.png  used on input line 693.
+(luatex.def)             Requested size: 398.33858pt x 199.27664pt.
+<Abbildungen/FreqBat4.png, id=862, 903.375pt x 451.9284pt>
+File: Abbildungen/FreqBat4.png Graphic file (type png)
+<use Abbildungen/FreqBat4.png>
+Package luatex.def Info: Abbildungen/FreqBat4.png  used on input line 715.
+(luatex.def)             Requested size: 398.33858pt x 199.27664pt.
+<Abbildungen/FreqBat5.png, id=864, 903.375pt x 451.9284pt>
+File: Abbildungen/FreqBat5.png Graphic file (type png)
+<use Abbildungen/FreqBat5.png>
+Package luatex.def Info: Abbildungen/FreqBat5.png  used on input line 726.
+(luatex.def)             Requested size: 398.33858pt x 199.27664pt.
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 730.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [54<./Abbildungen/FreqBat3.png>])
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 36.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [55<./Abbildungen/FreqBat4.png>]
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 36.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [56<./Abbildungen/FreqBat5.png>]
+\openout2 = Schlussteil.aux
+ (./Schlussteil.tex
+chapter 6.
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 3.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+[57
+
+
+
+
+]
+chapter 7.
+<Abbildungen/AusblickAbb1.jpg, id=890, 392.96812pt x 219.06844pt>
+File: Abbildungen/AusblickAbb1.jpg Graphic file (type jpg)
+<use Abbildungen/AusblickAbb1.jpg>
+Package luatex.def Info: Abbildungen/AusblickAbb1.jpg  used on input line 19.
+(luatex.def)             Requested size: 398.33858pt x 222.07632pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 50.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+[58
+
+]
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 50.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [59<./Abbildungen/AusblickAbb1.jpg>])
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 38.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [60]
+\openout2 = appendix.aux
+ (./appendix.tex)
+chapter without number
+
+Package biblatex Warning: No driver for 'legislation'.
+(biblatex)                Using fallback driver on input line 5.
+
+LaTeX Font Info:    Font shape `TU/LibertinusSerif(0)/m/sc' will be
+(Font)              scaled to size 12.0pt on input line 5.
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 5.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+[1
+
+
+
+
+]
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 5.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [2]
+File: Abbildungen/Logo_HSB_Hochschule_Bremen.png Graphic file (type png)
+<use Abbildungen/Logo_HSB_Hochschule_Bremen.png>
+Package luatex.def Info: Abbildungen/Logo_HSB_Hochschule_Bremen.png  used on input line 40.
+(luatex.def)             Requested size: 104.48145pt x 39.83368pt.
+ [3] (./SPT.aux (./Titel.aux) (./toc.aux) (./Einleitung.aux) (./Grundlagen.aux) (./Technikstand.aux) (./Simulation.aux) (./Schlussteil.aux) (./appendix.aux))
+ ***********
+LaTeX2e <2023-06-01> patch level 1
+L3 programming layer <2023-10-10>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `SPT.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package logreq Info: Writing requests to 'SPT.run.xml'.
+
+\openout1 = SPT.run.xml
+)
+
+Here is how much of LuaTeX's memory you used:
+ 67017 strings out of 476835
+ 125007,3417909 words of node,token memory allocated
+ 1125 words of node memory still in use:
+   8 hlist, 2 vlist, 2 rule, 1 local_par, 7 glue, 4 kern, 1 penalty, 1 margin_kern, 3 glyph, 86 attribute, 86 glue_spec, 45 attribute_list, 4 write, 24 pdf_action nodes
+   avail lists: 1:10,2:2301,3:584,4:170,5:595,6:185,7:10029,8:201,9:1253,10:31,11:1271,12:1
+ 86601 multiletter control sequences out of 65536+600000
+ 137 fonts using 37437291 bytes
+ 130i,24n,139p,10942b,3298s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/opentype/public/libertinus-fonts/LibertinusSerif-Regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/libertinus-fonts/LibertinusMath-Regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/libertinus-fonts/LibertinusMath-Regular.otf><c:/texlive/2023/texmf-dist/fonts/truetype/public/anonymouspro/AnonymousPro-Regular.ttf><c:/texlive/2023/texmf-dist/fonts/opentype/public/libertinus-fonts/LibertinusSerif-Bold.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/libertinus-fonts/LibertinusMath-Regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/libertinus-fonts/LibertinusSerif-Regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/libertinus-fonts/LibertinusSans-Bold.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/libertinus-fonts/LibertinusSerif-Italic.otf><c:/texlive/2023/texmf-dist/fonts/truetype/ascender/opensans/OpenSans-Regular.ttf><c:/texlive/2023/texmf-dist/fonts/truetype/ascender/opensans/OpenSans-Bold.ttf>
+Output written on SPT.pdf (69 pages, 3014749 bytes).
+
+PDF statistics: 1162 PDF objects out of 1200 (max. 8388607)
+ 966 compressed objects within 10 object streams
+ 235 named destinations out of 1000 (max. 131072)
+ 320 words of extra memory for PDF output out of 10000 (max. 100000000)
+
