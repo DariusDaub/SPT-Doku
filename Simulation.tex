@@ -21,7 +21,7 @@ Die Verläufe der Windgeschwindigkeit und Globalstrahlung der beiden Wetterstati
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\linewidth]{figures/Wetter20bis22.eps}
+	\includegraphics[width=\linewidth]{Abbildungen/Wetter20bis22.eps}
 	\caption{Wetterdaten für die Standorte Bremen Flughafen und Helgoland für die Jahre 2020 bis 2022}
 	\label{fig:wetter}
 \end{figure}
@@ -51,7 +51,7 @@ Mit Einsetzen in \autoref{eq:wind} ergibt sich somit die enthaltene Leistung im 
 
 %\begin{figure}[H]
 %	\centering
-%	\includegraphics[width=0.7\linewidth]{figures/E115.jpg}
+%	\includegraphics[width=0.7\linewidth]{Abbildungen/E115.jpg}
 %	\caption{Enercon E-115}
 %	\label{fig:e115}
 %\end{figure}
@@ -59,7 +59,7 @@ Es zeigt sich, dass die Leistung kubisch von der Windgeschwindigkeit abhängt. D
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{figures/Enercon E115.png}
+	\includegraphics[width=0.9\linewidth]{Abbildungen/Enercon E115.png}
 	\caption{Leistungskurve Enercon E-115 \cite{E115}}
 	\label{fig:Leistungskurve}
 \end{figure}
@@ -129,7 +129,7 @@ Die zuvor beschriebenen Zusammenhänge werden nun in einem Simulink Modell verkn
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{figures/ModellWEAeinfach.png}
+	\includegraphics[width=0.9\linewidth]{Abbildungen/ModellWEAeinfach.png}
 	\caption{Simulink Modell einer Enercon E-115}
 	\label{fig:simulinkWEA}
 \end{figure}
@@ -138,7 +138,7 @@ Zur Betrachtung des Modells in einem dreiphasigen Netz wird das Modell um einen 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{figures/ModellWEA.png}
+	\includegraphics[width=0.9\linewidth]{Abbildungen/ModellWEA.png}
 	\caption{Simulink Modell einer Enercon E-115}
 	\label{fig:e115}
 \end{figure}
@@ -163,7 +163,7 @@ Die Leistung des Strahlungsflusses wird dabei mit dem Modulwirkungsgrad $\eta$ i
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\linewidth]{figures/WirkungsgradPV.png}
+	\includegraphics[width=0.7\linewidth]{Abbildungen/WirkungsgradPV.png}
 	\caption{Veranschaulichung der Verluste innerhalb eines PV-Moduls mithilfe eines Sankey-Diagramms \cite{VerlustePV}}
 	\label{fig:VerlustePV}
 \end{figure}
@@ -174,7 +174,7 @@ Werden die beschriebenen Zusammenhänge in ein Simulink Modell transferiert, erg
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{figures/PVModell.png}
+	\includegraphics[width=0.9\linewidth]{Abbildungen/PVModell.png}
 	\caption{Starkl vereinfachtes Modell einer PV-Anlage in Simulink}
 	\label{fig:PVModell}
 \end{figure}
@@ -187,7 +187,7 @@ Wie in \autoref{ch:Theorie} dargestellt, erfolgt die Simulation der Verbraucher 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{figures/LastBilanziell.png}
+	\includegraphics[width=0.9\linewidth]{Abbildungen/LastBilanziell.png}
 	\caption{Simulink Modell zur Simulation einer beliebigen Stromlast}
 	\label{fig:Last}
 \end{figure}
@@ -427,7 +427,7 @@ Sinn und Zweck des bilanziellen Modells ist es die Situation zwischen Erzeugung 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{figures/Bilanziell.png}
+	\includegraphics[width=0.9\linewidth]{Abbildungen/Bilanziell.png}
 	\caption{Bilanzielles Modell eines Inselnetzes in Matlab/Simulink}
 	\label{fig:Bilanziell}
 \end{figure}
@@ -437,7 +437,7 @@ Die Erzeuger, Speicher und Verbraucher sind analog zu den vorherigen Erklärunge
 
 %\begin{figure}[H]
 %	\centering
-%	\includegraphics[width=0.9\linewidth]{figures/Clock.png}
+%	\includegraphics[width=0.9\linewidth]{Abbildungen/Clock.png}
 %	\caption{Taktgeber für das bilanzielle Modell}
 %	\label{fig:clock}
 %\end{figure}
@@ -446,7 +446,7 @@ Der Batteriespeicher erhält die Leistungsbilanz ohne Energiespeicher als Eingan
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{figures/Auswertung.png}
+	\includegraphics[width=0.9\linewidth]{Abbildungen/Auswertung.png}
 	\caption{Auswertung der einzelnen Komponenten im bilanziellen Modell}
 	\label{fig:Auswertung}
 \end{figure}
@@ -471,7 +471,7 @@ Um die Gesamtlast realitätsnah zu gestalten, werden die Gewichtungsfaktoren an 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\linewidth]{figures/Stromverbrauch.png}
+	\includegraphics[width=0.8\linewidth]{Abbildungen/Stromverbrauch.png}
 	\caption{Anteile der Verbrauchergruppen am Nettostromverbrauch 2023}
 	\label{fig:pie}
 \end{figure}
@@ -497,7 +497,7 @@ Dies stellt lediglich eine Vereinfachung dar und spiegelt keinesfalls die Realit
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\linewidth]{figures/Gesamtlast.eps}
+	\includegraphics[width=0.8\linewidth]{Abbildungen/Gesamtlast.eps}
 	\caption{Kombiniertes Gesamtlastprofil für einen Werktag im Winter}
 	\label{fig:Gesamtlast}
 \end{figure}
@@ -510,7 +510,7 @@ Für dieses Szenario dient die Insel Helgoland als Grundlage für Wetter und Ver
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.6\linewidth]{figures/StromverbrauchHelgoland.png}
+	\includegraphics[width=0.6\linewidth]{Abbildungen/StromverbrauchHelgoland.png}
 	\caption{Elektrische Energie [kWh/a] und prozentualer Anteil nach Sektoren im Jahr 2008 nach \cite{Helgoland}}
 	\label{fig:helgolandVerbrauch}
 \end{figure}
@@ -538,7 +538,7 @@ Wird nun das Jahr 2020 simuliert, ergeben sich für das Energiesystem ohne Speic
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\linewidth]{figures/HelgolandLeistungOhne.eps}
+	\includegraphics[width=\linewidth]{Abbildungen/HelgolandLeistungOhne.eps}
 	\caption{Simulierter Jahresverlauf der Stromproduktion und des Stromverbrauchs}
 	\label{fig:helgolandVerlaufOhne}
 \end{figure}
@@ -547,7 +547,7 @@ Hier ist erneut die starke Abhängigkeit der PV-Produktion von der Jahreszeit er
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\linewidth]{figures/HelgolandBilanzOhne.eps}
+	\includegraphics[width=\linewidth]{Abbildungen/HelgolandBilanzOhne.eps}
 	\caption{Simulierter Jahresverlauf der Leistungsbilanz im modellierten Inselnetz}
 	\label{fig:helgolandBilanzOhne}
 \end{figure}
@@ -556,7 +556,7 @@ Hier ist klar zu erkennen, dass im schlechtesten Fall keinerlei Produktion vorli
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\linewidth]{figures/HelgolandBilanzOhne.eps}
+	\includegraphics[width=\linewidth]{Abbildungen/HelgolandBilanzOhne.eps}
 	\caption{Simulierter Jahresverlauf der Leistungsbilanz im modellierten Inselnetz}
 	\label{fig:helgolandBilanzOhne}
 \end{figure}
