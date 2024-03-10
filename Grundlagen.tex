@@ -1,5 +1,32 @@
 \chapter{Theoretische Grundlagen}
 
+\section{Stabilität in Inselnetzen}
+
+Ein Zentrales Kriterium bei der Auslegung und dem betrieb von elektrischen Energiesystemen stellt die Stabilität dar. Durch sie wird eine lückenlose und zuverlässige Stromversorgung gewährt. Die Stabilität in Energiesystemen definiert sich daraus, wie ein System auf Störeinflüsse oder Änderungen im Last- oder Erzeugungsverhalten reagiert. Die verschiedenen Stabilitätskriterien lassen sich wie  \autoref{fig:stabil} zeigt in verschiedene Kategorien klassifizieren. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{Abbildungen/Stabilität.png}
+	\caption{Klassifizierung der Stabilität in Inselnetzen nach}
+	\label{fig:stabil}
+\end{figure}
+
+Grundsätzlich ergeben sich hieraus drei Stabilitätsbetrachtungen, die im Folgenden kurz erläutert werden. Obwohl sich das Modell in \autoref{ } lediglich mit der Frequenzstabilität beschäftigt, werden der Vollständigkeit halber und für das allgemeine Verständnis auch die anderen beiden Stabilitätskriterien kurz umrissen.
+
+\textbf{Frequenzstabilität}
+
+Die Frequenzstabilität beschreibt Phänomene, welche sich aus der Wirkleistungsbilanz des Netzes ergeben. Die Frequenz hängt direkt mit dem Gleichgewicht aus Erzeugung und Verbrauch von Wirkleistung zusammen, weshalb diese auch ein Maß für die ausgeglichene Bilanz in einem Energiesystem darstellt. Die Arten der Störungen werden hierbei noch in ihre Dauer und ihren Einfluss auf das System kategorisiert. Ein Ausfall einer kleinen Erzeugungsanlage stellt beispielsweise eine Kleinstörung dar, welche durch eine geeignete Regelung der Erzeugungsanlagen auch schnell wieder ausgeregelt werden kann. Ein Kurzschluss stellt wiederum eine Großstörung dar, welche sich bei einem korrekten Verhalten der Schutztechnik schnell auflöst aber auch bei einem ungewollten Verhalten langfristig anhalten kann. Besonders in kleineren Inselnetzen wirken sich der Ausfall einer Erzeugunsganlage stärker aus als in einem großen Verbundnetz mit relativ großer Trägheit. Hinzu kommt die mangelnde Trägheit der Generatoren bei einer Erzeugung aus erneuerbaren Erzeugungsanlagen, welche meistens über Wechselrichter an das Netz gekoppelt sind. \cite{Simulationsmethode} Zudem besteht in Inselnetzen durch die geringeAusddehnung eine hohes R/X-Verhältnis, welches zu einer Kopplung zwischen Spannungs- und Frequenzstabilität führt. Denn eine Spannungsänderung an der Erzeugungsanlage wirkt sich unmittlebar auf den verbraucher aus, weelcher druch die geringere Spannung zusätzlich eine geringere Leistung abruft. \cite{Willenberg}
+
+\textbf{Spannungsstabilität}
+
+Die Spannungsstabiltät beschreibt das Verhalten der Spannungen in allen Knoten des Netzes un dist im wesentlichen von der Blindleistungsbilanz abhängig. In Inselnetzen spielt diese aber meistens eine untergeordnete Rolle, da der Blindleistungsbedarf aufgrund der geringen Ausdehnung und damit verbundenen kleinen Übertragungsleitungen relativ gerin gausfällt. Viel wichtiger ist hier die richtige Aufteilung der Blindleistungserzeugung auf die Erzugungsanlagen, da bei unvporteilhafter AUfteilung hohe Blindströme fließnen, welche sich wiederrum auf die Spannungsstabilität auswirken. Falls die Erzeugungsanlagen einen erhöhten Blindleistunsgbedarf durch z.B. eine Störung nicht ausregeln, wirkt sich dies besonders Stark auf die Spannung im Netz aus. Jedoch wird der Spannungsstabilität aufgrund des begrenzten Umfangs in den folgenden Modellen keine Betrachtung geschenkt.
+
+\textbf{Regelungssystems}
+
+Durch die hohe Dezentralität der Erzeugungsanlagen und dem Verzicht auf große Kraftwerke ist eine optimale Regelung der Erzeugungsanlagen unter Betrachtung der oben genannten Kriterien notwendig. Elektrische Maschienne bilden durech ihre Massenträgheit eine gewisse Trägheit in der Asuwirkung von Störungen oder Disbalancen und stabilisieren das Netzsomit von selbst. In Wechselrichtergeführten Netzen könenen sich besonders durch die Schaltfrequenzen der Leistungselektronik gegenseitige Beeinflussungen der Erzeugungsanlagen bilden. Daher stellt die Regelung dieser System eine besondere Herausforderung dar. Die Regelung des System wird jedoch aufgrund der Oberflächliche nBetrachtung ebenfalls im weiteren verlauf vernachlässigt.
+
+
+
 \section{Verbraucher in Inselnetzen}
 
 Der folgende Abschnitt befasst sich mit der Beschreibung der Stromverbraucher für das vorliegende Inselnetz. 
