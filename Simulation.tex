@@ -435,12 +435,12 @@ Sinn und Zweck des bilanziellen Modells ist es die Situation zwischen Erzeugung 
 Die Erzeuger, Speicher und Verbraucher sind analog zu den vorherigen Erklärungen aufgebaut. Es wird angenommen, dass der Speicher exakt die Menge an Energie aufnimmt oder abgibt, welche das System benötigt. Dabei hält er jedoch seine vorgegebenen Grenzen hinsichtlich Kapazität, maximaler Leistung und SOC ein. Das Subsystem Clock dient als Taktgeber für alle Komponenten und ermöglicht es das Modell in beliebigen Zeitschritten simulieren zu lassen. 
 %Der Aufbau ist in \autoref{fig:clock} zu sehen.
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.9\linewidth]{Abbildungen/Clock.png}
-	\caption{Taktgeber für das bilanzielle Modell}
-	\label{fig:clock}
-\end{figure}
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[width=0.9\linewidth]{figures/Clock.png}
+%	\caption{Taktgeber für das bilanzielle Modell}
+%	\label{fig:clock}
+%\end{figure}
 
 Der Batteriespeicher erhält die Leistungsbilanz ohne Energiespeicher als Eingangsgröße und berechnet hieraus die ein- oder auszuspeisende Leistung. Diese wird wieder mit der zuvor berechneten Leistungsbilanz des Inselnetzes ohne Speicher verrechnet, wodurch sich der Verlauf der Bilanz unter Verwendung eines Speichersystems ergibt. Diese Auswertung wird in dem gleichnamigen Subsystem vorgenommen, welches in \autoref{fig:Auswertung} dargestellt ist.
 
