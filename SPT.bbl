@@ -19,6 +19,71 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{Simulationsmethoden}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=9af20196e587531968014062dd4cc451}{%
+           family={Nuschke},
+           familyi={N\bibinitperiod},
+           given={Maria},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Technische Universität Braunshweig}%
+      }
+      \list{publisher}{1}{%
+        {Fraunhofer verlag}%
+      }
+      \strng{namehash}{9af20196e587531968014062dd4cc451}
+      \strng{fullhash}{9af20196e587531968014062dd4cc451}
+      \strng{bibnamehash}{9af20196e587531968014062dd4cc451}
+      \strng{authorbibnamehash}{9af20196e587531968014062dd4cc451}
+      \strng{authornamehash}{9af20196e587531968014062dd4cc451}
+      \strng{authorfullhash}{9af20196e587531968014062dd4cc451}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Frequenzstabilität im umricherdominierten Verbundnetz}
+      \field{type}{Dissertation}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://publica-rest.fraunhofer.de/server/api/core/bitstreams/68d20c8c-49b6-48cf-a9d5-e657f05cbd58/content
+      \endverb
+      \verb{url}
+      \verb https://publica-rest.fraunhofer.de/server/api/core/bitstreams/68d20c8c-49b6-48cf-a9d5-e657f05cbd58/content
+      \endverb
+    \endentry
+    \entry{Willenberg2021}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=dc6ee5b72bbe212a2f1e12acee6b9626}{%
+           family={Willenberg},
+           familyi={W\bibinitperiod},
+           given={Dominik},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Rheinisch Westfälische technische Hochschule Aachen}%
+      }
+      \strng{namehash}{dc6ee5b72bbe212a2f1e12acee6b9626}
+      \strng{fullhash}{dc6ee5b72bbe212a2f1e12acee6b9626}
+      \strng{bibnamehash}{dc6ee5b72bbe212a2f1e12acee6b9626}
+      \strng{authorbibnamehash}{dc6ee5b72bbe212a2f1e12acee6b9626}
+      \strng{authornamehash}{dc6ee5b72bbe212a2f1e12acee6b9626}
+      \strng{authorfullhash}{dc6ee5b72bbe212a2f1e12acee6b9626}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Designfaktoren für den stabilen Inselnetzbetrieb in NS-/MS-Netzen}
+      \field{type}{Dissertation}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://publications.rwth-aachen.de/record/837922/files/837922.pdf
+      \endverb
+      \verb{url}
+      \verb https://publications.rwth-aachen.de/record/837922/files/837922.pdf
+      \endverb
+    \endentry
     \entry{cronenberg_beschreibung_nodate}{article}{}
       \name{author}{1}{}{%
         {{hash=a8a24e803be4cea53eead29c87bd8e1a}{%
@@ -894,40 +959,6 @@
       \verb https://www.netztransparenz.de/de-de/Regelenergie/Daten-Regelreserve/Sek%C3%BCndliche-Daten
       \endverb
     \endentry
-    \entry{Simulationsmethoden}{thesis}{}
-      \name{author}{1}{}{%
-        {{hash=9af20196e587531968014062dd4cc451}{%
-           family={Nuschke},
-           familyi={N\bibinitperiod},
-           given={Maria},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{institution}{1}{%
-        {Technische Universität Braunshweig}%
-      }
-      \list{publisher}{1}{%
-        {Fraunhofer verlag}%
-      }
-      \strng{namehash}{9af20196e587531968014062dd4cc451}
-      \strng{fullhash}{9af20196e587531968014062dd4cc451}
-      \strng{bibnamehash}{9af20196e587531968014062dd4cc451}
-      \strng{authorbibnamehash}{9af20196e587531968014062dd4cc451}
-      \strng{authornamehash}{9af20196e587531968014062dd4cc451}
-      \strng{authorfullhash}{9af20196e587531968014062dd4cc451}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Frequenzstabilität im umricherdominierten Verbundnetz}
-      \field{type}{Dissertation}
-      \field{year}{2021}
-      \verb{urlraw}
-      \verb https://publica-rest.fraunhofer.de/server/api/core/bitstreams/68d20c8c-49b6-48cf-a9d5-e657f05cbd58/content
-      \endverb
-      \verb{url}
-      \verb https://publica-rest.fraunhofer.de/server/api/core/bitstreams/68d20c8c-49b6-48cf-a9d5-e657f05cbd58/content
-      \endverb
-    \endentry
     \entry{Helgoland}{booklet}{}
       \name{author}{1}{}{%
         {{hash=a5c4f62fa65e72dc3ee335ac01568168}{%
@@ -1014,8 +1045,6 @@
       \field{year}{2023}
     \endentry
   \enddatalist
-  \missing{Simulationsmethode}
-  \missing{Willenberg}
 \endrefsection
 \endinput
 

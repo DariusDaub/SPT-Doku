@@ -202,11 +202,11 @@ beschrieben werden.
 
 \subsection{Batteriemodelle}\label{Batteriemodelle}
 Batteriemodelle können grundlegend in 
-%\begin{itemize}
-%    \item mathematisch, empirische Black-Box-Modelle,
-%    \item elektrische Modelle und
-%   \item physikalisch-chemische Modelle
-%\end{itemize}
+\begin{itemize}
+    \item mathematisch, empirische Black-Box-Modelle,
+    \item elektrische Modelle und
+   \item physikalisch-chemische Modelle
+\end{itemize}
 unterteilt werden. 
 Innerhalb dieser Kategorien gibt es zusätzlich erhebliche Unterschiede in Bezug auf die Komplexität des Modells.
 Die mathematischen Modelle versuchen dabei, das Verhalten von Batterien durch Umsetzung von empirisch bestimmten
@@ -400,9 +400,6 @@ Laut Vorgabe der Übertragungsnetzbetreiber darf dieses Nachladen maximal 2 Stun
 Der Speicher in dieser Simulation braucht etwas über eine halbe Stunde und kann anschließend wieder
 Regelleistung zur Verfügung stellen.
 
-
-
-\section{Netzmodell}
 \section{Netzmodell}
 
 Zur Untersuchung der Inselnetze werden die zuvor gezeigten Teilmodelle zu Netzmodellen verschaltet. Abhängig von der geforderten Modelltiefe und dem geforderten Detailgrad, stehen grundsätzlich drei verschiedene Simulationsmethoden in Simulink zur Verfügung. Im folgenden werden diese drei Methoden kurz beleuchtet und anschließend eine Entscheidung für die nachfolgenden Modelle begründet.
@@ -650,7 +647,7 @@ Mit dieser Dimensionierung kann einerseits überprüft werden ob der Windkraft-S
 und andererseits muss dieser Speicher so durchgehend positive Leistung bereitstellen und erreicht daher die SOC-Untergrenze.
 Ab dieser muss der Speicher sich abschalten, es kommt zu einem Frequenzeinbruch und die FCR wird aktiviert.
 
-\paragraph{Messwerte und Ergebnisse}
+\paragraph{Grundlegende Simulation}
 
 \begin{figure}[h!]
 	\centering
@@ -682,5 +679,74 @@ Diesmal ist der Generator allerdings nicht in der Lage genug Leistung auszugeben
 ursprünglichen Wert einzustellen.
 Die Batterie zur FCR-Erbringung gibt nun einen konstanten Wert aus und verhindert ein weiteres Absinken der Frequenz aber
 es wäre weitere Regelreserve notwendig um wieder eine konstante Netzfrequenz von 50 Hz zu erreichen.
- 
+
+\paragraph{Simulation mit Abschaltung der Windkraft}
+Um die Reaktion des Inselnetzmodells auf Frequenzabweichungen genauer zu untersuchen wurde eine zusätzliche
+Simulation durchgeführt bei der die Windkraftanlage und der dazugehörige Speicher in Regelmäßigen Abständen für 
+einen Zeitraum vom Netz getrennt werden.
+Im folgenden Beispiel wird die Windkraftanlage mit ihrem Batteriespeicher bei 250 s an das Netz angeschlossen
+und bei 500 s wieder getrennt.
+Dieses Muster wiederholt sich anschließend über die gesamte Simulationsdauer.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=14cm]{Abbildungen/FreqBat3.png}
+	\caption{Verlauf der Frequenz und Batterieleistung mit Windkraft-Abschaltung}\label{Verlauf3}
+\end{figure}
+
+In Abbildung~\ref{Verlauf3} ist der dazugehörige Verlauf der Frequenz und Batterieleistung dargestellt.
+Das Zu- oder Abschalten der Windkraft führt immer wieder zu Frequenzeinbrüchen bzw. Frequenzspitzen.
+Diese werden durch den Generator abgefedert führen aber trotzdem zur FCR-Provision durch die Batterie.
+Auch hier ist wieder gut zu erkennen, dass der Generator nicht genug Leistung aufbringen kann um die fehlende Windkraft
+zu ersetzen, weswegen eine Frequenzabweichung bleibt.
+Die Höhe dieser Abweichung ist durch die Grenze zur FCR-Bereitstellung der Batteriesteuerung vorgegeben.
+Der Speicher versucht die Frequenzabweichung bis 49,99 Hz auszugleichen und schaltet dann ab.
+In den Intervallen ohne abweichende Netzfrequenz zieht die Batterie eine geringe Leistung aus dem Netz um 
+ihren Ziel-SOC von 50 \% zu erreichen.
+Mit zunehmender Abweichung vom Ziel-SOC steigt diese bezogene Leistung.
+
+Da die FCR-Batterie in diesem Szenario deutlich mehr beansprucht wird, wurde die Simulation noch einmal
+mit einem geringeren Start-SOC wiederholt.
+So kann untersucht werden ob die Batterie korrekt in den Reservemodus wechselt
+und welchen Einfluss dieser Wechsel auf das Inselnetz hat.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=14cm]{Abbildungen/FreqBat4.png}
+	\caption{Zeitverläufe im Reservebetrieb}\label{Verlauf4}
+\end{figure}
+
+Abbildung~\ref{Verlauf4} zeigt die aufgezeichneten Verläufe der Frequenz, Batterieleistung und des Ladezustands.
+Für die Zeiträume in denen die Windkraftanlage nicht an das Netz angeschlossen ist, schwingt die Frequenz um 48,8 Hz.
+Auch im Reservebetrieb muss der Batteriespeicher bei dieser Abweichung Regelleistung zur Verfügung stellen.
+Durch die harte Grenze in der Steuerung schaltet die Batterie allerdings immer wieder schlagartig in den Reservebetrieb sobald 
+die Frequenzabweichung geringer als 200 mHz ist.
+\begin{figure}
+	 \centering
+	 \includegraphics[width=14cm]{Abbildungen/FreqBat5.png}
+	 \caption{Ausschnitt aus dem Zeitverlauf im Reservebetrieb}\label{Verlauf5}
+\end{figure}
+Abbildung \ref{Verlauf5} zeigt dieses Verhalten deutlich.
+
+Dieser Effekt müsste durch Maßnahmen wie Trägheitskonstanten in der Steuerung beseitigt werden.
+Eine so schnelle Änderung der Batterieleistung sollte nicht vorkommen können.
+Trotzdem zeigt sich hier grundlegend das richtige Verhalten der Batteriesteuerung.
+In den Intervallen mit angeschlossener Windkraftanlage kann eine Frequenz von 50 Hz erreicht werden und die Batterie 
+wechselt in den Reservebetrieb. 
+In diesem belastet sie das Netz mit maximal 500 kW und versucht innerhalb von maximal 2 Stunden den erlaubten Betriebsbereich zu erreichen.
+Diese zusätzliche Belastung kann in diesem Fall ausgeglichen werden und die Frequenz bleibt dabei konstant.
+
+Bei dieser Auslegung des Inselnetzes könnte die Batterie im erlaubten Arbeitsbereich von mindestens 35 \% SOC
+einen Ausfall der Windkraftanlage für ungefähr eine halbe Stunde abfangen (ausgehend von 600 kW Verbrauch).
+Für Fehler über diesen Zeitraum hinaus, müssten weitere Regelleistungsprodukte bereit gestellt werden.
+
 \paragraph{Einordnung der Simulation und des Modells}
+Insgesamt sind das dreiphasige Modell und die entsprechende Simulation nur eingeschränkt aussagekräftig.
+Durch die suboptimale Messung der Frequenz kann keine verlässliche FCR-Bereitstellung simuliert werden.
+Auch die Auslegung eines möglichst frequenzstabilen Inselnetzes ist daher auf Basis einer solchen Simulation kaum möglich.
+Eine Blindleistungsbetrachtung, die im Rahmen dieser Arbeit leider nicht mehr umgesetzt wurde, hätte einen Vorteil
+dieser Simulationsvariante darstellen können.
+Durch eine korrekte Frequenzschätzung mittels \texttt{Phase-Locked Loops} (PLL) wäre es möglich, den Dieselgenerator
+aus dem Modell zu entfernen oder zumindest nur eingeschränkt als Momentanreserve zu nutzen.
+Dadurch würden die Ergebnisse der durchgeführten Simulationen deutlich an Wert gewinnen und es wäre eine 
+Betrachtung von interessanteren Szenarien möglich.
