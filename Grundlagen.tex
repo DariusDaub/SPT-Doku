@@ -1,6 +1,33 @@
 \chapter{Theoretische Grundlagen}
 
-\section{Verbraucher in Inselnetzen}\label{Verbraucher}
+\section{Stabilität in Inselnetzen}
+
+Ein Zentrales Kriterium bei der Auslegung und dem betrieb von elektrischen Energiesystemen stellt die Stabilität dar. Durch sie wird eine lückenlose und zuverlässige Stromversorgung gewährt. Die Stabilität in Energiesystemen definiert sich daraus, wie ein System auf Störeinflüsse oder Änderungen im Last- oder Erzeugungsverhalten reagiert. Die verschiedenen Stabilitätskriterien lassen sich wie  \autoref{fig:stabil} zeigt in verschiedene Kategorien klassifizieren. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{Abbildungen/Stabilität.png}
+	\caption{Klassifizierung der Stabilität in Inselnetzen nach}
+	\label{fig:stabil}
+\end{figure}
+
+Grundsätzlich ergeben sich hieraus drei Stabilitätsbetrachtungen, die im Folgenden kurz erläutert werden. Obwohl sich das Modell in \autoref{ } lediglich mit der Frequenzstabilität beschäftigt, werden der Vollständigkeit halber und für das allgemeine Verständnis auch die anderen beiden Stabilitätskriterien kurz umrissen.
+
+\textbf{Frequenzstabilität}
+
+Die Frequenzstabilität beschreibt Phänomene, welche sich aus der Wirkleistungsbilanz des Netzes ergeben. Die Frequenz hängt direkt mit dem Gleichgewicht aus Erzeugung und Verbrauch von Wirkleistung zusammen, weshalb diese auch ein Maß für die ausgeglichene Bilanz in einem Energiesystem darstellt. Die Arten der Störungen werden hierbei noch in ihre Dauer und ihren Einfluss auf das System kategorisiert. Ein Ausfall einer kleinen Erzeugungsanlage stellt beispielsweise eine Kleinstörung dar, welche durch eine geeignete Regelung der Erzeugungsanlagen auch schnell wieder ausgeregelt werden kann. Ein Kurzschluss stellt wiederum eine Großstörung dar, welche sich bei einem korrekten Verhalten der Schutztechnik schnell auflöst aber auch bei einem ungewollten Verhalten langfristig anhalten kann. Besonders in kleineren Inselnetzen wirken sich der Ausfall einer Erzeugunsganlage stärker aus als in einem großen Verbundnetz mit relativ großer Trägheit. Hinzu kommt die mangelnde Trägheit der Generatoren bei einer Erzeugung aus erneuerbaren Erzeugungsanlagen, welche meistens über Wechselrichter an das Netz gekoppelt sind. \cite{Simulationsmethode} Zudem besteht in Inselnetzen durch die geringeAusddehnung eine hohes R/X-Verhältnis, welches zu einer Kopplung zwischen Spannungs- und Frequenzstabilität führt. Denn eine Spannungsänderung an der Erzeugungsanlage wirkt sich unmittlebar auf den verbraucher aus, weelcher druch die geringere Spannung zusätzlich eine geringere Leistung abruft. \cite{Willenberg}
+
+\textbf{Spannungsstabilität}
+
+Die Spannungsstabiltät beschreibt das Verhalten der Spannungen in allen Knoten des Netzes un dist im wesentlichen von der Blindleistungsbilanz abhängig. In Inselnetzen spielt diese aber meistens eine untergeordnete Rolle, da der Blindleistungsbedarf aufgrund der geringen Ausdehnung und damit verbundenen kleinen Übertragungsleitungen relativ gerin gausfällt. Viel wichtiger ist hier die richtige Aufteilung der Blindleistungserzeugung auf die Erzugungsanlagen, da bei unvporteilhafter AUfteilung hohe Blindströme fließnen, welche sich wiederrum auf die Spannungsstabilität auswirken. Falls die Erzeugungsanlagen einen erhöhten Blindleistunsgbedarf durch z.B. eine Störung nicht ausregeln, wirkt sich dies besonders Stark auf die Spannung im Netz aus. Jedoch wird der Spannungsstabilität aufgrund des begrenzten Umfangs in den folgenden Modellen keine Betrachtung geschenkt.
+
+\textbf{Regelungssystems}
+
+Durch die hohe Dezentralität der Erzeugungsanlagen und dem Verzicht auf große Kraftwerke ist eine optimale Regelung der Erzeugungsanlagen unter Betrachtung der oben genannten Kriterien notwendig. Elektrische Maschienne bilden durech ihre Massenträgheit eine gewisse Trägheit in der Asuwirkung von Störungen oder Disbalancen und stabilisieren das Netzsomit von selbst. In Wechselrichtergeführten Netzen könenen sich besonders durch die Schaltfrequenzen der Leistungselektronik gegenseitige Beeinflussungen der Erzeugungsanlagen bilden. Daher stellt die Regelung dieser System eine besondere Herausforderung dar. Die Regelung des System wird jedoch aufgrund der Oberflächliche nBetrachtung ebenfalls im weiteren verlauf vernachlässigt.
+
+
+
+\section{Verbraucher in Inselnetzen}
 
 Der folgende Abschnitt befasst sich mit der Beschreibung der Stromverbraucher für das vorliegende Inselnetz. 
 Für eine fiktive Kommune gibt es verschiedene Verbrauchertypen, welche es näher zu untersuchen gilt. 
@@ -76,7 +103,7 @@ Die vier resultierenden Verbrauchertypen werden in nachfolgender Tabelle aufgef�
 
 \begin{table}[htbp]
     \centering
-    \caption{Tabelle 1: 4 Szenarien (exakter Wert in den Klammern)}
+    \caption{4 Szenarien (exakter Wert in den Klammern)}
     \label{tab:szenarien}
     \begin{tabular}{lccc}
         \toprule
@@ -137,7 +164,7 @@ Bei Nutzung der Mittelwerte für die Dimensionierung von PV-Anlagen pro Verbrauc
 
 \begin{table}[htbp]
     \centering
-    \caption{Tabelle 2: Dimensionierung}
+    \caption{Dimensionierung}
     \label{tab:dimensionierung}
     \begin{tabular}{lccc}
         \toprule
@@ -189,7 +216,7 @@ Als Kriterium für die Nutzung gilt der Anteil in einer Kommune, die auf Basis e
 
 \begin{table}[htbp]
     \centering
-    \caption{Tabelle 3: Liste verfügbare Lastprofile}
+    \caption{Liste verfügbare Lastprofile}
     \label{tab:lastprofile}
     \begin{tabular}{llcc}
         \toprule
@@ -235,22 +262,23 @@ Daher wurden Schätzfaktoren im Verhältnis zum Haushalt aufgestellt. Die genutz
 
 \begin{table}[htbp]
     \centering
-    \caption{Tabelle 4: Skalierungsfaktor Lastprofile Jahresverbrauch}
+    \caption{Skalierungsfaktor Lastprofile Jahresverbrauch}
     \label{tab:skalierungsfaktor}
     \begin{tabular}{lcl}
         \toprule
         \textbf{Lastprofil} & \textbf{Faktor zum Jahresverbrauch (1000 kW * Faktor)} \\
         \midrule
-        H0 & 7* (auf Basis des Verhältnisses von EFH und MFH nach Verbrauchswerten aus Tabelle 1 berechnet) \\
+        H0 & 7* \\
         G4 & 20 \\
         G5 & 50 \\
         L0 & 30 \\
-        W0 & 10* (auf Basis des Verhältnisses von EFH und MFH nach Verbrauchswerten aus Tabelle 1 berechnet) \\
+        W0 & 10*\\
         A0 & 1 \\
         S0 & 1 \\
         \bottomrule
     \end{tabular}
 \end{table}
+*auf Basis des Verhältnisses von EFH und MFH nach Verbrauchswerten aus Tabelle Dimensionierung berechnet
     
 Der Jahresverbrauch einer Straßenlaterne ist bei Nutzung von LEDs bei etwa 168 kWh. 
 Aus Simplifizierungsgründen wird mit dem Faktor 1 gearbeitet, also entspricht eine Einheit einem Zug von 6 Straßenlaternen. 

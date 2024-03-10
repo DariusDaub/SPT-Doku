@@ -4,22 +4,31 @@
 Im folgenden wird gezeigt, auf welcher Grundlage die Erzeugungsanlagen in den jeweiligen Inselnetzen modelliert werden. In Anlehnung an den Abschlussbericht des Umweltbundesamtes zur Transformation der Stromerzeugung bis 2050 wird der Fokus ausschließlich auf die Modellierung von Windenergie- und Photovoltaikanlagen gelegt, da diese den Großteil der Erzeugung in allen betrachteten Szenarien darstellen. Zudem bieten sich diese Erzeugungsanlagen besonders für den autarken Einsatz in Inselnetzen an.
 
 \subsection{Wetterdaten}
-Die verwendeten Erzeugungsanlagen setzen eine Simulation von Wetterdaten voraus. Für Windenergieanlagen ist daher die Windgeschwindigkeit in $m/s$  und für die Photovoltaikanlagen die Globalstrahlungsdichte in $W/m^2$ von Bedeutung. Diese Daten stellt der deutsche Wetterdienst für über 400 verschiedene Wetterstationen in Deutschland im csv-Dateiformat frei zur Verfügung. Zudem werden die Daten in einer 10-minütigen Auflösung gemessen und bereitgestellt. Für die folgenden Simulationen werden Wetterdaten der anschließend aufgeführten Wetterstionen verwendet.
+
+Die verwendeten Erzeugungsanlagen setzen eine Simulation von Wetterdaten voraus. Für Windenergieanlagen ist daher die Windgeschwindigkeit in $m/s$  und für die Photovoltaikanlagen die Summe der Globalstrahlung der vorangegangenen 10 Minuten in $J/cm^2$ von Bedeutung. Diese Daten stellt der deutsche Wetterdienst für über 400 verschiedene Wetterstationen in Deutschland im csv-Dateiformat frei zur Verfügung. Zudem werden die Daten in einer 10-minütigen Auflösung gemessen und bereitgestellt. Für die folgenden Simulationen werden Wetterdaten der anschließend aufgeführten Wetterstionen verwendet.
 
 \begin{center}
 	\begin{tabular}[htpb]{c|c|c|c|c}
 		Stations ID & Stationshöhe & Länge & Breite & Standort \\
 		\hline
 		00691 & $4~m$ & 53.0451 & 8.7981 & Bremen \\
-		Einschaltgeschwindigkeit & $4~m$ & 54.1860 & 7.9119 & Helgoland Düne
+		02115 & $4~m$ & 54.1860 & 7.9119 & Helgoland \\
+		00282 & $240~m$ & 49.8743 & 10.9206 & Bamberg 
 	\end{tabular}
 \end{center}
 
-Die Verläufe der Windgeschwindigkeit und Globalstrahlung der beiden Wetterstationen für das Jahr 2022 sind in \autoref{label} zu sehen.
+Die Verläufe der Windgeschwindigkeit und Globalstrahlung der beiden Wetterstationen für die Jahre 2020 bis 2022 sind in \autoref{fig:wetter} zu sehen.
 
-Die Wetterstation in Bremen befindet sich auf freier Fläche in der nähe des Bremer Flughafens und spiegelt daher die Wetterverhältnisse im Umkreis von Bremen wieder. Zur Simulation einer Insel dient die Wetterstation auf Helgoland. Diese zeichnet sich vor allem durch die höhere Windauslastung aus.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{figures/Wetter20bis22.eps}
+	\caption{Wetterdaten für die Standorte Bremen Flughafen und Helgoland für die Jahre 2020 bis 2022}
+	\label{fig:wetter}
+\end{figure}
+
+Die Wetterstation in Bremen befindet sich auf freier Fläche in der nähe des Bremer Flughafens und spiegelt daher die Wetterverhältnisse im Umkreis von Bremen wieder. Zur Simulation einer Insel dient die Wetterstation auf Helgoland. Wie in \autoref{fig:wetter} zu erkennen, zeichnet sich hier das Wetter vor allem durch die höhere Windauslastung aus. Die Globalstrahlung ist größtenteils identisch.
+
 \subsection{Windenergie}
-
 
 Um das Erzeugungsverhalten einer Windenergieanlage zu beschreiben wird im wesentlichen der Zusammenhang zwischen der Windgeschwindigkeit und der ausgegebenen elektrischen Leistung der Anlage benötigt. Als Ansatz hierfür dient die kinetische Energie $E_{kin}$ einer Luftmasse $m$ mit der Geschwindigkeit $v$. \cite{Hau2016}
 
@@ -42,7 +51,7 @@ Mit Einsetzen in \autoref{eq:wind} ergibt sich somit die enthaltene Leistung im 
 
 %\begin{figure}[H]
 %	\centering
-%	\includegraphics[width=0.7\linewidth]{Abbildungen/E115.jpg}
+%	\includegraphics[width=0.7\linewidth]{figures/E115.jpg}
 %	\caption{Enercon E-115}
 %	\label{fig:e115}
 %\end{figure}
@@ -50,7 +59,7 @@ Es zeigt sich, dass die Leistung kubisch von der Windgeschwindigkeit abhängt. D
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{Abbildungen/Enercon E115.png}
+	\includegraphics[width=0.9\linewidth]{figures/Enercon E115.png}
 	\caption{Leistungskurve Enercon E-115 \cite{E115}}
 	\label{fig:Leistungskurve}
 \end{figure}
@@ -88,7 +97,7 @@ Mit:
 Bei der Messung in Bodennahen Schichten spielt vorallem die Bodenrauhigkeit eine maßgebliche Rolle, da die Messung hier von der Umgebung stark beeinflußt wird. \autoref{tab:Rauigkeit} zeigt daher die anzunehmenden Werte, je nach Standort der Messstation.  
 
 \begin{table} [H]
-	\begin{tabular}[htpb]{p{4cm}|p{3cm}|p{8cm}}
+	\begin{tabular}[htpb]{p{4cm}|p{3cm}|p{7cm}}
 		\textbf{Rauhigkeitsklasse} & \textbf{Rauhigkeitslänge} & \textbf{Geländetyp} \\
 		\hline
 		0 & 0,0002 & Wasserflächen \\
@@ -114,11 +123,13 @@ Bei der Messung in Bodennahen Schichten spielt vorallem die Bodenrauhigkeit eine
 \label{tab:Rauigkeit}
 \end{table}
 
+Von der Tabelle ausgehend wird für den Standort Bremen Flughafen eine Rauhigkeitsklasse von 0,5 angenommen, da sich die Wetterstation direkt neben einer Landebahn befindet. Für die Messung auf Helgoland wird hingegen eine Rauhigkeitsklasse von 1 angenommen, aufgrund der geringen Höhe der Messtation in Kombination mit einer leicht hügeligen Umgebung.
+
 Die zuvor beschriebenen Zusammenhänge werden nun in einem Simulink Modell verknüpft. Es ergibt sich das Modell in \autoref{fig:simulinkWEA}.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{Abbildungen/ModellWEAeinfach.png}
+	\includegraphics[width=0.9\linewidth]{figures/ModellWEAeinfach.png}
 	\caption{Simulink Modell einer Enercon E-115}
 	\label{fig:simulinkWEA}
 \end{figure}
@@ -127,12 +138,13 @@ Zur Betrachtung des Modells in einem dreiphasigen Netz wird das Modell um einen 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{Abbildungen/ModellWEA.png}
+	\includegraphics[width=0.9\linewidth]{figures/ModellWEA.png}
 	\caption{Simulink Modell einer Enercon E-115}
 	\label{fig:e115}
 \end{figure}
 
 \subsection{Photovoltaik}
+
 Ähnlich wie bei der Windenergieanlage wird zur Modellierung einer Photovoltaikanlage ein Bezug zwischen der in der Sonnenstrahlung enthaltenen Energie und der ausgegebenen elektrischen Energie eines PV Moduls hergestellt. Nach \cite{PV} besteht ein proportionaler Zusammenhang zwischen der elektrischen Leistung eines PV-Moduls $P_{el}$ und dem Strahlungsfluss $\Phi$. 
 
 \begin{equation}
@@ -151,8 +163,8 @@ Die Leistung des Strahlungsflusses wird dabei mit dem Modulwirkungsgrad $\eta$ i
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\linewidth]{Abbildungen/WirkungsgradPV.png}
-	\caption{Veraqnschaulichung der Verluste innerhalb eines PV-Moduls \cite{VerlustePV}}
+	\includegraphics[width=0.7\linewidth]{figures/WirkungsgradPV.png}
+	\caption{Veranschaulichung der Verluste innerhalb eines PV-Moduls mithilfe eines Sankey-Diagramms \cite{VerlustePV}}
 	\label{fig:VerlustePV}
 \end{figure}
 
@@ -162,14 +174,25 @@ Werden die beschriebenen Zusammenhänge in ein Simulink-Modell transferiert, erg
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{Abbildungen/PVModell.png}
+	\includegraphics[width=0.9\linewidth]{figures/PVModell.png}
 	\caption{Starkl vereinfachtes Modell einer PV-Anlage in Simulink}
 	\label{fig:PVModell}
 \end{figure}
 
-Dabei handelt es sich um ein stark vereinfachtes Modell, welches jedoch für diese Betrachtung völlig ausreichend ist, da es die Fluktuation der Sonnenstrahlung wiedergibt.
+Dabei handelt es sich um ein stark vereinfachtes Modell, welches jedoch für diese Betrachtung völlig ausreichend ist, da es die Fluktuation der Sonnenstrahlung wiedergibt und diese für die Bestimmung der Leistungsbilanz ausschlaggebend ist.
 
 \section{Verbraucher}
+
+Wie in \autoref{ch:Theorie} dargestellt, erfolgt die Simulation der Verbraucher auf Grundlage von Lastprofilen. Diese werden, wie in \autoref{fig:Last} zu sehen, mithilfe von zweidimensionalen Look-Up-Tables in das Modell integriert. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{figures/LastBilanziell.png}
+	\caption{Simulink Modell zur Simulation einer beliebigen Stromlast}
+	\label{fig:Last}
+\end{figure}
+
+Die Lastverläufe sind jeweils von der Uhrzeit, dem Wochentag und der Jahreszeit abhängig. Daher wird zu beginn mithilfe einer logischen Schaltung zwischen den jeweiligen Wochentagen und Jahreszeiten unterschieden. Anschließend wird anhand des Zeitpunktes ein Lastwert für jedes Standardprofil bestimmt. Die verschiedenen Lastprofile fließen durch einen Gewichtungsfaktor in unterschiedlichen Anteilen in die Berechnung der Gesamtlast ein. Zuletzt wird noch ein Skalierungsfaktor benutzt, um die Last auf eine gewünschten Jahresverbrauch anzupassen. Da alle Lastprofile auf einen Jahresverbrauch von 1000~kWh/a normiert sind, gibt dieser Faktor den Gesamtjahresverbrauch in vielfachen von 1000~kWh/a an.
 \section{Speicher}\label{Speicher}
 In diesem Abschnitt soll der Aufbau und die Steuerung der Speichermodelle erläutert werden.
 Dazu werden zunächst verschiedene Batteriemodelle eingeführt und anschließend der gewählte Aufbau für
@@ -380,7 +403,56 @@ Regelleistung zur Verfügung stellen.
 
 
 \section{Netzmodell}
+\section{Netzmodell}
+
+Zur Untersuchung der Inselnetze werden die zuvor gezeigten Teilmodelle zu Netzmodellen verschaltet. Abhängig von der geforderten Modelltiefe und dem geforderten Detailgrad, stehen grundsätzlich drei verschiedene Simulationsmethoden in Simulink zur Verfügung. Im folgenden werden diese drei Methoden kurz beleuchtet und anschließend eine Entscheidung für die nachfolgenden Modelle begründet.
+
+\textbf{Bilanzmodell}
+
+Das Bilanzmodell stellt die oberflächlichste Betrachtung dar und dient zur Betrachtung der Leistungsbilanz im Inselnetz. Hierfür werden die einzelnen Komponenten vereinfacht dargestellt und elektrische Parameter des Netzes vernachlässigt. Durch diese Vereinfachungen ergeben sich kurze Simulationszeiten, weshalb es möglich ist lange Zeiträume zu betrachten. Jedoch bildet dieses Modell mit steigender Vereinfachung immer weniger die Realität ab, wodurch sich dieses Modell besonders für grobe Betrachtungen anbietet.
+
+\textbf{Momentanwertsimulation (EMT)}
+
+Bei der Momentanwertsimulation unter Berücksichtigung von elektromagnetischen Transienten wird das Netz durch die jeweiligen dreiphasigen Netzzweige beschrieben. Hierdurch ergibt sich ein Gleichungssystem aus Differentialgleichungen, welches für jeden betrachteten Zeitschritt gelöst wird. Somit lassen sich Netze auch in unsymmetrischen Netzzuständen und sehr Detailgetreu hinsichtlich ihrer elektrischen Eigenschaften beschrieben. Der Rechenaufwand ist hier jedoch vergleichsweise hoch und steigt mit der Komplexität des betrachteten Netzes. \cite{Simulationsmethoden}
+
+\textbf{Raumzeigersimulation (RMS)}
+
+Eine etwas weniger detaillierte Simulationsmethode stellt die Raumzeigersimulation dar. Hierbei werden die bei der Momentanwertssimulation betrachteten elektromagnetischen Vorgänge vernachlässigt, wodurch sich eine deutlich weniger rechenintensive Simulation ergibt. Dennoch ist dieses Modell detailliert genug, um Spannungs- oder Frequenzregelung in Energienetzen zu untersuchen. Statt den tatsächlichen Sinusverlauf der dreiphasigen Wechselspannungen zu betrachten, werden diese als Vektoren in einem rotierenden Koordinatensystem dargestellt. Das Koordinatensystem rotiert hierbei mit der Netzfrequenz, wodurch sich ein stehender Zeiger ergibt, der auch Raumzeiger genannt wird und aus den Komponeten d und q besteht. Dies ermöglicht deutlich größere SImulkationsschritte, da der Sinus nicht mehr exakt nachgebidlet werden muss. Jedoch wird nach Modell auch unegnauer mit steigender Abweichung der Netzfrequernz von der Frequenz des drehenden Koordinatensystems. \cite{Simulationsmethoden}
+
+Nach kurzer Betrachtung der drei Simulationsmethoden werden im folgenden die bilanzielle und die Betrachtung mithilfe eines Raumzeigers verfolgt, da beide Modelle eine akzeptable Simulationsdauer und -tiefe bieten. Das bilanzielle Modell dient hier eher der groben Betrachtung und das Raumzeigermodell der Frequenzbetrachtung. Das Momentanwertsmodell scheidet durch den hohen Simulationsaufwand und die Detailtiefe aus. Die zuvor beschriebenen Modelle der Erzeuger, Verbraucher und Speicher ermöglichen durch die ihre starke Vereinfachung keine detaillierte Betrachtung der elektrischen Eigenschaften.
+
 \subsection{Bilanziell}
+
+Sinn und Zweck des bilanziellen Modells ist es die Situation zwischen Erzeugung und Verbrauch im Inselnetz über lange Zeiträume zu untersuchen. Somit ist es möglich den Energiespeicher auszulegen und mögliche kritische Zeitpunkte zu identifizieren. Wie es der Name vermuten lässt, handelt es sich hierbei um eine bilanzielle Betrachtung zwischen Erzeugung und Verbrauch. Die dabei entstehende Diskrepanz wird mithilfe des Energiespeichers abgefangen, indem dieser Systemdienlich überschüssige Energie aufnimmt oder gespeicherte Energie abgibt. \autoref{fig:Bilanziell} zeigt die oberste Ebene und somit den groben Aufbau des Modells.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{figures/Bilanziell.png}
+	\caption{Bilanzielles Modell eines Inselnetzes in Matlab/Simulink}
+	\label{fig:Bilanziell}
+\end{figure}
+
+Die Erzeuger, Speicher und Verbraucher sind analog zu den vorherigen Erklärungen aufgebaut. Es wird angenommen, dass der Speicher exakt die Menge an Energie aufnimmt oder abgibt, welche das System benötigt. Dabei hält er jedoch seine vorgegebenen Grenzen hinsichtlich Kapazität, maximaler Leistung und SOC ein. Das Subsystem Clock dient als Taktgeber für alle Komponenten und ermöglicht es das Modell in beliebigen Zeitschritten simulieren zu lassen. 
+%Der Aufbau ist in \autoref{fig:clock} zu sehen.
+
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[width=0.9\linewidth]{figures/Clock.png}
+%	\caption{Taktgeber für das bilanzielle Modell}
+%	\label{fig:clock}
+%\end{figure}
+
+Der Batteriespeicher erhält die Leistungsbilanz ohne Energiespeicher als Eingangsgröße und berechnet hieraus die ein- oder auszuspeisende Leistung. Diese wird wieder mit der zuvor berechneten Leistungsbilanz des Inselnetzes ohne Speicher verrechnet, wodurch sich der Verlauf der Bilanz unter Verwendung eines Speichersystems ergibt. Diese Auswertung wird in dem gleichnamigen Subsystem vorgenommen, welches in \autoref{fig:Auswertung} dargestellt ist.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{figures/Auswertung.png}
+	\caption{Auswertung der einzelnen Komponenten im bilanziellen Modell}
+	\label{fig:Auswertung}
+\end{figure}
+
+Zusätzlich erfolgt eine Energiemessung der einzelnen Komponenten, um hier eine weitere Auswertung vornehmen zu können.
+
 \subsection{Dreiphasig}\label{3phase}
 Um das Frequenzverhalten des Inselnetzes so gut es geht auszuwerten wurde ein dreiphasiges Simulink-Modell aufgebaut.
 Dabei wurde auf eine Vorlage zurückgegriffen welche anschließend an das geplante Inselnetz angepasst wurde.
@@ -455,6 +527,107 @@ Der FCR-Speicher kommt in dieser Simulation daher nur eingeschränkt zum Einsatz
 \chapter{Auswertung}
 
 \section{Bilanziell}
+
+
+
+
+\subsection{Szenario Standort Bremen}
+
+Dieses Szenario betrachtetet ein Ins
+
+Um die Gesamtlast realitätsnah zu gestalten, werden die Gewichtungsfaktoren an die Anteile der Verbrauchergruppen am Nettostromverbrauch in Deutschland für das Jahr 2023 angelehnt. Die Verteilung der Verbräuche ist in \autoref{fig:pie} dargestellt.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{figures/Stromverbrauch.png}
+	\caption{Anteile der Verbrauchergruppen am Nettostromverbrauch 2023}
+	\label{fig:pie}
+\end{figure}
+
+Da sich die jeweiligen Verbrauchergruppen aus diversen Lastprofilen zusammensetzen, werden die vorhandenen Lastprofile bestmöglich Gewichtet, um möglichst der Realität zu entsprechen. Es wird eine folgende Gewichtung der Lastprofile gewählt:
+
+\begin{center}
+	\begin{tabular}[htpb]{c|c}
+		\textbf{Lastkurve} & \textbf{Gewichtung} \\
+		\hline
+		H0 Haushalt & 25~\% \\
+		W0 Wärmepumpe & 5~\% \\
+		G4 Friseur & 6~\% \\
+		G5 Bäckerei & 7~\% \\
+		S0 Straßenbeleuchtung & 1~\% \\
+		L0 Landwirtschaft & 6~\% \\
+		G3 Gewerbe durchlaufend & 25~\% \\
+		G1 Werktags & 25~\% 
+	\end{tabular}
+\end{center}
+
+Dies stellt lediglich eine Vereinfachung dar und spiegelt keinesfalls die Realität wieder. \autoref{fig:Gesamtlast} zeigt das resultierende Gesamtastprofil für einen Tag und normiert auf $1000~kWh/a$.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{figures/Gesamtlast.eps}
+	\caption{Kombiniertes Gesamtlastprofil für einen Werktag im Winter}
+	\label{fig:Gesamtlast}
+\end{figure}
+
+\subsection{Szenario Helgoland}
+
+Für dieses Szenario dient die Insel Helgoland als Grundlage für Wetter und Verbrauchsdaten. Da es sich bei Helgoland, um die letzte ans Stromnetz angeschlossene Gemeinde handelt und die Insel weit entfernt von der Küste liegt, bietet diese eine realistisches Szenario für ein Inselnetz.
+
+\autoref{fig:helgolandVerbrauch} zeigt den jährlichen Stromverbrauch auf der Insel Helgoland für das Jahr 2008. Der Gesamtverbrauch beträgt hier $11,6~GWh/a$.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\linewidth]{figures/StromverbrauchHelgoland.png}
+	\caption{Elektrische Energie [kWh/a] und prozentualer Anteil nach Sektoren im Jahr 2008 nach \cite{Helgoland}}
+	\label{fig:helgolandVerbrauch}
+\end{figure}
+
+Besonders stechen hier der hohe Anteil an Haushalten heraus. Zudem besitzt Helgoland keine eigene Landwirtschaft und durch die touristische Auslegung wird von einem betrieb am Wochenende ausgegangen. Zur Nachbildung dieses Verbraucherprofils wird die folgende Gewichtung von Standardlastprofilen verwendet.
+
+\begin{center}
+	\begin{tabular}[htpb]{c|c}
+		\textbf{Lastkurve} & \textbf{Gewichtung} \\
+		\hline
+		H0 Haushalt & 35~\% \\
+		W0 Wärmepumpe & 5~\% \\
+		G4 Friseur & 7~\% \\
+		G5 Bäckerei & 7~\% \\
+		S0 Straßenbeleuchtung & 1~\% \\
+		L0 Landwirtschaft & 0~\% \\
+		G3 Gewerbe durchlaufend & 30~\% \\
+		G1 Werktags & 15~\% 
+	\end{tabular}
+\end{center}
+
+In diesem Szenario werden die Wetterdaten der Wetterstation auf Helgoland aus dem Jahr 2020 verwendet, da diese Daten wenig Messfehler beinhalten. Zur Deckung der genannten Last wird eine Windenergieanlage mit einer Spitzenleistung von 3~MW verwendet. Zudem stehen nach \cite{Helgoland} ca. 11.130~m² Dachflächen für die Nutzung von Photovoltaikanlagen zur Verfügung. 
+
+Wird nun das Jahr 2020 simuliert, ergeben sich für das Energiesystem ohne Speicher die Verläufe in \autoref{fig:helgolandVerlaufOhne}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{figures/HelgolandLeistungOhne.eps}
+	\caption{Simulierter Jahresverlauf der Stromproduktion und des Stromverbrauchs}
+	\label{fig:helgolandVerlaufOhne}
+\end{figure}
+
+Hier ist erneut die starke Abhängigkeit der PV-Produktion von der Jahreszeit erkennbar und es ergibt sich eine jährliche Produktion von 2,3~GWh/a. Zusätzlich steigt der Stromverbrauch im Winter deutlich an. In Summe ist dieser so skaliert, dass er die 11,6 GWh/a aus 2008 erreicht. Die WEA erzeugt durch die vorteilhaften Bedingungen 16,8 GWh/a. Wird nun die Leistungsbilanz gebildet, ergibt sich der Verlauf in \autoref{fig:helgolandBilanzOhne}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{figures/HelgolandBilanzOhne.eps}
+	\caption{Simulierter Jahresverlauf der Leistungsbilanz im modellierten Inselnetz}
+	\label{fig:helgolandBilanzOhne}
+\end{figure}
+
+Hier ist klar zu erkennen, dass im schlechtesten Fall keinerlei Produktion vorliegt und ein Speichersystem benötigt wird, welches die komplette Versorgung übernimmt. Daher wird der verwendete Speicher auf eine Lade- und Entladeleistung von 3~MW begrenzt und besitzt eine Kapazität von 300~kWh. Bei erneuter Simulation des Inselnetzes mit Speicher ergebeben sich die Verläufe in \autoref{fig:}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{figures/HelgolandBilanzOhne.eps}
+	\caption{Simulierter Jahresverlauf der Leistungsbilanz im modellierten Inselnetz}
+	\label{fig:helgolandBilanzOhne}
+\end{figure}
 
 \section{Dreiphasig}
 
