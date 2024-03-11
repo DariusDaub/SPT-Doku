@@ -23,7 +23,7 @@ Die Verläufe der Windgeschwindigkeit und Globalstrahlung der beiden Wetterstati
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\linewidth]{figures/Wetter20bis22.eps}
+	\includegraphics[width=\linewidth]{Abbildungen/Wetter20bis22.eps}
 	\caption{Wetterdaten für die Standorte Bremen Flughafen und Helgoland für die Jahre 2020 bis 2022}
 	\label{fig:wetter}
 \end{figure}
@@ -53,7 +53,7 @@ Mit Einsetzen in \autoref{eq:wind} ergibt sich somit die enthaltene Leistung im 
 
 %\begin{figure}[H]
 %	\centering
-%	\includegraphics[width=0.7\linewidth]{figures/E115.jpg}
+%	\includegraphics[width=0.7\linewidth]{Abbildungen/E115.jpg}
 %	\caption{Enercon E-115}
 %	\label{fig:e115}
 %\end{figure}
@@ -61,7 +61,7 @@ Es zeigt sich, dass die Leistung kubisch von der Windgeschwindigkeit abhängt. D
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{figures/Enercon E115.png}
+	\includegraphics[width=0.9\linewidth]{Abbildungen/Enercon E115.png}
 	\caption{Leistungskurve Enercon E-115 \cite{E115}}
 	\label{fig:Leistungskurve}
 \end{figure}
@@ -135,7 +135,7 @@ Die zuvor beschriebenen Zusammenhänge werden nun in einem Simulink Modell verkn
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{figures/ModellWEAeinfach.png}
+	\includegraphics[width=0.9\linewidth]{Abbildungen/ModellWEAeinfach.png}
 	\caption{Simulink Modell einer Enercon E-115}
 	\label{fig:simulinkWEA}
 \end{figure}
@@ -144,7 +144,7 @@ Zur Betrachtung des Modells in einem dreiphasigen Netz wird das Modell um einen 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{figures/ModellWEA.png}
+	\includegraphics[width=0.9\linewidth]{Abbildungen/ModellWEA.png}
 	\caption{Simulink Modell einer Enercon E-115}
 	\label{fig:e115}
 \end{figure}
@@ -171,7 +171,7 @@ Die Leistung des Strahlungsflusses wird dabei mit dem Modulwirkungsgrad $\eta$ i
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\linewidth]{figures/WirkungsgradPV.png}
+	\includegraphics[width=0.7\linewidth]{Abbildungen/WirkungsgradPV.png}
 	\caption{Veranschaulichung der Verluste innerhalb eines PV-Moduls mithilfe eines Sankey-Diagramms \cite{VerlustePV}}
 	\label{fig:VerlustePV}
 \end{figure}
@@ -182,7 +182,7 @@ Werden die beschriebenen Zusammenhänge in ein Simulink Modell transferiert, erg
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{figures/PVModell.png}
+	\includegraphics[width=0.9\linewidth]{Abbildungen/PVModell.png}
 	\caption{Starkl vereinfachtes Modell einer PV-Anlage in Simulink}
 	\label{fig:PVModell}
 \end{figure}
@@ -195,7 +195,7 @@ Wie in \autoref{ch:Theorie} dargestellt, erfolgt die Simulation der Verbraucher 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{figures/LastBilanziell.png}
+	\includegraphics[width=0.9\linewidth]{Abbildungen/LastBilanziell.png}
 	\caption{Simulink Modell zur Simulation einer beliebigen Stromlast}
 	\label{fig:Last}
 \end{figure}
@@ -424,7 +424,7 @@ Sinn und Zweck des bilanziellen Modells ist es die Situation zwischen Erzeugung 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{figures/Bilanziell.png}
+	\includegraphics[width=0.9\linewidth]{Abbildungen/Bilanziell.png}
 	\caption{Bilanzielles Modell eines Inselnetzes in Matlab/Simulink}
 	\label{fig:Bilanziell}
 \end{figure}
@@ -434,7 +434,7 @@ Die Erzeuger, Speicher und Verbraucher sind analog zu den vorherigen Erklärunge
 
 %\begin{figure}[H]
 %	\centering
-%	\includegraphics[width=0.9\linewidth]{figures/Clock.png}
+%	\includegraphics[width=0.9\linewidth]{Abbildungen/Clock.png}
 %	\caption{Taktgeber für das bilanzielle Modell}
 %	\label{fig:clock}
 %\end{figure}
@@ -443,7 +443,7 @@ Der Batteriespeicher erhält die Leistungsbilanz ohne Energiespeicher als Eingan
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{figures/Auswertung.png}
+	\includegraphics[width=0.9\linewidth]{Abbildungen/Auswertung.png}
 	\caption{Auswertung der einzelnen Komponenten im bilanziellen Modell}
 	\label{fig:Auswertung}
 \end{figure}
@@ -525,47 +525,7 @@ Der FCR-Speicher kommt in dieser Simulation daher nur eingeschränkt zum Einsatz
 
 \section{Bilanziell}
 
-
-
-
-\subsection{Szenario Standort Bremen}
-
-Dieses Szenario betrachtetet ein Ins
-
-Um die Gesamtlast realitätsnah zu gestalten, werden die Gewichtungsfaktoren an die Anteile der Verbrauchergruppen am Nettostromverbrauch in Deutschland für das Jahr 2023 angelehnt. Die Verteilung der Verbräuche ist in \autoref{fig:pie} dargestellt.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\linewidth]{Abbildungen/Stromverbrauch.png}
-	\caption{Anteile der Verbrauchergruppen am Nettostromverbrauch 2023}
-	\label{fig:pie}
-\end{figure}
-
-Da sich die jeweiligen Verbrauchergruppen aus diversen Lastprofilen zusammensetzen, werden die vorhandenen Lastprofile bestmöglich Gewichtet, um möglichst der Realität zu entsprechen. Es wird eine folgende Gewichtung der Lastprofile gewählt:
-
-\begin{center}
-	\begin{tabular}[htpb]{c|c}
-		\textbf{Lastkurve} & \textbf{Gewichtung} \\
-		\hline
-		H0 Haushalt & 25~\% \\
-		W0 Wärmepumpe & 5~\% \\
-		G4 Friseur & 6~\% \\
-		G5 Bäckerei & 7~\% \\
-		S0 Straßenbeleuchtung & 1~\% \\
-		L0 Landwirtschaft & 6~\% \\
-		G3 Gewerbe durchlaufend & 25~\% \\
-		G1 Werktags & 25~\% 
-	\end{tabular}
-\end{center}
-
-Dies stellt lediglich eine Vereinfachung dar und spiegelt keinesfalls die Realität wieder. \autoref{fig:Gesamtlast} zeigt das resultierende Gesamtastprofil für einen Tag und normiert auf $1000~kWh/a$.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\linewidth]{Abbildungen/Gesamtlast.eps}
-	\caption{Kombiniertes Gesamtlastprofil für einen Werktag im Winter}
-	\label{fig:Gesamtlast}
-\end{figure}
+Es folgt eine Simulation von zwei Szenarien, um die Funktionalität des bilanziellen Modells zu veranschaulichen und an praktischen Beispielen eine Speichersystem auszulegen.
 
 \subsection{Szenario Helgoland}
 
@@ -580,7 +540,7 @@ Für dieses Szenario dient die Insel Helgoland als Grundlage für Wetter und Ver
 	\label{fig:helgolandVerbrauch}
 \end{figure}
 
-Besonders stechen hier der hohe Anteil an Haushalten heraus. Zudem besitzt Helgoland keine eigene Landwirtschaft und durch die touristische Auslegung wird von einem betrieb am Wochenende ausgegangen. Zur Nachbildung dieses Verbraucherprofils wird die folgende Gewichtung von Standardlastprofilen verwendet.
+Besonders stechen hier der hohe Anteil an Haushalten heraus. Zudem besitzt Helgoland keine eigene Landwirtschaft und durch die touristische Auslegung wird von einem verstärkten Betrieb am Wochenende ausgegangen. Zur Nachbildung dieses Verbraucherprofils wird die folgende Gewichtung von Standardlastprofilen verwendet.
 
 \begin{center}
 	\begin{tabular}[htpb]{c|c}
@@ -608,24 +568,103 @@ Wird nun das Jahr 2020 simuliert, ergeben sich für das Energiesystem ohne Speic
 	\label{fig:helgolandVerlaufOhne}
 \end{figure}
 
-Hier ist erneut die starke Abhängigkeit der PV-Produktion von der Jahreszeit erkennbar und es ergibt sich eine jährliche Produktion von 2,3~GWh/a. Zusätzlich steigt der Stromverbrauch im Winter deutlich an. In Summe ist dieser so skaliert, dass er die 11,6 GWh/a aus 2008 erreicht. Die WEA erzeugt durch die vorteilhaften Bedingungen 16,8 GWh/a. Wird nun die Leistungsbilanz gebildet, ergibt sich der Verlauf in \autoref{fig:helgolandBilanzOhne}.
+Hier ist erneut die starke Abhängigkeit der PV-Produktion von der Jahreszeit erkennbar und es ergibt sich eine jährliche Produktion von 2,3~GWh/a. Zusätzlich steigt der Stromverbrauch im Winter deutlich an. In Summe ist dieser so skaliert, dass er die 11,6 GWh/a aus 2008 erreicht. Die WEA erzeugt durch die vorteilhaften Bedingungen 16,8 GWh/a, jedoch müssen hiervon  Wird nun die Leistungsbilanz gebildet, ergibt sich der Verlauf in \autoref{fig:helgolandBilanz}.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{Abbildungen/HelgolandBilanzOhne.eps}
-	\caption{Simulierter Jahresverlauf der Leistungsbilanz im modellierten Inselnetz}
-	\label{fig:helgolandBilanzOhne}
+	\caption{Simulierter Jahresverlauf der erzeugten und verbrauchten Leistungen im Inselnetz mit Speicher}
+	\label{fig:helgolandBilanz}
 \end{figure}
 
-Hier ist klar zu erkennen, dass im schlechtesten Fall keinerlei Produktion vorliegt und ein Speichersystem benötigt wird, welches die komplette Versorgung übernimmt. Daher wird der verwendete Speicher auf eine Lade- und Entladeleistung von 3~MW begrenzt und besitzt eine Kapazität von 300~kWh. Bei erneuter Simulation des Inselnetzes mit Speicher ergebeben sich die Verläufe in \autoref{fig:}
+Wird hieraus die Leistungsbilanz des Inselnetzes gebildet, zeichnet sich der Verlauf in \autoref{fig:helgolandBilanzOhne} ab.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{Abbildungen/HelgolandBilanzOhne.eps}
-	\caption{Simulierter Jahresverlauf der Leistungsbilanz im modellierten Inselnetz}
+	\caption{Simulierter Jahresverlauf der Leistungsbilanz im modellierten Inselnetz ohne Speicher}
 	\label{fig:helgolandBilanzOhne}
 \end{figure}
 
+Hier ist klar zu erkennen, dass sich, vermutlich durch fehlerhafte Messwerte, eine dreitägige Dunkelflaute ergibt und ein Speichersystem benötigt wird, welches die komplette Versorgung übernimmt. Aufgrund der geringen Redundanz durch eine einzige WEA wird dieser Zeitraum als Störung mitbetrachtet. Daher wird der verwendete Speicher auf eine Lade- und Entladeleistung von 3~MW begrenzt und besitzt eine Kapazität von 200~MWh. Dieser Wert ist für eine Insel stark überzogen, jedoch ist der Speicher mit dieser Kapazität in der Lage die Dunkelflaute auszugleichen. Bei erneuter Simulation des Inselnetzes mit Speicher ergebenen sich die Verläufe in \autoref{fig:helgolandBilanzSpeicher}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{Abbildungen/HelgolandSpeicher.eps}
+	\caption{Simulierter Jahresverlauf der Leistungsbilanz im modellierten Inselnetz und des SOC des Speichers}
+	\label{fig:helgolandBilanzSpeicher}
+\end{figure}
+
+Es ist zu beobachten, dass die Leistungsbilanz im Inselnetz keine negativen Werte annimmt. Daher ist von einer konstanten Versorgungssicherheit auszugehen. Jedoch werden enorme Mengen an Leistungsspitzen abgeregelt. In Summe beträgt die abgeregelte Energie ohne Speicher 8,818~GWh/a und  mit Speicher 6,494~GWh/a. Wird von dem spezifischen Preis für Lithium-Ionen Batterien aus \autoref{tab:Gegenüberstellung_Batteriespeicher_Stand_der_Technik} ausgegangen, ergibt sich ein Preis für die Batterie von 18,4 mio. Euro. Hinzu kommt das ungewöhnliche Verhältnis aus maximaler Leistung zur Speicherkapazität, welches sich nach \autoref{fig:Sauer} als unüblich herausstellt. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{Abbildungen/Spezifisch.png}
+	\caption{Verhältnis von spezifischer Leistung zu spezifischer Energie bei diversen Speichertechnologien nach \cite{Sauer}}
+	\label{fig:Sauer}
+\end{figure}
+
+Ausgehend von einer Volumetrischen Energiedichte von 400~kWh/m³ ergibt sich ein Gesamtvolumen von 500~m³ für die Zellen. Dies entspricht dem Volumen von ca. 15 20-Fuß Containern, wobei hier noch die Peripherie des Speichersystems fehlt.
+
+\subsection{Szenario Standort Bremen}
+
+Als Vergleich zum zuvor betrachteten Szenario wird nun ein Inselnetz am Standort Bremen betrachtet. Um die Gesamtlast realitätsnah zu gestalten, werden die Gewichtungsfaktoren an die Anteile der Verbrauchergruppen am Nettostromverbrauch in Deutschland für das Jahr 2023 angelehnt \cite{BDEW}.  Die Verteilung der Verbräuche ist in \autoref{fig:pie} dargestellt.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{Abbildungen/Stromverbrauch.png}
+	\caption{Anteile der Verbrauchergruppen am Nettostromverbrauch 2023 \cite{BDEW}}
+	\label{fig:pie}
+\end{figure}
+
+Da sich die jeweiligen Verbrauchergruppen aus diversen Lastprofilen zusammensetzen, werden die vorhandenen Lastprofile bestmöglich gewichtet, um möglichst der Realität zu entsprechen. Es wird die Gewichtung der Lastprofile in \autoref{tab:BremenLast} gewählt:
+
+\begin{table}
+	\begin{tabular}[htpb]{c|c}
+		\textbf{Lastkurve} & \textbf{Gewichtung} \\
+		\hline
+		H0 Haushalt & 25~\% \\
+		W0 Wärmepumpe & 5~\% \\
+		G4 Friseur & 6~\% \\
+		G5 Bäckerei & 7~\% \\
+		S0 Straßenbeleuchtung & 1~\% \\
+		L0 Landwirtschaft & 6~\% \\
+		G3 Gewerbe durchlaufend & 25~\% \\
+		G1 Werktags & 25~\% 
+	\end{tabular}
+	\centering
+	\caption{Grobe Gewichtung der Standardlastprofile entsprechend der Anteile der Verbrauchergruppen am deutschen Stromverbrauch}
+	\label{tab:BremenLast}
+\end{table}
+
+Dies stellt lediglich eine Vereinfachung dar und spiegelt keinesfalls die Realität wieder. \autoref{fig:Gesamtlast} zeigt das resultierende Gesamtastprofil für einen Tag und normiert auf $1000~kWh/a$.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{Abbildungen/Gesamtlast.eps}
+	\caption{Kombiniertes Gesamtlastprofil für einen Werktag im Winter}
+	\label{fig:Gesamtlast}
+\end{figure}
+
+Die Gesamtlast wird erneut auf 11.6~GWh/a skaliert und die Erzeugungsanlagen bleiben ebenfalls gleich. Für das angenommene Inselnetz ergeben sich die Verläufe  in \autoref{fig:BremenSpeicherKlein}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{Abbildungen/BremenSpeicherKlein.eps}
+	\caption{Simulierter Jahresverlauf der Leistungsbilanz im modellierten Inselnetz und des SOC des Speichers bei gleichbleibender Erzeugung}
+	\label{fig:BremenSpeicherKlein}
+\end{figure}
+
+Aufgrund der schlechteren Windbedingungen an Land ergibt sich bei gleichen Parametern eine deutliche Unterversorgung. Um dem entgegenzuwirken werden die Erzeugungsanlagen hoch skaliert. Aufgrund der nahezu gleichbleibenden Verbraucherseite reicht eine Speicherleistung von 3~MW völlig aus. Die Kapazität bleibt ebenfalls unverändert. Statt einer werden nun jedoch drei WEA aufgestellt und eine Photovoltaikfläche von 60.000~m² angenommen. Der Verlauf des SOC und der Leistungsbilanz im System ergeben die Verläufe in \autoref{fig:BremenSpeicherGroß}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{Abbildungen/BremenSpeicherGroß.eps}
+	\caption{Simulierter Jahresverlauf der Leistungsbilanz im modellierten Inselnetz und des SOC des Speichers bei erweiterter Erzeugung}
+	\label{fig:BremenSpeicherGroß}
+\end{figure}
+
+Die Winderzeugung beträgt in diesem Fall insgesamt 24,65~GWh/a und die Erzeugung aus PV-Anlagen 11,86~GWh/a. Im Verhältnis zur Last (11,6~GWh/a) beträgt die Winderzeugung 213~\% und die Erzeugung aus PV-Anlagen knapp 100~\%. Es ist zum eine zu erkennen, dass durch die stark überdimensionierten Erzeuger extreme Mengen an Energie abgeregelt werden. Parallel stützt der Speicher das System im Winter, jedoch wird dieser im restlichen Zeitraum kaum beansprucht. Es ergibt sich daher keine wirtschaftliche Nutzung des Speichers. Durch eine Optimierung des Verhältnisses aus Erzeugen und Verbrauchern, sowie der intelligente Steuerung von Verbrauchern wäre hier eine Verringerung der Speicherkapazität möglich. Jedoch biete die vorliegende Arbeit keine Platz mehr für derartige Betrachtungen.
 \section{Dreiphasig}
 
 In diesem Abschnitt sollen die Ergebnisse der Simulationen mit dem dreiphasigen Inselnetzmodell diskutiert werden.
