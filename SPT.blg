@@ -1,0 +1,17 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'SPT.blg'
+[197] biber-MSWIN64:340> INFO - === 
+[248] Biber.pm:419> INFO - Reading 'SPT.bcf'
+[432] Biber.pm:979> INFO - Found 45 citekeys in bib section 0
+[455] Biber.pm:4419> INFO - Processing section 0
+[473] Biber.pm:4610> INFO - Looking for bibtex file 'bib.bib' for section 0
+[561] bibtex.pm:1713> INFO - LaTeX decoding ...
+[657] bibtex.pm:1519> INFO - Found BibTeX data source 'bib.bib'
+[1111] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1111] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1112] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'de-DE'
+[1112] Biber.pm:4245> INFO - No sort tailoring available for locale 'de-DE'
+[1303] bbl.pm:660> INFO - Writing 'SPT.bbl' with encoding 'UTF-8'
+[1349] bbl.pm:763> INFO - Output to SPT.bbl
+[1349] Biber.pm:131> WARN - I didn't find a database entry for 'Simulationsmethode' (section 0)
+[1349] Biber.pm:133> INFO - WARNINGS: 1
