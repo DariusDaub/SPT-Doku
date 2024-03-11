@@ -1,0 +1,53 @@
+\babel@toc {ngerman}{}\relax 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Energieverbrauch WG\blx@tocontentsinit {0}\cite {destatisenergie}}}{3}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Deutscher Wohngebäudebestand\blx@tocontentsinit {0}\cite {baualtersklassen}}}{4}{figure.caption.7}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Endenergieverbrauch nach Sektoren\blx@tocontentsinit {0}\cite {uwb}}}{6}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Excel-Tool zu Erstellung und Skalierung von Gesamtlastprofilen (eigene Darstellung)}}{11}{figure.caption.23}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Klassifizierung der Stabilität in Inselnetzen nach}}{11}{figure.caption.24}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Frequenzschwankungen durch Ungleichgewicht von erzeugter und verbrauchter Leistung~\blx@tocontentsinit {0}\parencite {cronenberg_beschreibung_nodate}}}{13}{figure.caption.25}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Überblick über die verschiedenen Regelreserveprodukte aus~\blx@tocontentsinit {0}\parencite {cronenberg_beschreibung_nodate}}}{16}{figure.caption.26}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Vorgabe der Leistungskurve für PCR-Bereitstellung aus~\blx@tocontentsinit {0}\parencite [Kap. 3]{noauthor_soc_nodate}}}{17}{figure.caption.27}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Flussdiagramm zur Deadband-Strategie nach~\blx@tocontentsinit {0}\parencite []{noauthor_soc_nodate}}}{18}{figure.caption.28}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces SOC-Wiederherstellung mit Leistungssollwerten aus \blx@tocontentsinit {0}\parencite []{noauthor_soc_nodate}}}{18}{figure.caption.29}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Skizze Inselnetz\blx@tocontentsinit {0}\cite {forwind}}}{20}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Stromprognose und Lastverläufe Färöer-Inseln, Stand 2021\blx@tocontentsinit {0}\cite {trondheim-thesis}}}{21}{figure.caption.31}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Speichertechnologien Übersicht\blx@tocontentsinit {0}\cite {eespeicher}}}{22}{figure.caption.32}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Batterispeichersystem Aufbau\blx@tocontentsinit {0}\cite {kyon-energy}}}{25}{figure.caption.34}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Wetterdaten für die Standorte Bremen Flughafen und Helgoland für die Jahre 2020 bis 2022}}{28}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Leistungskurve Enercon E-115 \blx@tocontentsinit {0}\cite {E115}}}{29}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Simulink Modell einer Enercon E-115}}{32}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Simulink Modell einer Enercon E-115}}{32}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Veranschaulichung der Verluste innerhalb eines PV-Moduls mithilfe eines Sankey-Diagramms \blx@tocontentsinit {0}\cite {VerlustePV}}}{33}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Starkl vereinfachtes Modell einer PV-Anlage in Simulink}}{34}{figure.caption.42}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Simulink Modell zur Simulation einer beliebigen Stromlast}}{35}{figure.caption.43}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Subsystem-Baustein der Batterie in Simulink}}{36}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Inhalt des Batteriesubsystems in Simulink}}{37}{figure.caption.45}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Aufbau der SOC-Schätzung im Simulink Batteriemodell}}{38}{figure.caption.48}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Inhalt des Subsystems zur Leistungssteuerung der FCR-Batterie}}{39}{figure.caption.51}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Inhalt des Steuerblocks zur SOC-Restoration}}{40}{figure.caption.52}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Messergebnisse der Simulation mit vorgegebenen Frequenzwerten}}{41}{figure.caption.55}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Ausschnitt aus den Messergebnissen der Simulation mit vorgegebenen Frequenzwerten}}{41}{figure.caption.56}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Simulation mit Beispielszenario der Übertragungsnetzbetreiber}}{42}{figure.caption.57}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Bilanzielles Modell eines Inselnetzes in Matlab/Simulink}}{44}{figure.caption.58}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Auswertung der einzelnen Komponenten im bilanziellen Modell}}{45}{figure.caption.59}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Dreiphasiges Simulink-Modell eines Inselnetzes}}{46}{figure.caption.60}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Anteile der Verbrauchergruppen am Nettostromverbrauch 2023}}{48}{figure.caption.65}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Kombiniertes Gesamtlastprofil für einen Werktag im Winter}}{49}{figure.caption.66}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Elektrische Energie [kWh/a] und prozentualer Anteil nach Sektoren im Jahr 2008 nach \blx@tocontentsinit {0}\cite {Helgoland}}}{50}{figure.caption.67}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Simulierter Jahresverlauf der Stromproduktion und des Stromverbrauchs}}{51}{figure.caption.68}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Simulierter Jahresverlauf der Leistungsbilanz im modellierten Inselnetz}}{51}{figure.caption.69}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Simulierter Jahresverlauf der Leistungsbilanz im modellierten Inselnetz}}{52}{figure.caption.70}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Verlauf der Netzfrequenz und FCR-Batterieleistung}}{53}{figure.caption.75}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Verlauf der Windkraftleistung, des Lastprofils und der Batterieleistung}}{53}{figure.caption.76}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Verlauf der Frequenz und Batterieleistung mit Windkraft-Abschaltung}}{54}{figure.caption.79}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Zeitverläufe im Reservebetrieb}}{55}{figure.caption.80}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Ausschnitt aus dem Zeitverlauf im Reservebetrieb}}{56}{figure.caption.81}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

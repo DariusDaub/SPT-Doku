@@ -1,0 +1,55 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{III}{chapter*.2}%
+\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{V}{chapter*.3}%
+\contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Theoretische Grundlagen}{2}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Verbraucher in Inselnetzen}{2}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Verbraucher am Stromnetz}{2}{subsection.2.1.1}%
+\contentsline {subsubsection}{\nonumberline Wohngebäude (WG)}{3}{subsubsection*.5}%
+\contentsline {subsubsection}{\nonumberline Nichtwohngebäude (NWG)}{5}{subsubsection*.10}%
+\contentsline {subsubsection}{\nonumberline Elektromobilität}{6}{subsubsection*.13}%
+\contentsline {subsubsection}{\nonumberline Prosumer: Gebäude mit PV/Windkraft/Speicher}{6}{subsubsection*.15}%
+\contentsline {subsubsection}{\nonumberline Weitere Verbraucher}{7}{subsubsection*.18}%
+\contentsline {subsubsection}{\nonumberline Umwandlung in Fernwärme/Power-to-Gas (Wasserstoff)}{8}{subsubsection*.20}%
+\contentsline {subsection}{\numberline {2.1.2}Verbrauchsermittlung auf Basis von Lastkurven}{8}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}Stabilität in Inselnetzen}{11}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Speichertechnologien in Inselnetzen}{13}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Gründe für den Einsatz von Speichern in Inselnetzen}{13}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Rahmenbedingung und Bestimmungen}{14}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Betriebsstrategien zu Batteriespeichern}{16}{subsection.2.3.3}%
+\contentsline {chapter}{\numberline {3}Stand der Technik}{19}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Inselnetze}{19}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Speicher}{22}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Lithium-Ionen-Batterien}{23}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Redox-Flow-Batterien}{24}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Aufbau von stationären Batteriespeichersystemen}{24}{subsection.3.2.3}%
+\contentsline {chapter}{\numberline {4}Modellbeschreibung}{27}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Erzeuger}{27}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Wetterdaten}{27}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Windenergie}{28}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Photovoltaik}{32}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Verbraucher}{34}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Speicher}{35}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Batteriemodelle}{36}{subsection.4.3.1}%
+\contentsline {paragraph}{\nonumberline SOC-Schätzung}{37}{paragraph*.47}%
+\contentsline {paragraph}{\nonumberline Dreiphasige Last als Umrichter}{38}{paragraph*.50}%
+\contentsline {subsection}{\numberline {4.3.2}Umsetzung Lade- und Entladestrategien}{38}{subsection.4.3.2}%
+\contentsline {paragraph}{\nonumberline Nachweis der Funktion}{40}{paragraph*.54}%
+\contentsline {section}{\numberline {4.4}Netzmodell}{42}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Bilanziell}{44}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Dreiphasig}{45}{subsection.4.4.2}%
+\contentsline {paragraph}{\nonumberline Komponenten des Modells}{45}{paragraph*.62}%
+\contentsline {paragraph}{\nonumberline Umsetzung der Frequenzmessung}{46}{paragraph*.64}%
+\contentsline {chapter}{\numberline {5}Auswertung}{48}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Bilanziell}{48}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Szenario Standort Bremen}{48}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Szenario Helgoland}{49}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Dreiphasig}{52}{section.5.2}%
+\contentsline {paragraph}{\nonumberline Simulationsparameter}{52}{paragraph*.72}%
+\contentsline {paragraph}{\nonumberline Grundlegende Simulation}{52}{figure.caption.75}%
+\contentsline {paragraph}{\nonumberline Simulation mit Abschaltung der Windkraft}{54}{paragraph*.78}%
+\contentsline {paragraph}{\nonumberline Einordnung der Simulation und des Modells}{55}{paragraph*.83}%
+\contentsline {chapter}{\numberline {6}Fazit}{57}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Ausblick}{58}{chapter.7}%
+\contentsline {chapter}{\nonumberline Literatur}{i}{chapter*.84}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
