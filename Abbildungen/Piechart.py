@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Data to plot
-labels = 'Industrie (Bergbau u. Verarb. gewerbe)', 'Haushalte', 'Gewerbe, Handel und Dienstleistungen', 'Verkehr'
-sizes = [201, 131, 118, 15]
+labels = 'Tertiärsektor', 'Haushalte', 'Kommunale Liegenschaften', 'Verkehr (Land)'
+sizes = [7171329, 4018133, 288918, 100000]
 colors = ['gold', 'yellowgreen', 'lightcoral', 'lightskyblue']
 explode = (0.1, 0.1, 0.1, 0.1)  # explode 1st slice
 
