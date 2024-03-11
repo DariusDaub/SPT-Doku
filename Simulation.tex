@@ -1,27 +1,29 @@
 \chapter{Modellbeschreibung}\label{Modellbeschreibung}
 \section{Erzeuger}\label{Erzeuger}
 
-Im folgenden wird gezeigt, auf welcher Grundlage die Erzeugungsanlagen in den jeweiligen Inselnetzen modelliert werden. In Anlehnung an den Abschlussbericht des Umweltbundesamtes zur Transformation der Stromerzeugung bis 2050 wird der Fokus ausschließlich auf die Modellierung von Windenergie- und Photovoltaikanlagen gelegt, da diese den Großteil der Erzeugung in allen betrachteten Szenarien darstellen. Zudem bieten sich diese Erzeugungsanlagen besonders für den autarken Einsatz in Inselnetzen an.
+Im Folgenden wird gezeigt, auf welcher Grundlage die Erzeugungsanlagen in den jeweiligen Inselnetzen modelliert werden. In Anlehnung an den Abschlussbericht des Umweltbundesamtes zur Transformation der Stromerzeugung bis 2050 wird der Fokus ausschließlich auf die Modellierung von Windenergie- und Photovoltaikanlagen gelegt, da diese den Großteil der Erzeugung in allen betrachteten Szenarien darstellen. \cite{Energiewende} Zudem bieten sich diese Erzeugungsanlagen besonders für den autarken Einsatz in Inselnetzen an.
 
 \subsection{Wetterdaten}
 
-Die verwendeten Erzeugungsanlagen setzen eine Simulation von Wetterdaten voraus. Für Windenergieanlagen ist daher die Windgeschwindigkeit in $m/s$  und für die Photovoltaikanlagen die Summe der Globalstrahlung der vorangegangenen 10 Minuten in $J/cm^2$ von Bedeutung. Diese Daten stellt der deutsche Wetterdienst für über 400 verschiedene Wetterstationen in Deutschland im csv-Dateiformat frei zur Verfügung. Zudem werden die Daten in einer 10-minütigen Auflösung gemessen und bereitgestellt. Für die folgenden Simulationen werden Wetterdaten der anschließend aufgeführten Wetterstionen verwendet.
+Die verwendeten Erzeugungsanlagen setzen eine Simulation von Wetterdaten voraus. Für Windenergieanlagen ist daher die Windgeschwindigkeit in $m/s$  und für die Photovoltaikanlagen die Summe der Globalstrahlung der vorangegangenen 10 Minuten in $J/cm^2$ von Bedeutung. Diese Daten stellt der deutsche Wetterdienst für über 400 verschiedene Wetterstationen in Deutschland im csv-Dateiformat frei zur Verfügung. Zudem werden die Daten in einer 10-minütigen Auflösung gemessen und bereitgestellt. Für die folgenden Simulationen werden Wetterdaten die in \autoref{tab:Wetter} aufgeführten Wetterstationen verwendet.
 
-\begin{center}
+\begin{table} [H]
 	\begin{tabular}[htpb]{c|c|c|c|c}
-		Stations ID & Stationshöhe & Länge & Breite & Standort \\
+		Stations ID & Stationshöhe & Längengrad & Breitengrad & Standort \\
 		\hline
 		00691 & $4~m$ & 53.0451 & 8.7981 & Bremen \\
-		02115 & $4~m$ & 54.1860 & 7.9119 & Helgoland \\
-		00282 & $240~m$ & 49.8743 & 10.9206 & Bamberg 
+		02115 & $4~m$ & 54.1860 & 7.9119 & Helgoland
 	\end{tabular}
-\end{center}
+	\centering
+	\caption{Betrachtete Wetterstationen}
+	\label{tab:Wetter}
+\end{table}
 
 Die Verläufe der Windgeschwindigkeit und Globalstrahlung der beiden Wetterstationen für die Jahre 2020 bis 2022 sind in \autoref{fig:wetter} zu sehen.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\linewidth]{Abbildungen/Wetter20bis22.eps}
+	\includegraphics[width=\linewidth]{figures/Wetter20bis22.eps}
 	\caption{Wetterdaten für die Standorte Bremen Flughafen und Helgoland für die Jahre 2020 bis 2022}
 	\label{fig:wetter}
 \end{figure}
@@ -37,7 +39,7 @@ Um das Erzeugungsverhalten einer Windenergieanlage zu beschreiben wird im wesent
 	\label{eq:wind}
 \end{equation}
 
-Im Falle eines Rotors wird eine bestimmte Querschnitsfläche $A$ betrachtet, durch die ein Massenstrom $\dot{m}$ strömt. Dieser lässt sich mithilfe der Luftdichte $\rho$ nach \cite{} wie folgt ausdrücken:
+Im Falle eines Rotors wird eine bestimmte Querschnitsfläche $A$ betrachtet, durch die ein Massenstrom $\dot{m}$ strömt. Dieser lässt sich mithilfe der Luftdichte $\rho$ nach \cite{Hau2016} wie folgt ausdrücken:
 
 \begin{equation}
 	\dot{m} = \rho vA
@@ -51,32 +53,36 @@ Mit Einsetzen in \autoref{eq:wind} ergibt sich somit die enthaltene Leistung im 
 
 %\begin{figure}[H]
 %	\centering
-%	\includegraphics[width=0.7\linewidth]{Abbildungen/E115.jpg}
+%	\includegraphics[width=0.7\linewidth]{figures/E115.jpg}
 %	\caption{Enercon E-115}
 %	\label{fig:e115}
 %\end{figure}
-Es zeigt sich, dass die Leistung kubisch von der Windgeschwindigkeit abhängt. Die im Wind enthaltene Leistung wird jedoch nicht vollständig in einer Windenergieanlage in elektrische Leistung umgesetzt. Den Zusammenhang zwischen der Windgeschwindigkeit und der erzeugten Leistung stellt die Leistungskurve einer Anlage dar. Beispielhaft zeigt \autoref{fig:Leistungskurve} die Leistungskurve einer Windenergienalage der Herstellers Enercon. 
+Es zeigt sich, dass die Leistung kubisch von der Windgeschwindigkeit abhängt. Die im Wind enthaltene Leistung wird jedoch nicht vollständig in einer Windenergieanlage in elektrische Leistung umgesetzt. Den Zusammenhang zwischen der Windgeschwindigkeit und der erzeugten Leistung stellt die Leistungskurve einer Anlage dar. Beispielhaft zeigt \autoref{fig:Leistungskurve} die Leistungskurve einer Windenergienalage der Herstellers ENERCON. 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{Abbildungen/Enercon E115.png}
+	\includegraphics[width=0.9\linewidth]{figures/Enercon E115.png}
 	\caption{Leistungskurve Enercon E-115 \cite{E115}}
 	\label{fig:Leistungskurve}
 \end{figure}
 
-Dieser Anlagentyp und die zugehörige Leistungskurve dienen auch für die weiteren Simulationen als Datengrundlage. Weitere Parameter, welche für die Simulation relevant sind, werden im folgenden veranschaulicht.
+Dieser Anlagentyp und die zugehörige Leistungskurve dienen auch für die weiteren Simulationen als Datengrundlage. Weitere Parameter, welche für die Simulation relevant sind, werden in \autoref{tab:E115} veranschaulicht.
 
-\begin{center}
+\begin{table}
 	\begin{tabular}[htpb]{c|c}
 		Typ & Enercon E-115 \\
 		\hline
+		Nennleistung & $3~MW$ \\
 		Nabenhöhe & $149~m$ \\
 		Einschaltgeschwindigkeit & $2~m/s$ \\
 		Abschaltgeschwindigkeit & $25~m/s$
 	\end{tabular}
-\end{center}
+	\centering
+	\caption{Für die Simulation relevante Kennzahlen einer ENERCON E-115 \cite{E115}}
+	\label{tab:E115}
+\end{table}
 
-Wie \autoref{eq:wind} zeigt, ist die erzeugt Leistung stark von der Windgeschwindigkeit abhängig. Diese nimmt wiederum mit steigender Höhe tendenziell zu, weshalb eine Betrachtung der Windgeschwindigkeit in Nabenhöhe notwendig ist. Da die Wetterdaten jedoch meistens in deutlich geringeren Höhen gemessen werden, wird zur Schätzung der Windgeschwindigkeit das logarithmische Windprofil verwendet. Mithilfe von \autoref{eq:log} lässt sich mit der gemessenen Widngeschwindigkeit in einer Höhe unter Angabe der Rauigkeit der Umgebung die Windgeschwindigkeit in einer gewünschten Höhe abschätzen. \cite{Hoehenprofil}
+Wie \autoref{eq:wind} zeigt, ist die erzeugt Leistung stark von der Windgeschwindigkeit abhängig. Diese nimmt wiederum mit steigender Höhe tendenziell zu, weshalb eine Betrachtung der Windgeschwindigkeit in Nabenhöhe notwendig ist. Da die Wetterdaten jedoch meistens in deutlich geringeren Höhen gemessen werden, wird zur Schätzung der Windgeschwindigkeit das logarithmische Windprofil verwendet. Mithilfe von \autoref{eq:log} lässt sich mit der gemessenen Windgeschwindigkeit in einer Höhe unter Angabe der Rauigkeit der Umgebung die Windgeschwindigkeit in einer gewünschten Höhe abschätzen. \cite{Hoehenprofil}
 
 \begin{equation}
 	v(h) = \frac{v_{Ref}}{ln\left(\frac{h_{Ref}}{z_0}\right)} \cdot ln\left(\frac{h}{z_0}\right)
@@ -96,7 +102,7 @@ Mit:
 
 Bei der Messung in Bodennahen Schichten spielt vorallem die Bodenrauhigkeit eine maßgebliche Rolle, da die Messung hier von der Umgebung stark beeinflußt wird. \autoref{tab:Rauigkeit} zeigt daher die anzunehmenden Werte, je nach Standort der Messstation.  
 
-\begin{table}[H]
+\begin{table} [H]
 	\begin{tabular}[htpb]{p{4cm}|p{3cm}|p{7cm}}
 		\textbf{Rauhigkeitsklasse} & \textbf{Rauhigkeitslänge} & \textbf{Geländetyp} \\
 		\hline
@@ -119,29 +125,31 @@ Bei der Messung in Bodennahen Schichten spielt vorallem die Bodenrauhigkeit eine
 		4 & 1,6 & Großstädte, hohe Gebäude, Wolkenkratzer \\
 	\end{tabular}
 \centering
-\caption{Angenommene Parameter für die Validierung der Berechnungsmethode \cite{Rauigkeit}}
+\caption{Rauhigkeitsklassen und -längen in Abhängigkeit des Geländetyps \cite{Rauigkeit}}
 \label{tab:Rauigkeit}
 \end{table}
 
-Von der Tabelle ausgehend wird für den Standort Bremen Flughafen eine Rauhigkeitsklasse von 0,5 angenommen, da sich die Wetterstation direkt neben einer Landebahn befindet. Für die Messung auf Helgoland wird hingegen eine Rauhigkeitsklasse von 1 angenommen, aufgrund der geringen Höhe der Messtation in Kombination mit einer leicht hügeligen Umgebung.
+Von der Tabelle ausgehend, wird für den Standort Bremen Flughafen eine Rauhigkeitsklasse von 0,5 angenommen, da sich die Wetterstation direkt neben einer Landebahn befindet. Für die Messung auf Helgoland wird hingegen eine Rauhigkeitsklasse von 1 angenommen, aufgrund der geringen Höhe der Messtation in Kombination mit einer leicht hügeligen Umgebung.
 
 Die zuvor beschriebenen Zusammenhänge werden nun in einem Simulink Modell verknüpft. Es ergibt sich das Modell in \autoref{fig:simulinkWEA}.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{Abbildungen/ModellWEAeinfach.png}
+	\includegraphics[width=0.9\linewidth]{figures/ModellWEAeinfach.png}
 	\caption{Simulink Modell einer Enercon E-115}
 	\label{fig:simulinkWEA}
 \end{figure}
 
-Zur Betrachtung des Modells in einem dreiphasigen Netz wird das Modell um einen Dreiphasigen Erzeugerblock ergänzt. Auf eine detaillierte Betrachtung des elektrischen und mechanischen teils der Windenergieanlage wird verzichtet, da dieser für die oberflächliche Betrachtung im Rahmen dieses Projekts keine Rolle spielt. Zudem erhält das Modell zwei PT1-Glieder um die Trägheit der Erzeugung darzustellen. Die Verbindung der Phasen zum Netz über einen Widerstand dient zur Stabilität des Modells während der Simulation.
+Zur Betrachtung des Modells in einem dreiphasigen Netz wird das Modell um einen Dreiphasigen Erzeugerblock ergänzt und es ergibt sich das Modell in \autoref{fig:e115}. 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{Abbildungen/ModellWEA.png}
+	\includegraphics[width=0.9\linewidth]{figures/ModellWEA.png}
 	\caption{Simulink Modell einer Enercon E-115}
 	\label{fig:e115}
 \end{figure}
+
+Auf eine detaillierte Betrachtung des elektrischen und mechanischen Teils der Windenergieanlage wird verzichtet, da dieser für die oberflächliche Betrachtung im Rahmen dieses Projekts keine Rolle spielt. Zudem erhält das Modell zwei PT1-Glieder um die Trägheit der Erzeugung darzustellen. Die Verbindung der Phasen zum Netz über einen Widerstand dient zur Stabilität des Modells während der Simulation.
 
 \subsection{Photovoltaik}
 
@@ -151,35 +159,35 @@ Zur Betrachtung des Modells in einem dreiphasigen Netz wird das Modell um einen 
 	P_{el} = \eta \cdot \Phi
 \end{equation}
 
-Der Strahlunfsluss $\Phi$ berechnet sich aus der Starhlungsdichte $E$ und der Fläche $A$. Bei homogener Bestrahlung ergibt sich der folgende Zusammenhang.
+Der Strahlungsfluss $\Phi$ berechnet sich aus der Strahlungsdichte $E$ und der Fläche $A$. Bei homogener Bestrahlung ergibt sich der folgende Zusammenhang.
 
 \begin{equation}
 	\Phi = E \cdot A
 \end{equation}
 
-Die Strahlungsdichte $E$ entspricht der gemesenenen Globalstrahlung der betrachteten Wettestaiuonen.
+Die Strahlungsdichte $E$ entspricht der gemessenen Globalstrahlung der betrachteten Wetterstationen. Da die Strahlungswerte jedoch als Energiedichte in $J/cm^2$ vorliegen, werden diese noch in die Strahlungsdichte mit der Einheit $W/m^2$ umgewandelt.
 
 Die Leistung des Strahlungsflusses wird dabei mit dem Modulwirkungsgrad $\eta$ in elektrische Leistung umgewandelt. Die Verluste sind in \autoref{fig:VerlustePV} in einem Sankey-Diagramm Veranschaulicht. 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\linewidth]{Abbildungen/WirkungsgradPV.png}
+	\includegraphics[width=0.7\linewidth]{figures/WirkungsgradPV.png}
 	\caption{Veranschaulichung der Verluste innerhalb eines PV-Moduls mithilfe eines Sankey-Diagramms \cite{VerlustePV}}
 	\label{fig:VerlustePV}
 \end{figure}
 
-Der hier angegebene Modulwirkungsgrad ist jedoch etwas veraltete und die Wirkungsgrade von Solarmodulen steigen kontinuierlich um etwa 0,3 - 0,5 \%-Punkte pro Jahr, sodass sich aktuell ein Wikrungsgrad von ungefähr 21~\% für kommerzielle Solarmodule ergibt. Im Betrieb wirken sich noch diverse andere nichtlineare Effekte auf den Modulwirkungsgrad aus wie z.B. die Modultemperatur, Verschattung oder die Verschmutzung der Module. Zudem ergeben sich noch zusätzliche Verluste in den Leitungen, Wechselrichtern und Transformatoren der Photovoltaikanlage. Die hier ntstehenden Verluste sind jedoch eher Vernachlässigbar, da beispielsweise Wechselrichter üblicherweise einen Wirkungsrad von 98~\% erreichen. Mit Betrachtung der sonstigen Einflusse auf den Wirkunsgrad wird ein mittlerer Wikrungsgrad von 18~\% zwischen der Strahlungsdichte und der elektrischen Leistung der Anlage angenommen. \cite{FaktenPV} 
+Der hier angegebene Modulwirkungsgrad ist jedoch etwas veraltete und die Wirkungsgrade von Solarmodulen steigen kontinuierlich um etwa 0,3 - 0,5 \%-Punkte pro Jahr, sodass sich aktuell ein Wirkungsgrad von ungefähr 21~\% für kommerzielle Solarmodule ergibt. Im Betrieb wirken sich noch diverse andere nichtlineare Effekte auf den Modulwirkungsgrad aus, wie z.B. die Modultemperatur, Verschattung oder die Verschmutzung der Module. Zudem ergeben sich noch zusätzliche Verluste in den Leitungen, Wechselrichtern und Transformatoren der Photovoltaikanlage. Die hier entstehenden Verluste sind jedoch eher Vernachlässigbar, da beispielsweise Wechselrichter üblicherweise einen Wirkungsrad von 98~\% erreichen. Mit Betrachtung der sonstigen Einflüsse auf den Wirkungsrad wird ein mittlerer Wirkungsgrad von 18~\% zwischen der Strahlungsdichte und der elektrischen Leistung der Anlage angenommen. \cite{FaktenPV} 
 
-Werden die beschriebenen Zusammenhänge in ein Simulink-Modell transferiert, ergibt sich das Modell in \autoref{fig:PVModell}
+Werden die beschriebenen Zusammenhänge in ein Simulink Modell transferiert, ergibt sich das Modell in \autoref{fig:PVModell}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{Abbildungen/PVModell.png}
+	\includegraphics[width=0.9\linewidth]{figures/PVModell.png}
 	\caption{Starkl vereinfachtes Modell einer PV-Anlage in Simulink}
 	\label{fig:PVModell}
 \end{figure}
 
-Dabei handelt es sich um ein stark vereinfachtes Modell, welches jedoch für diese Betrachtung völlig ausreichend ist, da es die Fluktuation der Sonnenstrahlung wiedergibt und diese für die Bestimmung der Leistungsbilanz ausschlaggebend ist.
+Dabei handelt es sich um ein stark vereinfachtes Modell, welches jedoch für diese Betrachtung völlig ausreichend ist, da es die Fluktuation der Sonnenstrahlung widerspiegelt und diese für die Bestimmung der Leistungsbilanz ausschlaggebend ist.
 
 \section{Verbraucher}
 
@@ -187,19 +195,12 @@ Wie in \autoref{ch:Theorie} dargestellt, erfolgt die Simulation der Verbraucher 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{Abbildungen/LastBilanziell.png}
+	\includegraphics[width=0.9\linewidth]{figures/LastBilanziell.png}
 	\caption{Simulink Modell zur Simulation einer beliebigen Stromlast}
 	\label{fig:Last}
 \end{figure}
 
 Die Lastverläufe sind jeweils von der Uhrzeit, dem Wochentag und der Jahreszeit abhängig. Daher wird zu beginn mithilfe einer logischen Schaltung zwischen den jeweiligen Wochentagen und Jahreszeiten unterschieden. Anschließend wird anhand des Zeitpunktes ein Lastwert für jedes Standardprofil bestimmt. Die verschiedenen Lastprofile fließen durch einen Gewichtungsfaktor in unterschiedlichen Anteilen in die Berechnung der Gesamtlast ein. Zuletzt wird noch ein Skalierungsfaktor benutzt, um die Last auf eine gewünschten Jahresverbrauch anzupassen. Da alle Lastprofile auf einen Jahresverbrauch von 1000~kWh/a normiert sind, gibt dieser Faktor den Gesamtjahresverbrauch in vielfachen von 1000~kWh/a an.
-\section{Speicher}\label{Speicher}
-In diesem Abschnitt soll der Aufbau und die Steuerung der Speichermodelle erläutert werden.
-Dazu werden zunächst verschiedene Batteriemodelle eingeführt und anschließend der gewählte Aufbau für
-unsere Simulationen gezeigt. 
-Zusätzlich soll die Umsetzung der in Abschnitt~\ref{Betriebsstrategien} angeführten Betriebsstrategien 
-beschrieben werden.
-
 \subsection{Batteriemodelle}\label{Batteriemodelle}
 Batteriemodelle können grundlegend in 
 \begin{itemize}
@@ -402,21 +403,20 @@ Regelleistung zur Verfügung stellen.
 
 \section{Netzmodell}
 
-Zur Untersuchung der Inselnetze werden die zuvor gezeigten Teilmodelle zu Netzmodellen verschaltet. Abhängig von der geforderten Modelltiefe und dem geforderten Detailgrad, stehen grundsätzlich drei verschiedene Simulationsmethoden in Simulink zur Verfügung. Im folgenden werden diese drei Methoden kurz beleuchtet und anschließend eine Entscheidung für die nachfolgenden Modelle begründet.
+Zur Untersuchung der Inselnetze werden die zuvor gezeigten Teilmodelle zu Netzmodellen verschaltet. Abhängig von der geforderten Modelltiefe und dem geforderten Detailgrad, stehen grundsätzlich drei verschiedene Simulationsmethoden in Simulink zur Verfügung. Im Folgenden werden diese drei Methoden kurz beleuchtet und anschließend eine Entscheidung für die nachfolgenden Modelle begründet.
 
 \textbf{Bilanzmodell}
 
 Das Bilanzmodell stellt die oberflächlichste Betrachtung dar und dient zur Betrachtung der Leistungsbilanz im Inselnetz. Hierfür werden die einzelnen Komponenten vereinfacht dargestellt und elektrische Parameter des Netzes vernachlässigt. Durch diese Vereinfachungen ergeben sich kurze Simulationszeiten, weshalb es möglich ist lange Zeiträume zu betrachten. Jedoch bildet dieses Modell mit steigender Vereinfachung immer weniger die Realität ab, wodurch sich dieses Modell besonders für grobe Betrachtungen anbietet.
-
 \textbf{Momentanwertsimulation (EMT)}
 
-Bei der Momentanwertsimulation unter Berücksichtigung von elektromagnetischen Transienten wird das Netz durch die jeweiligen dreiphasigen Netzzweige beschrieben. Hierdurch ergibt sich ein Gleichungssystem aus Differentialgleichungen, welches für jeden betrachteten Zeitschritt gelöst wird. Somit lassen sich Netze auch in unsymmetrischen Netzzuständen und sehr Detailgetreu hinsichtlich ihrer elektrischen Eigenschaften beschrieben. Der Rechenaufwand ist hier jedoch vergleichsweise hoch und steigt mit der Komplexität des betrachteten Netzes. \cite{Simulationsmethoden}
+Bei der Momentanwertsimulation unter Berücksichtigung von elektromagnetischen Transienten wird das Netz durch die jeweiligen dreiphasigen Netzzweige beschrieben. Hierdurch ergibt sich ein Gleichungssystem aus Differentialgleichungen, welches für jeden betrachteten Zeitschritt gelöst wird. Somit lassen sich Netze auch in unsymmetrischen Netzzuständen und sehr detailgetreu hinsichtlich ihrer elektrischen Eigenschaften beschrieben. Der Rechenaufwand ist hier jedoch vergleichsweise hoch und steigt enorm mit der Komplexität des betrachteten Netzes. \cite{Simulationsmethoden}
 
 \textbf{Raumzeigersimulation (RMS)}
 
-Eine etwas weniger detaillierte Simulationsmethode stellt die Raumzeigersimulation dar. Hierbei werden die bei der Momentanwertssimulation betrachteten elektromagnetischen Vorgänge vernachlässigt, wodurch sich eine deutlich weniger rechenintensive Simulation ergibt. Dennoch ist dieses Modell detailliert genug, um Spannungs- oder Frequenzregelung in Energienetzen zu untersuchen. Statt den tatsächlichen Sinusverlauf der dreiphasigen Wechselspannungen zu betrachten, werden diese als Vektoren in einem rotierenden Koordinatensystem dargestellt. Das Koordinatensystem rotiert hierbei mit der Netzfrequenz, wodurch sich ein stehender Zeiger ergibt, der auch Raumzeiger genannt wird und aus den Komponeten d und q besteht. Dies ermöglicht deutlich größere SImulkationsschritte, da der Sinus nicht mehr exakt nachgebidlet werden muss. Jedoch wird nach Modell auch unegnauer mit steigender Abweichung der Netzfrequernz von der Frequenz des drehenden Koordinatensystems. \cite{Simulationsmethoden}
+Eine etwas weniger detaillierte Simulationsmethode stellt die Raumzeigersimulation dar. Hierbei werden die bei der Momentanwertssimulation betrachteten elektromagnetischen Vorgänge vernachlässigt, wodurch sich eine deutlich weniger rechenintensive Simulation ergibt. Dennoch ist dieses Modell detailliert genug, um Spannungs- oder Frequenzregelung in Energienetzen zu untersuchen. Statt den tatsächlichen Sinusverlauf der dreiphasigen Wechselspannungen zu betrachten, werden diese als Vektoren in einem rotierenden Koordinatensystem dargestellt. Das Koordinatensystem rotiert hierbei mit der Netzfrequenz, wodurch sich ein stehender Zeiger ergibt, der auch Raumzeiger genannt wird und aus den Komponenten d und q besteht. Dies ermöglicht deutlich größere Simulkationsschritte, da der Sinus nicht mehr exakt nachgebildet werden muss. Jedoch wird das Modell auch ungenauer mit steigender Abweichung der Netzfrequenz von der Frequenz des drehenden Koordinatensystems. \cite{Simulationsmethoden}
 
-Nach kurzer Betrachtung der drei Simulationsmethoden werden im folgenden die bilanzielle und die Betrachtung mithilfe eines Raumzeigers verfolgt, da beide Modelle eine akzeptable Simulationsdauer und -tiefe bieten. Das bilanzielle Modell dient hier eher der groben Betrachtung und das Raumzeigermodell der Frequenzbetrachtung. Das Momentanwertsmodell scheidet durch den hohen Simulationsaufwand und die Detailtiefe aus. Die zuvor beschriebenen Modelle der Erzeuger, Verbraucher und Speicher ermöglichen durch die ihre starke Vereinfachung keine detaillierte Betrachtung der elektrischen Eigenschaften.
+Nach kurzer Betrachtung der drei Simulationsmethoden werden im folgenden die bilanzielle und die Betrachtung mithilfe eines Raumzeigers verfolgt, da beide Modelle eine akzeptable Simulationsdauer und -tiefe bieten. Das bilanzielle Modell dient hier eher der groben Betrachtung und das Raumzeigermodell der Frequenzbetrachtung für kleinere Zeiträume. Das Momentanwertsmodell scheidet durch den hohen Simulationsaufwand und die Detailtiefe aus. Die zuvor beschriebenen Modelle der Erzeuger, Verbraucher und Speicher ermöglichen durch ihre starke Vereinfachung ohnehin keine detaillierte Betrachtung der elektrischen Eigenschaften.
 
 \subsection{Bilanziell}
 
@@ -424,12 +424,12 @@ Sinn und Zweck des bilanziellen Modells ist es die Situation zwischen Erzeugung 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{Abbildungen/Bilanziell.png}
+	\includegraphics[width=0.9\linewidth]{figures/Bilanziell.png}
 	\caption{Bilanzielles Modell eines Inselnetzes in Matlab/Simulink}
 	\label{fig:Bilanziell}
 \end{figure}
 
-Die Erzeuger, Speicher und Verbraucher sind analog zu den vorherigen Erklärungen aufgebaut. Es wird angenommen, dass der Speicher exakt die Menge an Energie aufnimmt oder abgibt, welche das System benötigt. Dabei hält er jedoch seine vorgegebenen Grenzen hinsichtlich Kapazität, maximaler Leistung und SOC ein. Das Subsystem Clock dient als Taktgeber für alle Komponenten und ermöglicht es das Modell in beliebigen Zeitschritten simulieren zu lassen. 
+Die Erzeuger, Speicher und Verbraucher sind analog zu den vorherigen Erklärungen aufgebaut. Es wird angenommen, dass der Speicher exakt die Menge an Energie aufnimmt oder abgibt, welche das System benötigt. Dabei hält er jedoch seine vorgegebenen Grenzen hinsichtlich Kapazität, maximaler Leistung und SOC ein. Das Subsystem Clock dient als Taktgeber für alle Komponenten und ermöglicht es das Modell in beliebigen Zeitschritten simulieren zu lassen. Im Rahmen dieser Arbeit werden Simulation in 10-minütiger Auflösung durchgeführt.
 %Der Aufbau ist in \autoref{fig:clock} zu sehen.
 
 %\begin{figure}[H]
@@ -443,7 +443,7 @@ Der Batteriespeicher erhält die Leistungsbilanz ohne Energiespeicher als Eingan
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{Abbildungen/Auswertung.png}
+	\includegraphics[width=0.9\linewidth]{figures/Auswertung.png}
 	\caption{Auswertung der einzelnen Komponenten im bilanziellen Modell}
 	\label{fig:Auswertung}
 \end{figure}
